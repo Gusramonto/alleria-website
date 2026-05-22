@@ -226,7 +226,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 
 .nav-logo img {
-  height: 56px;
+  height: 76px;
   width: auto;
   object-fit: contain;
 }
@@ -1572,7 +1572,11 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .why-grid { grid-template-columns: repeat(3, 1fr); }
 
   .experience-grid { grid-template-columns: repeat(3, 1fr); }
+  .experience-card--featured { grid-column: 2; max-width: none; }
   .experience-img-wrap { height: 180px; }
+  .menu-grid { grid-template-columns: repeat(3, 1fr); }
+  .founders-inner { grid-template-columns: 380px 1fr; gap: 56px; }
+  .founders-photo { max-width: 100%; margin: 0; }
 
   .products-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -1636,24 +1640,13 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   margin-top: 2px;
 }
 
-/* Experience — tarjeta featured de panes */
+/* Experience — tarjeta featured de panes (centrada abajo) */
 .experience-card--featured {
   border: 2px solid var(--verde);
   position: relative;
-}
-.experience-card--featured::before {
-  content: '★ Protagonista';
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: var(--verde);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 3px 10px;
-  border-radius: var(--radius-pill);
-  z-index: 1;
+  max-width: 420px;
+  margin: 0 auto;
+  width: 100%;
 }
 .btn-experience-cta {
   display: inline-block;
@@ -1720,25 +1713,234 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   color: var(--texto-suave);
 }
 
+/* ===== HERO BRAND NAME ===== */
+.hero-brand {
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.18em;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  line-height: 1;
+}
+
+/* ===== SECCIÓN NOSOTROS (FUNDADORES) ===== */
+.founders-section {
+  background: var(--crema);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.founders-section::before {
+  content: '🫒';
+  position: absolute;
+  top: 20px;
+  right: 4%;
+  font-size: 9rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(20deg);
+  user-select: none;
+}
+.founders-section::after {
+  content: '🌿';
+  position: absolute;
+  bottom: 20px;
+  left: 3%;
+  font-size: 8rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(-15deg);
+  user-select: none;
+}
+.founders-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.founders-photo {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  max-width: 380px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+}
+.founders-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.founders-text .section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--verde);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+.founders-text h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--gris);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+.founders-text p {
+  font-size: 1rem;
+  color: var(--texto-suave);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.founders-text p:last-of-type { margin-bottom: 0; }
+.founders-signature {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--crema-border);
+}
+.founders-signature strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--gris);
+}
+.founders-signature span {
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+}
+
+/* ===== SECCIÓN MENÚ EN TIENDA ===== */
+.menu-section {
+  background: var(--crema);
+  padding: 72px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.menu-section::before {
+  content: '🥐';
+  position: absolute;
+  top: 30px;
+  left: 3%;
+  font-size: 8rem;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: rotate(-15deg);
+  user-select: none;
+}
+.menu-section::after {
+  content: '☕';
+  position: absolute;
+  bottom: 30px;
+  right: 4%;
+  font-size: 8rem;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: rotate(10deg);
+  user-select: none;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+.menu-col {
+  background: var(--blanco);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+.menu-col-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+.menu-col h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gris);
+  margin-bottom: 6px;
+}
+.menu-col .menu-tagline {
+  font-size: 0.82rem;
+  color: var(--verde);
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+}
+.menu-items { display: flex; flex-direction: column; gap: 14px; }
+.menu-item h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gris);
+  margin-bottom: 2px;
+}
+.menu-item p {
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+  line-height: 1.5;
+}
+.menu-cta-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===== EXPERIENCE BADGES ===== */
+.experience-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+.experience-badge--featured {
+  background: var(--verde);
+  color: #fff;
+}
+.experience-badge--top3 {
+  background: #fff7ed;
+  color: #c05621;
+  border: 1px solid #f6ad55;
+}
+
 /* ===== ELEMENTOS DECORATIVOS ===== */
 
-/* Why section — granos sutiles en el fondo */
+/* Why section */
 .why-section {
   position: relative;
 }
 .why-section::before {
   content: '🌾';
   position: absolute;
-  top: 30px;
-  right: 5%;
-  font-size: 5rem;
-  opacity: 0.05;
+  top: 20px;
+  right: 4%;
+  font-size: 8rem;
+  opacity: 0.09;
   pointer-events: none;
   transform: rotate(15deg);
   user-select: none;
 }
+.why-section::after {
+  content: '🌿';
+  position: absolute;
+  bottom: 20px;
+  left: 2%;
+  font-size: 7rem;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: rotate(-10deg);
+  user-select: none;
+}
 
-/* Science section — ícono decorativo */
+/* Science section */
 .science-section {
   position: relative;
   overflow: hidden;
@@ -1746,43 +1948,92 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .science-section::before {
   content: '🧬';
   position: absolute;
-  bottom: 40px;
-  left: 3%;
-  font-size: 7rem;
-  opacity: 0.04;
+  bottom: 30px;
+  left: 2%;
+  font-size: 9rem;
+  opacity: 0.07;
   pointer-events: none;
   transform: rotate(-20deg);
   user-select: none;
 }
+.science-section::after {
+  content: '🌾';
+  position: absolute;
+  top: 30px;
+  right: 3%;
+  font-size: 7rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(25deg);
+  user-select: none;
+}
 
-/* Products section — trigo decorativo */
+/* Products section */
 .products-section {
   position: relative;
+}
+.products-section::before {
+  content: '🌾';
+  position: absolute;
+  top: 40px;
+  left: 1%;
+  font-size: 9rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(-20deg);
+  user-select: none;
 }
 .products-section::after {
   content: '🥖';
   position: absolute;
-  top: 60px;
+  bottom: 40px;
   right: 2%;
-  font-size: 6rem;
-  opacity: 0.04;
+  font-size: 9rem;
+  opacity: 0.08;
   pointer-events: none;
   transform: rotate(30deg);
   user-select: none;
 }
 
-/* Game section — decorativo */
+/* Experience section */
+.experience-section {
+  position: relative;
+}
+.experience-section::before {
+  content: '🥪';
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  font-size: 8rem;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: rotate(10deg);
+  user-select: none;
+}
+
+/* Game section */
 .game-section {
   position: relative;
 }
-.game-section::after {
+.game-section::before {
   content: '🏆';
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 2%;
-  font-size: 5rem;
-  opacity: 0.04;
+  font-size: 7rem;
+  opacity: 0.07;
   pointer-events: none;
+  user-select: none;
+}
+.game-section::after {
+  content: '🥖';
+  position: absolute;
+  bottom: 30px;
+  right: 2%;
+  font-size: 7rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(20deg);
   user-select: none;
 }
 
@@ -1793,11 +2044,22 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .testimonials-section::before {
   content: '⭐';
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 4%;
-  font-size: 6rem;
-  opacity: 0.05;
+  font-size: 8rem;
+  opacity: 0.08;
   pointer-events: none;
+  user-select: none;
+}
+.testimonials-section::after {
+  content: '💬';
+  position: absolute;
+  bottom: 40px;
+  left: 3%;
+  font-size: 7rem;
+  opacity: 0.07;
+  pointer-events: none;
+  transform: rotate(-10deg);
   user-select: none;
 }
 

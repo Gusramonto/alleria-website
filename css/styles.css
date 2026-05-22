@@ -32,7 +32,7 @@
   --radius-pill: 50px;
 
   --transition: 300ms ease;
-  --header-h: 60px;
+  --header-h: 84px;
 }
 
 /* ===== RESET & BASE ===== */
@@ -1572,9 +1572,9 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .why-grid { grid-template-columns: repeat(3, 1fr); }
 
   .experience-grid { grid-template-columns: repeat(3, 1fr); }
-  .experience-card--featured { grid-column: 2; max-width: none; }
+  .experience-grid > .experience-card:last-child { grid-column: 2; }
   .experience-img-wrap { height: 180px; }
-  .menu-grid { grid-template-columns: repeat(3, 1fr); }
+  .menu-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
   .founders-inner { grid-template-columns: 380px 1fr; gap: 56px; }
   .founders-photo { max-width: 100%; margin: 0; }
 
@@ -1640,13 +1640,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   margin-top: 2px;
 }
 
-/* Experience — tarjeta featured de panes (centrada abajo) */
+/* Experience — tarjeta featured de panes */
 .experience-card--featured {
   border: 2px solid var(--verde);
   position: relative;
-  max-width: 420px;
-  margin: 0 auto;
-  width: 100%;
 }
 .btn-experience-cta {
   display: inline-block;
@@ -1885,6 +1882,50 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   color: var(--texto-suave);
   line-height: 1.5;
 }
+.menu-cat-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gris);
+  margin: 40px 0 4px;
+}
+.menu-cat-title:first-of-type { margin-top: 32px; }
+.menu-cat-sub {
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+  margin-bottom: 16px;
+}
+.menu-card {
+  background: var(--blanco);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition);
+}
+.menu-card:hover { box-shadow: var(--shadow-md); }
+.menu-card-img {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+}
+.menu-card-img--panini { background: linear-gradient(135deg, #f5e6c8 0%, #e8b87a 100%); }
+.menu-card-img--cafe   { background: linear-gradient(135deg, #3d2b1f 0%, #7b5230 100%); }
+.menu-card-img--postre { background: linear-gradient(135deg, #f9d4d4 0%, #e8a0a0 100%); }
+.menu-card-img--pan    { background: linear-gradient(135deg, #f5ede0 0%, #dab97a 100%); }
+.menu-card-body { padding: 16px 18px 20px; }
+.menu-card-body h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gris);
+  margin-bottom: 4px;
+}
+.menu-card-body p {
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+  line-height: 1.5;
+}
 .menu-cta-wrap {
   text-align: center;
   margin-top: 40px;
@@ -1911,156 +1952,149 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   border: 1px solid #f6ad55;
 }
 
-/* ===== ELEMENTOS DECORATIVOS ===== */
-
-/* Why section */
-.why-section {
-  position: relative;
-}
-.why-section::before {
-  content: '🌾';
-  position: absolute;
-  top: 20px;
-  right: 4%;
-  font-size: 8rem;
-  opacity: 0.09;
-  pointer-events: none;
-  transform: rotate(15deg);
-  user-select: none;
-}
-.why-section::after {
-  content: '🌿';
-  position: absolute;
-  bottom: 20px;
-  left: 2%;
-  font-size: 7rem;
-  opacity: 0.08;
-  pointer-events: none;
-  transform: rotate(-10deg);
-  user-select: none;
-}
-
-/* Science section */
-.science-section {
+/* ===== ELEMENTOS DECORATIVOS — Pan & Café ===== */
+/* Shorthand para posicionar emojis de fondo */
+.why-section,
+.science-section,
+.products-section,
+.experience-section,
+.menu-section,
+.game-section,
+.testimonials-section,
+.founders-section,
+.contact-section {
   position: relative;
   overflow: hidden;
 }
-.science-section::before {
-  content: '🧬';
-  position: absolute;
-  bottom: 30px;
-  left: 2%;
-  font-size: 9rem;
-  opacity: 0.07;
-  pointer-events: none;
-  transform: rotate(-20deg);
-  user-select: none;
-}
-.science-section::after {
+
+/* ¿Qué hace especial nuestro pan? */
+.why-section::before {
   content: '🌾';
-  position: absolute;
-  top: 30px;
-  right: 3%;
-  font-size: 7rem;
-  opacity: 0.07;
-  pointer-events: none;
-  transform: rotate(25deg);
-  user-select: none;
+  position: absolute; top: 20px; right: 5%;
+  font-size: 10rem; opacity: 0.11;
+  pointer-events: none; user-select: none;
+  transform: rotate(15deg);
+}
+.why-section::after {
+  content: '🥖';
+  position: absolute; bottom: 20px; left: 3%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-20deg);
 }
 
-/* Products section */
-.products-section {
-  position: relative;
+/* Ciencia / Acordeón */
+.science-section::before {
+  content: '🌾';
+  position: absolute; top: 30px; right: 3%;
+  font-size: 11rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(20deg);
 }
+.science-section::after {
+  content: '🥐';
+  position: absolute; bottom: 30px; left: 2%;
+  font-size: 10rem; opacity: 0.11;
+  pointer-events: none; user-select: none;
+  transform: rotate(-25deg);
+}
+
+/* Productos / Panes */
 .products-section::before {
   content: '🌾';
-  position: absolute;
-  top: 40px;
-  left: 1%;
-  font-size: 9rem;
-  opacity: 0.07;
-  pointer-events: none;
-  transform: rotate(-20deg);
-  user-select: none;
+  position: absolute; top: 40px; left: 1%;
+  font-size: 11rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-15deg);
 }
 .products-section::after {
   content: '🥖';
-  position: absolute;
-  bottom: 40px;
-  right: 2%;
-  font-size: 9rem;
-  opacity: 0.08;
-  pointer-events: none;
+  position: absolute; bottom: 40px; right: 1%;
+  font-size: 11rem; opacity: 0.11;
+  pointer-events: none; user-select: none;
   transform: rotate(30deg);
-  user-select: none;
 }
 
-/* Experience section */
-.experience-section {
-  position: relative;
-}
+/* Prueba Nuestros Productos */
 .experience-section::before {
-  content: '🥪';
-  position: absolute;
-  top: 20px;
-  right: 2%;
-  font-size: 8rem;
-  opacity: 0.08;
-  pointer-events: none;
+  content: '🥐';
+  position: absolute; top: 20px; right: 2%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
   transform: rotate(10deg);
-  user-select: none;
+}
+.experience-section::after {
+  content: '🌾';
+  position: absolute; bottom: 20px; left: 2%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-15deg);
 }
 
-/* Game section */
-.game-section {
-  position: relative;
+/* Menú en Tienda */
+.menu-section::before {
+  content: '☕';
+  position: absolute; top: 30px; left: 3%;
+  font-size: 10rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-10deg);
 }
+.menu-section::after {
+  content: '🍰';
+  position: absolute; bottom: 30px; right: 3%;
+  font-size: 10rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(15deg);
+}
+
+/* Juego */
 .game-section::before {
-  content: '🏆';
-  position: absolute;
-  top: 30px;
-  left: 2%;
-  font-size: 7rem;
-  opacity: 0.07;
-  pointer-events: none;
-  user-select: none;
+  content: '🥖';
+  position: absolute; top: 30px; left: 2%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-10deg);
 }
 .game-section::after {
-  content: '🥖';
-  position: absolute;
-  bottom: 30px;
-  right: 2%;
-  font-size: 7rem;
-  opacity: 0.07;
-  pointer-events: none;
+  content: '🌾';
+  position: absolute; bottom: 30px; right: 2%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
   transform: rotate(20deg);
-  user-select: none;
 }
 
-/* Testimonials section */
-.testimonials-section {
-  position: relative;
-}
+/* Testimonios */
 .testimonials-section::before {
-  content: '⭐';
-  position: absolute;
-  top: 40px;
-  right: 4%;
-  font-size: 8rem;
-  opacity: 0.08;
-  pointer-events: none;
-  user-select: none;
+  content: '🥖';
+  position: absolute; top: 40px; right: 4%;
+  font-size: 10rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(10deg);
 }
 .testimonials-section::after {
-  content: '💬';
-  position: absolute;
-  bottom: 40px;
-  left: 3%;
-  font-size: 7rem;
-  opacity: 0.07;
-  pointer-events: none;
-  transform: rotate(-10deg);
-  user-select: none;
+  content: '☕';
+  position: absolute; bottom: 40px; left: 3%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-15deg);
+}
+
+/* Nosotros — cubierto en la declaración de .founders-section::before/after arriba */
+
+/* Contacto */
+.contact-section::before {
+  content: '🥐';
+  position: absolute; top: 30px; right: 4%;
+  font-size: 10rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(15deg);
+}
+.contact-section::after {
+  content: '🌾';
+  position: absolute; bottom: 30px; left: 3%;
+  font-size: 9rem; opacity: 0.10;
+  pointer-events: none; user-select: none;
+  transform: rotate(-20deg);
 }
 
 /* ===== ACCESSIBILITY ===== */

@@ -16,13 +16,13 @@
     {
       category: 'La Miga',
       imageA: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/White_sandwich_bread.jpg/400px-White_sandwich_bread.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/9/90/White_sandwich_bread.jpg',
         alt: 'Miga de pan industrial uniforme',
         isSourdough: false,
         label: 'Pan A'
       },
       imageB: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sliced_loaf_of_sourdough_bread.jpg/400px-Sliced_loaf_of_sourdough_bread.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Sliced_loaf_of_sourdough_bread.jpg',
         alt: 'Miga de pan de masa madre con alveolos irregulares',
         isSourdough: true,
         label: 'Pan B'
@@ -33,13 +33,13 @@
     {
       category: 'La Corteza',
       imageA: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sourdough_bread_baked_in_cast_iron_dutch_oven.jpg/400px-Sourdough_bread_baked_in_cast_iron_dutch_oven.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Sourdough_bread_baked_in_cast_iron_dutch_oven.jpg',
         alt: 'Corteza gruesa y oscura de pan de masa madre',
         isSourdough: true,
         label: 'Pan A'
       },
       imageB: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Crust_of_milk_loaf_with_wheatgerm.jpg/400px-Crust_of_milk_loaf_with_wheatgerm.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Crust_of_milk_loaf_with_wheatgerm.jpg',
         alt: 'Corteza suave y pálida de pan industrial',
         isSourdough: false,
         label: 'Pan B'
@@ -50,13 +50,13 @@
     {
       category: 'El Color',
       imageA: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Wei%C3%9Fbrot-1.jpg/400px-Wei%C3%9Fbrot-1.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Wei%C3%9Fbrot-1.jpg',
         alt: 'Pan blanco industrial de color pálido uniforme',
         isSourdough: false,
         label: 'Pan A'
       },
       imageB: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sourdough_bread.jpg/400px-Sourdough_bread.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Sourdough_bread.jpg',
         alt: 'Pan de masa madre con color dorado oscuro caramelizado',
         isSourdough: true,
         label: 'Pan B'
@@ -67,13 +67,13 @@
     {
       category: 'La Textura',
       imageA: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slices_of_sourdough_bread.jpg/400px-Slices_of_sourdough_bread.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Slices_of_sourdough_bread.jpg',
         alt: 'Rebanadas densas y elásticas de pan de masa madre',
         isSourdough: true,
         label: 'Pan A'
       },
       imageB: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sliced_sandwich_breads_2021-8-28.jpg/400px-Sliced_sandwich_breads_2021-8-28.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Sliced_sandwich_breads_2021-8-28.jpg',
         alt: 'Rebanadas esponjosas de pan industrial de molde',
         isSourdough: false,
         label: 'Pan B'
@@ -84,13 +84,13 @@
     {
       category: 'La Conservación',
       imageA: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sandwich_bread_%28Bakers_Choice%29.JPG/400px-Sandwich_bread_%28Bakers_Choice%29.JPG',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Sandwich_bread_%28Bakers_Choice%29.JPG',
         alt: 'Pan industrial empaquetado con conservantes',
         isSourdough: false,
         label: 'Pan Industrial'
       },
       imageB: {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Loaf_of_sourdough_bread_cooling.jpg/400px-Loaf_of_sourdough_bread_cooling.jpg',
+        src: 'https://upload.wikimedia.org/wikipedia/commons/6/67/Loaf_of_sourdough_bread_cooling.jpg',
         alt: 'Pan de masa madre recién horneado sin conservantes',
         isSourdough: true,
         label: 'Pan Masa Madre'

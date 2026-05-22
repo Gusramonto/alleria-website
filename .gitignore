@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Docs de trabajo (no van al repo público)
+*.docx
+
+# Carpetas de fotos originales (se usan solo para copiar a /assets)
+Fotos de menú/
+Fotos panes/
+Fotos personal/
+Identidad Gráfica/
+
+# Node (por si se agrega tooling luego)
+node_modules/
+.env
+.env.local

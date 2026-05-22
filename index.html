@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alleria | Panadería de Masa Madre en Barquisimeto</title>
+  <meta name="description" content="Panadería artesanal de masa madre en Barquisimeto. Prueba nuestros panes en paninis o llévatelos a casa. Visítanos en Nueva Segovia.">
+  <meta name="keywords" content="panadería artesanal Barquisimeto, pan de masa madre Barquisimeto, pan artesanal Venezuela, panadería masa madre Venezuela, panini Barquisimeto">
+  <meta name="author" content="Alleria Coffee Bar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alleria-coffee.vercel.app">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alleria-coffee.vercel.app">
+  <meta property="og:title" content="Alleria | Panadería de Masa Madre en Barquisimeto">
+  <meta property="og:description" content="Panadería artesanal de masa madre en Barquisimeto. Prueba nuestros panes en paninis o llévatelos a casa.">
+  <meta property="og:image" content="https://alleria-coffee.vercel.app/assets/hero.jpg">
+  <meta property="og:locale" content="es_VE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alleria | Panadería de Masa Madre en Barquisimeto">
+  <meta name="twitter:description" content="Panadería artesanal de masa madre en Barquisimeto. Prueba nuestros panes en paninis o llévatelos a casa.">
+  <meta name="twitter:image" content="https://alleria-coffee.vercel.app/assets/hero.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Alleria Coffee Bar",
+    "description": "Panadería artesanal de masa madre en Barquisimeto. Experiencia en tienda con paninis, café y postres.",
+    "url": "https://alleria-coffee.vercel.app",
+    "telephone": "+584122632864",
+    "foundingDate": "2024",
+    "image": "https://alleria-coffee.vercel.app/assets/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 6 entre carrera 1 y 2, Edificio Chamonix, local 2",
+      "addressLocality": "Barquisimeto",
+      "addressRegion": "Lara",
+      "addressCountry": "VE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.0630136,
+      "longitude": -69.2928761
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    "sameAs": ["https://www.instagram.com/alleriacoffeebar"],
+    "priceRange": "$",
+    "servesCuisine": "Bakery, Coffee"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== REFERRAL BANNER (hidden by default, shown via JS) ===== -->
+  <div id="referral-banner" class="referral-banner" style="display:none;">
+    <div class="referral-banner-inner">
+      <span class="referral-icon">🎁</span>
+      <div>
+        <strong>Tu amigo te regaló 10% de descuento</strong>
+        <p>Menciona el código <span id="referral-code-display"></span> al hacer tu pedido</p>
+      </div>
+      <a id="referral-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn-referral">
+        Ordenar ahora
+      </a>
+      <button onclick="document.getElementById('referral-banner').style.display='none'" class="referral-close" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Quiero%20hacer%20un%20pedido%20%F0%9F%A5%96"
+     target="_blank" rel="noopener"
+     class="whatsapp-float"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ===== HEADER STICKY ===== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="Alleria Coffee Bar - Inicio">
+        <img src="assets/logo.jpg" alt="Alleria Coffee Bar" width="200" height="72">
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#productos">PRODUCTOS</a></li>
+        <li><a href="#testimonios">TESTIMONIOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+
+      <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Quiero%20hacer%20un%20pedido%20%F0%9F%A5%96"
+         target="_blank" rel="noopener"
+         class="btn-whatsapp-nav">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#inicio" class="mobile-nav-link">INICIO</a></li>
+        <li><a href="#nosotros" class="mobile-nav-link">NOSOTROS</a></li>
+        <li><a href="#productos" class="mobile-nav-link">PRODUCTOS</a></li>
+        <li><a href="#testimonios" class="mobile-nav-link">TESTIMONIOS</a></li>
+        <li><a href="#contacto" class="mobile-nav-link">CONTACTO</a></li>
+      </ul>
+      <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Quiero%20hacer%20un%20pedido%20%F0%9F%A5%96"
+         target="_blank" rel="noopener"
+         class="btn-whatsapp-mobile">
+        Ordenar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== SECCIÓN 2: HERO ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg" style="background-image: url('assets/hero.jpg');" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Panadería Artesanal de Masa Madre<br>en Barquisimeto</h1>
+        <p class="hero-subtitle">Prueba nuestros panes en paninis.<br>Llévatelos a casa.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Quiero%20hacer%20un%20pedido%20%F0%9F%A5%96"
+             target="_blank" rel="noopener"
+             class="btn-hero-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            ORDENAR POR WHATSAPP
+          </a>
+          <a href="#contacto" class="btn-hero-secondary">Visítanos en Nueva Segovia</a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: PRUEBA SOCIAL ===== -->
+    <section class="social-proof" aria-label="Nuestros clientes">
+      <div class="social-proof-track">
+        <div class="social-proof-content">
+          <span>⭐⭐⭐⭐⭐ <strong>4.9/5</strong></span>
+          <span class="sep">•</span>
+          <span><strong>150+</strong> clientes felices</span>
+          <span class="sep">•</span>
+          <span>"Las focaccias son la protagonista de cualquier panini" — <em>Ana C.</em></span>
+          <span class="sep">•</span>
+          <span>"Las focaccias son las mejores que he probado" — <em>Paola V.</em></span>
+          <span class="sep">•</span>
+          <span>"¡Quiero Ciabatta con aceitunas negras TODOS LOS DÍAS!" — <em>Pedro C.</em></span>
+          <span class="sep">•</span>
+          <span>"El pan integral de masa madre es una deliciosa sorpresa" — <em>Angela L.</em></span>
+          <span class="sep">•</span>
+          <span>"El mejor café de Barquisimeto" — <em>Jenny F.</em></span>
+          <span class="sep">•</span>
+          <span>"Panes saludables, deliciosos y buenos precios. La mejor combinación" — <em>Duglas G.</em></span>
+          <span class="sep">•</span>
+          <span>"El siciliano es mi favorito" — <em>Jorge A.</em></span>
+          <span class="sep">•</span>
+          <span>⭐⭐⭐⭐⭐ <strong>4.9/5</strong></span>
+          <span class="sep">•</span>
+          <span><strong>150+</strong> clientes felices</span>
+          <span class="sep">•</span>
+          <span>"Las focaccias son la protagonista de cualquier panini" — <em>Ana C.</em></span>
+          <span class="sep">•</span>
+          <span>"Las focaccias son las mejores que he probado" — <em>Paola V.</em></span>
+          <span class="sep">•</span>
+          <span>"¡Quiero Ciabatta con aceitunas negras TODOS LOS DÍAS!" — <em>Pedro C.</em></span>
+          <span class="sep">•</span>
+          <span>"El pan integral de masa madre es una deliciosa sorpresa" — <em>Angela L.</em></span>
+          <span class="sep">•</span>
+          <span>"El mejor café de Barquisimeto" — <em>Jenny F.</em></span>
+          <span class="sep">•</span>
+          <span>"Panes saludables, deliciosos y buenos precios. La mejor combinación" — <em>Duglas G.</em></span>
+          <span class="sep">•</span>
+          <span>"El siciliano es mi favorito" — <em>Jorge A.</em></span>
+          <span class="sep">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 4: ¿POR QUÉ MASA MADRE? ===== -->
+    <section id="nosotros" class="why-section">
+      <div class="container">
+        <h2 class="section-title">¿Qué Hace Especial Nuestro Pan?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🌾</div>
+            <h3>Digestión Ligera</h3>
+            <p>No te sientes pesado después. La fermentación lenta rompe el gluten naturalmente.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">✨</div>
+            <h3>Sabor Auténtico</h3>
+            <p>Profundidad que no encuentras en pan industrial. Se siente la diferencia.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">💚</div>
+            <h3>Ingredientes Reales</h3>
+            <p>Harina, agua, sal, tiempo. Nada más. Como debe ser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 5: PRUEBA NUESTRO PAN EN NUEVA SEGOVIA ===== -->
+    <section class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Prueba Nuestro Pan en Nueva Segovia</h2>
+        <p class="section-subtitle">Pan artesanal de masa madre: para llevar, en paninis, con café o de postre</p>
+        <div class="experience-grid">
+
+          <div class="experience-card experience-card--featured">
+            <div class="experience-img-wrap">
+              <img src="assets/hero.jpg" alt="Panes artesanales de masa madre Alleria" loading="lazy" style="object-position: center 25%;">
+            </div>
+            <div class="experience-info">
+              <h3>🥖 Nuestros Panes</h3>
+              <ul>
+                <li><strong>Focaccia</strong> — Suave, aireada, perfecta sola o en panini</li>
+                <li><strong>Ciabatta</strong> — Tradicional o con aceitunas negras</li>
+                <li><strong>Siciliano</strong> — Pan artesanal de carácter único</li>
+                <li><strong>Pan de Molde</strong> — Tradicional o integral con 7 semillas</li>
+                <li><strong>Campesino · Canilla · Deli · Croissant</strong></li>
+              </ul>
+              <a href="#productos" class="btn-experience-cta">Ver todos los panes →</a>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-img-wrap">
+              <img src="assets/products/siciliano.jpg" alt="Paninis de masa madre - Alleria Coffee Bar" loading="lazy">
+            </div>
+            <div class="experience-info">
+              <h3>🥪 Paninis en Masa Madre</h3>
+              <ul>
+                <li><strong>La Diosa</strong> — Focaccia con prosciutto, stracciatela, pimentones rojos, rúgula y pesto</li>
+                <li><strong>La Signora</strong> — Focaccia con mortadella, pistacho, parmigiano, pesto, tomate y rúgula</li>
+                <li><strong>La Incondicional</strong> — Focaccia con pollo asado, jamón, tocineta, mayo, queso gouda y vegetales</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-img-wrap experience-img-cafe">
+              <span class="experience-emoji">☕</span>
+            </div>
+            <div class="experience-info">
+              <h3>☕ Café</h3>
+              <ul>
+                <li><strong>Cappuccino / Flat White</strong> — Mezcla equilibrada de café y leche</li>
+                <li><strong>Latte Vainilla</strong> — Latte suave con toque de vainilla que enamora</li>
+                <li><strong>Frappuccino Gelato</strong> — Bebida helada de café y helado con crema chantilly</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-img-wrap experience-img-postres">
+              <span class="experience-emoji">🍰</span>
+            </div>
+            <div class="experience-info">
+              <h3>🍰 Postres</h3>
+              <ul>
+                <li><strong>Roles de Masa Madre</strong> — Canela con chocolate, canela con manzana, golfeado</li>
+                <li><strong>Polvorosa de Almendra</strong> — Ricas galletas griegas artesanales</li>
+                <li><strong>Tres Leches de Chocolate</strong> — Explosión de sabor con cacao</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 6: PANES PARA LLEVAR ===== -->
+    <section id="productos" class="products-section">
+      <div class="container">
+
+        <!-- Share button contextual -->
+        <div class="share-row">
+          <button class="btn-share-context" data-share-context="productos" aria-label="Enviar menú por WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Enviar menú por WhatsApp
+          </button>
+        </div>
+
+        <h2 class="section-title">Nuestros Panes de Masa Madre</h2>
+        <p class="section-subtitle">Para tu mesa o tu negocio</p>
+        <p class="price-disclaimer">Precios en USD (tasa BCV). IVA incluido.</p>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Focaccia de masa madre" loading="lazy" style="object-position: center 20%;">
+            </div>
+            <div class="product-info">
+              <h3>Focaccia</h3>
+              <p>Para panini o acompañamiento</p>
+              <span class="product-price">$2.50 <small>/ $12.50 bandeja</small></span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Ciabatta Tradicional de masa madre" loading="lazy" style="object-position: right 30%;">
+            </div>
+            <div class="product-info">
+              <h3>Ciabatta Tradicional</h3>
+              <p>Perfecta para panini</p>
+              <span class="product-price">$2.00</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Ciabatta con Aceitunas de masa madre" loading="lazy" style="object-position: left 40%;">
+            </div>
+            <div class="product-info">
+              <h3>Ciabatta con Aceitunas</h3>
+              <p>Toque mediterráneo</p>
+              <span class="product-price">$2.50</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Campesino Tradicional de masa madre" loading="lazy" style="object-position: center 60%;">
+            </div>
+            <div class="product-info">
+              <h3>Campesino Tradicional</h3>
+              <p>Ideal para pepitos</p>
+              <span class="product-price">$2.00</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Campesino Integral con 7 semillas" loading="lazy" style="object-position: right 50%;">
+            </div>
+            <div class="product-info">
+              <h3>Campesino Integral</h3>
+              <p>Linaza, sésamo, girasol, chía, amapola, quinoa y amaranto</p>
+              <span class="product-price">$2.50</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Canilla Tradicional de masa madre" loading="lazy" style="object-position: left 70%;">
+            </div>
+            <div class="product-info">
+              <h3>Canilla Tradicional</h3>
+              <p>Clásico pepito</p>
+              <span class="product-price">$1.00</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Canilla Integral con 7 semillas" loading="lazy" style="object-position: center 80%;">
+            </div>
+            <div class="product-info">
+              <h3>Canilla Integral</h3>
+              <p>Linaza, sésamo, girasol, chía, amapola, quinoa y amaranto</p>
+              <span class="product-price">$1.50</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Pan para Hamburguesas de masa madre" loading="lazy" style="object-position: right 70%;">
+            </div>
+            <div class="product-info">
+              <h3>Hamburguesas</h3>
+              <p>Pack de 4 unidades</p>
+              <span class="product-price">$5.00 <small>el pack</small></span>
+              <span class="product-price-secondary">$1.25 c/u</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Pan para Hot Dog de masa madre" loading="lazy" style="object-position: left 20%;">
+            </div>
+            <div class="product-info">
+              <h3>Hot Dog</h3>
+              <p>Pack de 5 unidades</p>
+              <span class="product-price">$5.00 <small>el pack</small></span>
+              <span class="product-price-secondary">$1.00 c/u</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Pan Deli estilo francés" loading="lazy" style="object-position: right 20%;">
+            </div>
+            <div class="product-info">
+              <h3>Deli</h3>
+              <p>Estilo francés, multiuso</p>
+              <span class="product-price">$0.60</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Piñitas dulces de masa madre" loading="lazy" style="object-position: center 35%;">
+            </div>
+            <div class="product-info">
+              <h3>Piñitas</h3>
+              <p>Dulces para merienda</p>
+              <span class="product-price">$0.60</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/products/pan-molde.jpg" alt="Pan de Molde Tradicional de masa madre" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Pan de Molde Tradicional</h3>
+              <p>6–7 sandwiches / 8–9 sandwiches</p>
+              <span class="product-price">$5.50 <small>med</small> / $6.50 <small>gde</small></span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Pan de Molde Integral con 7 semillas" loading="lazy" style="object-position: left 55%;">
+            </div>
+            <div class="product-info">
+              <h3>Pan de Molde Integral</h3>
+              <p>Linaza, sésamo, girasol, chía, amapola, quinoa y amaranto</p>
+              <span class="product-price">$6.50 <small>med</small> / $7.50 <small>gde</small></span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/products/siciliano.jpg" alt="Siciliano pan artesanal" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Siciliano</h3>
+              <p>Pan artesanal</p>
+              <span class="product-price">$4.50 <small>med</small> / $6.50 <small>gde</small></span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/hero.jpg" alt="Croissant hojaldrado artesanal" loading="lazy" style="object-position: right 85%;">
+            </div>
+            <div class="product-info">
+              <h3>Croissant</h3>
+              <p>Hojaldrado artesanal</p>
+              <span class="product-price">$2.00</span>
+            </div>
+          </article>
+
+        </div>
+        <!-- /products-grid -->
+
+        <!-- B2B Section + Calculator -->
+        <div class="b2b-section">
+          <div class="b2b-header">
+            <h2>¿Vendes al Mayor?</h2>
+            <p>Precios especiales para restaurantes, hoteles, cafés, bodegones y negocios de alimentos</p>
+            <div class="b2b-benefits">
+              <span>✓ Crédito 7 días (después del 3er pedido)</span>
+              <span>✓ Entregas sin costo</span>
+              <span>✓ Garantía 100%</span>
+            </div>
+            <div class="b2b-ctas">
+              <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Me%20interesan%20los%20precios%20al%20mayor%20para%20mi%20negocio%20%F0%9F%A5%96"
+                 target="_blank" rel="noopener"
+                 class="btn-primary">CONSULTAR PRECIOS</a>
+            </div>
+          </div>
+
+          <!-- Calculadora B2B -->
+          <div class="calculator-wrap">
+            <h3>¿Cuánto Pan Necesita Tu Negocio?</h3>
+            <p class="calc-subtitle">Calcula tu pedido mensual estimado</p>
+
+            <form id="calculator-form" class="calculator-form" novalidate>
+              <div class="calc-inputs">
+                <div class="calc-field">
+                  <label for="calc-desayunos">Desayunos diarios (personas)</label>
+                  <input type="number" id="calc-desayunos" name="desayunos" min="0" max="9999" placeholder="0" inputmode="numeric">
+                </div>
+                <div class="calc-field">
+                  <label for="calc-almuerzos">Almuerzos diarios (personas)</label>
+                  <input type="number" id="calc-almuerzos" name="almuerzos" min="0" max="9999" placeholder="0" inputmode="numeric">
+                </div>
+                <div class="calc-field">
+                  <label for="calc-cenas">Cenas diarias (personas)</label>
+                  <input type="number" id="calc-cenas" name="cenas" min="0" max="9999" placeholder="0" inputmode="numeric">
+                </div>
+              </div>
+
+              <fieldset class="calc-type">
+                <legend>Tipo de negocio</legend>
+                <div class="radio-group">
+                  <label class="radio-option">
+                    <input type="radio" name="tipo" value="restaurante" checked>
+                    <span>Restaurante</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="tipo" value="hotel">
+                    <span>Hotel</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="tipo" value="cafe">
+                    <span>Café</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="tipo" value="catering">
+                    <span>Catering</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="tipo" value="bodegon">
+                    <span>Bodegón</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn-calcular">CALCULAR ESTIMACIÓN</button>
+            </form>
+
+            <!-- Calculator Result -->
+            <div id="calculator-result" class="calculator-result" hidden>
+              <h4>Tu negocio necesita aproximadamente:</h4>
+              <div class="calc-result-list">
+                <div class="calc-result-item">
+                  <span class="calc-product">Focaccias</span>
+                  <span class="calc-qty" id="res-focaccias"></span>
+                  <span class="calc-subtotal" id="res-focaccias-price"></span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="calc-product">Ciabattas</span>
+                  <span class="calc-qty" id="res-ciabattas"></span>
+                  <span class="calc-subtotal" id="res-ciabattas-price"></span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="calc-product">Panes de Molde</span>
+                  <span class="calc-qty" id="res-molde"></span>
+                  <span class="calc-subtotal" id="res-molde-price"></span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="calc-product">Otros</span>
+                  <span class="calc-qty" id="res-otros"></span>
+                  <span class="calc-subtotal" id="res-otros-price"></span>
+                </div>
+              </div>
+              <div class="calc-total">
+                TOTAL ESTIMADO: <span id="res-total"></span><small>/mes</small>
+              </div>
+              <p class="calc-note">⚠️ Esta calculadora es solo referencial (precios al detal). Los precios al mayor son distintos y se cotizan individualmente según volumen, tipo de negocio y frecuencia de pedido.</p>
+              <div class="calc-result-ctas">
+                <a href="#" id="btn-cotizar" class="btn-primary">SOLICITAR COTIZACIÓN EXACTA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 7: LA CIENCIA DETRÁS DEL SABOR ===== -->
+    <section id="ciencia" class="science-section">
+      <div class="container">
+        <div class="science-header">
+          <span class="science-icon">🧬</span>
+          <h2>La Ciencia Detrás del Sabor</h2>
+          <p>Por qué tu cuerpo lo nota (y lo agradece)</p>
+        </div>
+
+        <div class="accordion-list" id="accordion-list">
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Es realmente más fácil de digerir?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Te sientes ligero, no pesado. Menos hinchazón y gases.</p>
+            <div class="accordion-body" hidden>
+              <p><strong>SÍ.</strong> Durante la fermentación lenta (48–72 horas), las bacterias buenas "predigieren" parte del gluten. Tu estómago hace menos trabajo.</p>
+              <p><em>Estudios muestran que personas con sensibilidad al gluten (NO celíacos) reportan 50–70% menos síntomas con masa madre.</em></p>
+              <p class="science-note">Importante: Si eres celíaco, NO es apto. Si eres sensible, muchos lo toleran mejor.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Tiene menos azúcar que el pan normal?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Sin pico de azúcar. Energía sostenida. No te da sueño después de comer.</p>
+            <div class="accordion-body" hidden>
+              <p><strong>SÍ.</strong> Las bacterias consumen los azúcares durante la fermentación.</p>
+              <p><strong>Índice glucémico:</strong> 15–20% más bajo que el pan blanco industrial.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Puede comerlo alguien con diabetes o prediabetes?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Liberación lenta de glucosa — una mejor opción de carbohidrato.</p>
+            <div class="accordion-body" hidden>
+              <p>Consulta a tu médico siempre. Dicho eso: la masa madre produce una liberación lenta de glucosa (vs pico del pan industrial). Muchos diabéticos lo prefieren por eso.</p>
+              <p class="science-note">No reemplaza medicación, pero es una mejor opción de carbohidrato.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Por qué los deportistas lo prefieren?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Energía sostenida, más minerales disponibles, flora intestinal fuerte.</p>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li>Energía sostenida (no crash a media mañana)</li>
+                <li>Carbohidratos complejos de verdad</li>
+                <li>Prebióticos naturales (flora intestinal = mejor absorción de nutrientes)</li>
+                <li>Más hierro y zinc disponibles (la fermentación libera minerales)</li>
+              </ul>
+              <p><em>En resumen: Combustible de calidad, no gasolina adulterada.</em></p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Cómo sé si es masa madre REAL? ⭐</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Sabor ligeramente ácido · Miga irregular · Dura 5–7 días sin moho.</p>
+            <div class="accordion-body" hidden>
+              <p><strong>3 señales infalibles:</strong></p>
+              <ol>
+                <li><strong>Sabor:</strong> Ligeramente ácido (como yogurt), NO dulce. Si sabe dulce, tiene azúcar añadida.</li>
+                <li><strong>Textura:</strong> Densa pero aireada. Miga irregular (burbujas de diferentes tamaños). NO esponjosa uniforme como pan industrial.</li>
+                <li><strong>Conservación:</strong> Dura 5–7 días sin moho. Pan industrial se pone verde en 2 días.</li>
+              </ol>
+              <p><strong>Bonus:</strong> Lee los ingredientes. Si dice "levadura comercial" o "levadura instantánea", NO es masa madre pura.</p>
+              <p class="science-highlight">Masa madre real: Harina + agua + sal + tiempo. Nada más.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Qué son esos "probióticos" de los que hablan?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Digestión más feliz. Sistema inmune más fuerte. Como yogurt, pero en pan.</p>
+            <div class="accordion-body" hidden>
+              <p>Bacterias buenas (principalmente Lactobacillus) que ayudan a tu flora intestinal.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>¿Por qué dura más días sin moho?</span>
+              <svg class="accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <p class="accordion-benefit">✅ Dura 5–7 días sin moho. Sin conservantes químicos. Se conserva solo.</p>
+            <div class="accordion-body" hidden>
+              <p><strong>Acidez natural = conservante.</strong> El ácido láctico inhibe el moho y las bacterias malas.</p>
+              <p>El pan industrial necesita conservantes químicos. La masa madre se conserva sola.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- /accordion-list -->
+
+        <!-- Share Ciencia -->
+        <div class="share-row share-row-center">
+          <p class="share-prompt">¿Te pareció útil?</p>
+          <div class="share-buttons" data-share-context="ciencia">
+            <button class="btn-share whatsapp" aria-label="Compartir por WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </button>
+            <button class="btn-share copy" aria-label="Copiar enlace">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copiar link
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 8: ¿SABES IDENTIFICAR PAN REAL? ===== -->
+    <section id="juego" class="game-section">
+      <div class="container">
+        <h2 class="section-title">¿Sabes Identificar Pan Real?</h2>
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-juego" id="btn-tab-juego">
+            🎮 Pon a Prueba Tu Ojo
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-guia" id="btn-tab-guia">
+            📖 Guía Completa
+          </button>
+        </div>
+
+        <!-- Tab 1: Juego -->
+        <div id="tab-juego" class="tab-content active" role="tabpanel" aria-labelledby="btn-tab-juego">
+          <div id="game-container">
+
+            <!-- Game progress -->
+            <div class="game-progress" id="game-progress">
+              <div class="game-dots">
+                <span class="game-dot" id="dot-1"></span>
+                <span class="game-dot" id="dot-2"></span>
+                <span class="game-dot" id="dot-3"></span>
+                <span class="game-dot" id="dot-4"></span>
+                <span class="game-dot" id="dot-5"></span>
+              </div>
+              <span class="game-round-label" id="game-round-label">Pregunta 1 / 5</span>
+            </div>
+
+            <!-- Game question -->
+            <div class="game-question" id="game-question">
+              <h3 id="game-category"></h3>
+              <p class="game-ask">¿Cuál tiene masa madre real?</p>
+              <div class="game-images">
+                <div class="game-choice" id="choice-a">
+                  <img id="game-img-a" src="" alt="Pan A" loading="eager">
+                  <button class="btn-choose" id="btn-a" data-choice="a">Elegir A</button>
+                </div>
+                <div class="game-choice" id="choice-b">
+                  <img id="game-img-b" src="" alt="Pan B" loading="eager">
+                  <button class="btn-choose" id="btn-b" data-choice="b">Elegir B</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game feedback -->
+            <div class="game-feedback" id="game-feedback" hidden>
+              <div class="feedback-icon" id="feedback-icon"></div>
+              <p id="feedback-text"></p>
+              <button class="btn-next" id="btn-next">Siguiente →</button>
+            </div>
+
+            <!-- Game result -->
+            <div class="game-result" id="game-result" hidden>
+              <div class="result-score-wrap">
+                <div class="result-score" id="result-score"></div>
+                <div class="result-label" id="result-label"></div>
+                <div class="result-quote" id="result-quote"></div>
+              </div>
+              <div class="result-actions">
+                <button class="btn-share-score" id="btn-share-score">
+                  📤 COMPARTIR RESULTADO
+                </button>
+                <button class="btn-reto" id="btn-reto">
+                  🤜 RETAR A UN AMIGO
+                </button>
+                <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Quiero%20ordenar%20pan%20real%20%F0%9F%A5%96"
+                   target="_blank" rel="noopener"
+                   class="btn-primary">
+                  ORDENAR PAN REAL AHORA
+                </a>
+              </div>
+              <button class="btn-play-again" id="btn-play-again">Jugar de nuevo</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: Guía -->
+        <div id="tab-guia" class="tab-content" role="tabpanel" aria-labelledby="btn-tab-guia" hidden>
+          <h3 class="guide-title">DIFERENCIAS: MASA MADRE vs INDUSTRIAL</h3>
+          <p class="guide-subtitle">Aprende a identificar pan real en la tienda</p>
+
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Característica</th>
+                  <th>Masa Madre ✓</th>
+                  <th>Industrial ✗</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Corteza</strong></td>
+                  <td>Gruesa, crujiente, color irregular</td>
+                  <td>Delgada, suave, color uniforme</td>
+                </tr>
+                <tr>
+                  <td><strong>Miga</strong></td>
+                  <td>Burbujas irregulares, alveolos grandes y pequeños</td>
+                  <td>Esponjosa uniforme, burbujas pequeñas iguales</td>
+                </tr>
+                <tr>
+                  <td><strong>Olor</strong></td>
+                  <td>Ácido suave, a granos</td>
+                  <td>Dulce, a levadura, químico</td>
+                </tr>
+                <tr>
+                  <td><strong>Tacto</strong></td>
+                  <td>Denso pero elástico, firme</td>
+                  <td>Ligero, se aplasta, esponjoso</td>
+                </tr>
+                <tr>
+                  <td><strong>Conservación</strong></td>
+                  <td>5–7 días sin moho (solo se pone firme)</td>
+                  <td>2 días, luego moho verde</td>
+                </tr>
+                <tr>
+                  <td><strong>Ingredientes</strong></td>
+                  <td>Harina + agua + sal + tiempo. Nada más.</td>
+                  <td>+ levadura + azúcar + conservantes + emulsionantes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="checklist">
+            <h4>Checklist rápido en tienda</h4>
+            <ul>
+              <li><span class="check">✓</span> Tiene sabor ligeramente ácido (no dulce)</li>
+              <li><span class="check">✓</span> Miga con burbujas irregulares</li>
+              <li><span class="check">✓</span> Corteza gruesa y crujiente</li>
+              <li><span class="check">✓</span> Dura más de 3 días sin moho</li>
+              <li><span class="check">✓</span> Ingredientes: solo harina, agua, sal</li>
+            </ul>
+          </div>
+
+          <!-- Share guía -->
+          <div class="share-row share-row-center">
+            <div class="share-buttons" data-share-context="guia">
+              <button class="btn-share whatsapp" aria-label="Compartir guía por WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Compartir guía
+              </button>
+              <button class="btn-share copy" aria-label="Copiar enlace">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copiar link
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 9: TESTIMONIOS + FEEDBACK ===== -->
+    <section id="testimonios" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+
+        <div class="testimonials-grid">
+
+          <!-- Left: Feedback Form -->
+          <div class="feedback-col">
+            <h3>Cuéntanos Tu Experiencia</h3>
+            <form id="feedback-form" class="feedback-form" novalidate>
+              <div class="stars-input" id="stars-input" role="group" aria-label="Calificación en estrellas">
+                <button type="button" class="star-btn" data-value="1" aria-label="1 estrella">★</button>
+                <button type="button" class="star-btn" data-value="2" aria-label="2 estrellas">★</button>
+                <button type="button" class="star-btn" data-value="3" aria-label="3 estrellas">★</button>
+                <button type="button" class="star-btn" data-value="4" aria-label="4 estrellas">★</button>
+                <button type="button" class="star-btn" data-value="5" aria-label="5 estrellas">★</button>
+              </div>
+              <input type="hidden" id="feedback-rating" name="rating" value="0">
+
+              <div class="form-field">
+                <label for="feedback-name">Tu nombre</label>
+                <input type="text" id="feedback-name" name="name" placeholder="Ej: María G." maxlength="50" autocomplete="name">
+              </div>
+
+              <div class="form-field">
+                <label for="feedback-business">¿Dónde consumiste nuestro pan? <span class="field-optional">(opcional)</span></label>
+                <input type="text" id="feedback-business" name="business" placeholder="Ej: Alleria, Restaurante XYZ, en casa..." maxlength="60">
+              </div>
+
+              <div class="form-field">
+                <label for="feedback-comment">Tu comentario <span class="char-count" id="char-count">0/150</span></label>
+                <textarea id="feedback-comment" name="comment" placeholder="Cuéntanos qué te pareció..." maxlength="150" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-feedback" id="btn-submit-feedback">
+                ENVIAR RESEÑA
+              </button>
+
+              <div id="feedback-success" class="feedback-success" hidden>
+                <p>¡Gracias por tu reseña! 🎉</p>
+                <div class="share-buttons" data-share-context="feedback">
+                  <button class="btn-share whatsapp" aria-label="Recomendar por WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    RECOMIÉNDANOS (10% OFF)
+                  </button>
+                </div>
+              </div>
+              <div id="feedback-error" class="feedback-error" hidden>
+                <p>Por favor selecciona una calificación y escribe un comentario.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Google Reviews -->
+          <div class="reviews-col">
+            <div class="reviews-header">
+              <span class="reviews-rating-big">4.9</span>
+              <div>
+                <div class="stars-display">⭐⭐⭐⭐⭐</div>
+                <p>150+ reseñas en Google</p>
+              </div>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Alleria+Coffee+Bar+Barquisimeto" target="_blank" rel="noopener" class="btn-google-review">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="#4285F4"/>
+              </svg>
+              Déjanos una reseña en Google ⭐
+            </a>
+
+            <div class="reviews-list">
+
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="reviewer-avatar">P</div>
+                  <div>
+                    <strong>Paola V.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
+                <p class="review-text">"Las focaccias son las mejores que he probado"</p>
+              </div>
+
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="reviewer-avatar">J</div>
+                  <div>
+                    <strong>Jenny F.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
+                <p class="review-text">"El mejor café de Barquisimeto"</p>
+              </div>
+
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="reviewer-avatar">I</div>
+                  <div>
+                    <strong>Iraides L.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
+                <p class="review-text">"Servicio excelente, comida deliciosa"</p>
+              </div>
+
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="reviewer-avatar">G</div>
+                  <div>
+                    <strong>Giovanna D.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
+                <p class="review-text">"Un lugar acogedor y especial"</p>
+              </div>
+
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="reviewer-avatar">F</div>
+                  <div>
+                    <strong>Freddy B.</strong>
+                    <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                  </div>
+                </div>
+                <p class="review-text">"Atención increíble, el dueño es súper amable"</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 10: CONTACTO ===== -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">¿Listo Para Probar?</h2>
+
+        <div class="contact-paths">
+
+          <div class="contact-path b2c">
+            <h3>Para Ti</h3>
+            <div class="contact-locations-split">
+              <div class="contact-loc-mini">
+                <strong>📍 Nueva Segovia</strong>
+                <ul>
+                  <li>🍽️ Comer en tienda</li>
+                  <li>🚚 Delivery</li>
+                  <li>📦 Pick up</li>
+                  <li>🎉 Catering</li>
+                </ul>
+              </div>
+              <div class="contact-loc-mini">
+                <strong>📍 Cabudare</strong>
+                <ul>
+                  <li>🚚 Delivery</li>
+                  <li>📦 Pick up</li>
+                </ul>
+              </div>
+            </div>
+            <p class="contact-hours">🕐 Lun–Sáb · 8:00 AM – 8:00 PM</p>
+            <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Me%20gustar%C3%ADa%20ordenar%20%F0%9F%A5%96"
+               target="_blank" rel="noopener"
+               class="btn-whatsapp-big">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WHATSAPP
+            </a>
+          </div>
+
+          <div class="contact-divider" aria-hidden="true">ó</div>
+
+          <div class="contact-path b2b">
+            <h3>Para Tu Negocio</h3>
+            <p>Precios especiales al mayor desde cualquier ubicación</p>
+            <div class="contact-locations-split">
+              <div class="contact-loc-mini">
+                <strong>📍 Nueva Segovia</strong>
+                <ul>
+                  <li>🚚 Delivery</li>
+                  <li>📦 Pick up</li>
+                  <li>🥖 Pedidos al mayor</li>
+                </ul>
+              </div>
+              <div class="contact-loc-mini">
+                <strong>📍 Cabudare</strong>
+                <ul>
+                  <li>🚚 Delivery</li>
+                  <li>📦 Pick up</li>
+                  <li>🥖 Pedidos al mayor</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="b2b-perks">
+              <li>✓ Crédito 7 días (después del 3er pedido)</li>
+              <li>✓ Entregas sin costo</li>
+              <li>✓ Garantía 100%</li>
+            </ul>
+            <a href="https://wa.me/584122632864?text=Hola%20Alleria!%20Me%20interesa%20hablar%20sobre%20precios%20al%20mayor%20para%20mi%20negocio%20%F0%9F%A5%96"
+               target="_blank" rel="noopener"
+               class="btn-primary">CONSULTAR AL MAYOR</a>
+          </div>
+
+        </div>
+
+        <!-- Store info + Map -->
+        <div class="store-info-wrap">
+          <div class="store-info">
+            <h3>Visítanos</h3>
+            <div class="locations">
+              <div class="location">
+                <h4>📍 Nueva Segovia — Barquisimeto</h4>
+                <p>Calle 6 entre carrera 1 y 2, Edificio Chamonix, local 2<br>
+                <em>Dirección al hotel Jirahara por prolongación de Av. Bracamonte</em></p>
+                <p><strong>Paninis · Café · Postres · Panes al detal</strong></p>
+              </div>
+              <div class="location">
+                <h4>📍 Las Mercedes — Cabudare</h4>
+                <p>Calle 5 lote 20, #20-37<br>
+                <em>Detrás de Panadería San Benito</em></p>
+                <p><strong>Delivery · Pick up · Pedidos al mayor</strong></p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <p>🕐 Lunes a Sábado · 8:00 AM – 8:00 PM</p>
+              <a href="https://www.instagram.com/alleriacoffeebar" target="_blank" rel="noopener" class="instagram-link">
+                📷 @alleriacoffeebar
+              </a>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=10.0630136,-69.2928761&z=17&output=embed"
+              title="Ubicación Alleria Coffee Bar en Nueva Segovia, Barquisimeto"
+              width="100%"
+              height="300"
+              style="border:0; border-radius: 12px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== SECCIÓN 11: FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="footer-logo" aria-label="Alleria Coffee Bar - Volver al inicio">
+        <img src="assets/logo.jpg" alt="Alleria Coffee Bar" width="100" height="36">
+      </a>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/alleriacoffeebar" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/584122632864" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="footer-copy">© 2025 Alleria · Hecho con amor en Barquisimeto</p>
+    </div>
+  </footer>
+
+  <!-- Hidden canvas for game score image -->
+  <canvas id="score-canvas" width="600" height="800" style="display:none;" aria-hidden="true"></canvas>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
+  <!-- App scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/share.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

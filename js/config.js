@@ -8,8 +8,8 @@
 // SUPABASE_KEY  → "anon public" key (es segura para el frontend)
 // =============================================
 
-const SUPABASE_URL = 'TU_SUPABASE_URL_AQUI';
-const SUPABASE_KEY = 'TU_SUPABASE_ANON_KEY_AQUI';
+const SUPABASE_URL = 'https://fkpdjjttypblijnqssqz.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw';
 
 // Indica si Supabase está configurado (se usa para degradación elegante)
 const SUPABASE_CONFIGURED = (

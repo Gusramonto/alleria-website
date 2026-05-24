@@ -689,7 +689,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 /* ===== B2B SECTION ===== */
 .b2b-section {
   background: var(--crema-dark);
-  margin-top: 72px;
+  margin-top: 0;
   padding: 64px 0 80px;
 }
 
@@ -1560,7 +1560,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 
 /* ===== TABLET: 768px ===== */
 @media (min-width: 768px) {
-  :root { --header-h: 70px; }
+  :root { --header-h: 84px; }
 
   .nav-links { display: flex; }
   .btn-whatsapp-nav { display: inline-flex; }
@@ -1817,28 +1817,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   position: relative;
   overflow: hidden;
 }
-.menu-section::before {
-  content: '🥐';
-  position: absolute;
-  top: 30px;
-  left: 3%;
-  font-size: 8rem;
-  opacity: 0.08;
-  pointer-events: none;
-  transform: rotate(-15deg);
-  user-select: none;
-}
-.menu-section::after {
-  content: '☕';
-  position: absolute;
-  bottom: 30px;
-  right: 4%;
-  font-size: 8rem;
-  opacity: 0.08;
-  pointer-events: none;
-  transform: rotate(10deg);
-  user-select: none;
-}
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1974,7 +1952,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 
 /* ===== ELEMENTOS DECORATIVOS — Pan & Café ===== */
-/* Shorthand para posicionar emojis de fondo */
 .why-section,
 .science-section,
 .products-section,
@@ -1988,18 +1965,58 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   overflow: hidden;
 }
 
+/* Fondos con gradiente para secciones crema — añaden profundidad */
+.why-section {
+  background:
+    radial-gradient(ellipse 80% 55% at 0% 0%, rgba(45,125,70,0.09) 0%, transparent 100%),
+    radial-gradient(ellipse 70% 50% at 100% 100%, rgba(200,155,75,0.10) 0%, transparent 100%),
+    var(--crema);
+}
+.menu-section {
+  background:
+    radial-gradient(ellipse 75% 50% at 100% 0%, rgba(45,125,70,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 65% 45% at 0% 100%, rgba(200,155,75,0.10) 0%, transparent 100%),
+    var(--crema);
+}
+.testimonials-section {
+  background:
+    radial-gradient(ellipse 70% 50% at 5% 20%, rgba(45,125,70,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 60% 45% at 95% 80%, rgba(200,155,75,0.09) 0%, transparent 100%),
+    var(--crema);
+}
+.founders-section {
+  background:
+    radial-gradient(ellipse 65% 50% at 0% 100%, rgba(45,125,70,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 70% 45% at 100% 5%, rgba(200,155,75,0.09) 0%, transparent 100%),
+    var(--crema);
+}
+
+/* Fondos para secciones blancas — tono cálido sutil */
+.experience-section {
+  background:
+    radial-gradient(ellipse 55% 40% at 95% 5%, rgba(245,241,232,0.95) 0%, transparent 100%),
+    radial-gradient(ellipse 55% 40% at 5% 95%, rgba(45,125,70,0.04) 0%, transparent 100%),
+    var(--blanco);
+}
+.game-section {
+  background:
+    radial-gradient(ellipse 55% 40% at 5% 5%, rgba(245,241,232,0.95) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 35% at 95% 95%, rgba(45,125,70,0.04) 0%, transparent 100%),
+    var(--blanco);
+}
+
 /* ¿Qué hace especial nuestro pan? */
 .why-section::before {
   content: '🌾';
-  position: absolute; top: 20px; right: 5%;
-  font-size: 10rem; opacity: 0.11;
+  position: absolute; top: 20px; right: 4%;
+  font-size: 15rem; opacity: 0.18;
   pointer-events: none; user-select: none;
   transform: rotate(15deg);
 }
 .why-section::after {
   content: '🥖';
-  position: absolute; bottom: 20px; left: 3%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; bottom: 20px; left: 2%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-20deg);
 }
@@ -2008,62 +2025,62 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .science-section::before {
   content: '🌾';
   position: absolute; top: 30px; right: 3%;
-  font-size: 11rem; opacity: 0.10;
+  font-size: 16rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(20deg);
 }
 .science-section::after {
   content: '🥐';
-  position: absolute; bottom: 30px; left: 2%;
-  font-size: 10rem; opacity: 0.11;
+  position: absolute; bottom: 30px; left: 1%;
+  font-size: 15rem; opacity: 0.18;
   pointer-events: none; user-select: none;
   transform: rotate(-25deg);
 }
 
-/* Productos / Panes */
+/* B2B / Panes para negocios */
 .products-section::before {
   content: '🌾';
   position: absolute; top: 40px; left: 1%;
-  font-size: 11rem; opacity: 0.10;
+  font-size: 15rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-15deg);
 }
 .products-section::after {
   content: '🥖';
   position: absolute; bottom: 40px; right: 1%;
-  font-size: 11rem; opacity: 0.11;
+  font-size: 15rem; opacity: 0.18;
   pointer-events: none; user-select: none;
   transform: rotate(30deg);
 }
 
-/* Prueba Nuestros Productos */
+/* Nuestros Productos Destacados */
 .experience-section::before {
   content: '🥐';
   position: absolute; top: 20px; right: 2%;
-  font-size: 9rem; opacity: 0.10;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(10deg);
 }
 .experience-section::after {
   content: '🌾';
-  position: absolute; bottom: 20px; left: 2%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; bottom: 20px; left: 1%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-15deg);
 }
 
-/* Menú en Tienda */
+/* Menú Alleria */
 .menu-section::before {
   content: '☕';
-  position: absolute; top: 30px; left: 3%;
-  font-size: 10rem; opacity: 0.10;
+  position: absolute; top: 30px; left: 2%;
+  font-size: 15rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-10deg);
 }
 .menu-section::after {
   content: '🍰';
-  position: absolute; bottom: 30px; right: 3%;
-  font-size: 10rem; opacity: 0.10;
+  position: absolute; bottom: 30px; right: 2%;
+  font-size: 15rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(15deg);
 }
@@ -2071,15 +2088,15 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 /* Juego */
 .game-section::before {
   content: '🥖';
-  position: absolute; top: 30px; left: 2%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; top: 30px; left: 1%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-10deg);
 }
 .game-section::after {
   content: '🌾';
-  position: absolute; bottom: 30px; right: 2%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; bottom: 30px; right: 1%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(20deg);
 }
@@ -2087,33 +2104,31 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 /* Testimonios */
 .testimonials-section::before {
   content: '🥖';
-  position: absolute; top: 40px; right: 4%;
-  font-size: 10rem; opacity: 0.10;
+  position: absolute; top: 40px; right: 3%;
+  font-size: 15rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(10deg);
 }
 .testimonials-section::after {
   content: '☕';
-  position: absolute; bottom: 40px; left: 3%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; bottom: 40px; left: 2%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-15deg);
 }
 
-/* Nosotros — cubierto en la declaración de .founders-section::before/after arriba */
-
 /* Contacto */
 .contact-section::before {
   content: '🥐';
-  position: absolute; top: 30px; right: 4%;
-  font-size: 10rem; opacity: 0.10;
+  position: absolute; top: 30px; right: 3%;
+  font-size: 15rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(15deg);
 }
 .contact-section::after {
   content: '🌾';
-  position: absolute; bottom: 30px; left: 3%;
-  font-size: 9rem; opacity: 0.10;
+  position: absolute; bottom: 30px; left: 2%;
+  font-size: 14rem; opacity: 0.17;
   pointer-events: none; user-select: none;
   transform: rotate(-20deg);
 }

@@ -1910,10 +1910,31 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   justify-content: center;
   font-size: 2.8rem;
 }
-.menu-card-img--panini { background: linear-gradient(135deg, #f5e6c8 0%, #e8b87a 100%); }
-.menu-card-img--cafe   { background: linear-gradient(135deg, #3d2b1f 0%, #7b5230 100%); }
-.menu-card-img--postre { background: linear-gradient(135deg, #f9d4d4 0%, #e8a0a0 100%); }
-.menu-card-img--pan    { background: linear-gradient(135deg, #f5ede0 0%, #dab97a 100%); }
+.menu-card-img--sandwich { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); }
+.menu-card-img--panini   { background: linear-gradient(135deg, #f5e6c8 0%, #c8904a 100%); }
+.menu-card-img--cafe     { background: linear-gradient(135deg, #2d1a0e 0%, #6f4e37 100%); }
+.menu-card-img--postre   { background: linear-gradient(135deg, #fce4ec 0%, #d4899a 100%); }
+.menu-card-img--pan      { background: linear-gradient(135deg, #f5ede0 0%, #dab97a 100%); }
+.menu-price {
+  float: right;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--verde);
+}
+.menu-badge-mm {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(45,125,70,0.12);
+  color: var(--verde-dark);
+  border: 1px solid var(--verde);
+  border-radius: var(--radius-pill);
+  padding: 2px 8px;
+}
+.menu-card--special { border: 2px solid var(--verde); }
 .menu-card-body { padding: 16px 18px 20px; }
 .menu-card-body h4 {
   font-size: 0.95rem;

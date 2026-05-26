@@ -1391,6 +1391,20 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   line-height: 1.6;
   font-style: italic;
 }
+.review-business {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--verde);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.review-date {
+  display: block;
+  font-size: 0.72rem;
+  color: #aaa;
+  margin-top: 6px;
+  text-align: right;
+}
 
 /* ===== CONTACT SECTION ===== */
 .contact-section {

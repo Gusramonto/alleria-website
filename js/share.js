@@ -193,4 +193,63 @@
     }).catch(() => {});
   }
 
+  // ===== DYNAMIC REVIEWS =====
+  async function loadReviews() {
+    const list = document.getElementById('reviews-list');
+    if (!list || !SUPABASE_CONFIGURED) return;
+
+    try {
+      const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+      const { data, error } = await client
+        .from('testimonials')
+        .select('name, rating, comment, business, created_at')
+        .order('created_at', { ascending: false })
+        .limit(6);
+
+      if (error || !data || data.length === 0) return;
+
+      list.innerHTML = data.map(r => {
+        const initial = r.name.charAt(0).toUpperCase();
+        const stars = '⭐'.repeat(Math.min(5, Math.max(1, r.rating)));
+        const date = formatReviewDate(r.created_at);
+        const business = r.business
+          ? `<span class="review-business">📍 ${escHtml(r.business)}</span>` : '';
+        return `
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer-avatar">${initial}</div>
+              <div>
+                <strong>${escHtml(r.name)}</strong>
+                <span class="review-stars">${stars}</span>
+              </div>
+            </div>
+            ${business}
+            <p class="review-text">"${escHtml(r.comment)}"</p>
+            <span class="review-date">${date}</span>
+          </div>`;
+      }).join('');
+    } catch (_) {}
+  }
+
+  function formatReviewDate(iso) {
+    const date = new Date(iso);
+    const now = new Date();
+    const diffMin = Math.floor((now - date) / 60000);
+    const diffHr = Math.floor(diffMin / 60);
+    const diffDays = Math.floor(diffHr / 24);
+
+    if (diffMin < 2)   return 'Ahora mismo';
+    if (diffMin < 60)  return `Hace ${diffMin} minutos`;
+    if (diffHr < 24)   return `Hace ${diffHr} hora${diffHr > 1 ? 's' : ''}`;
+    if (diffDays === 1) return 'Ayer';
+    if (diffDays < 7)  return `Hace ${diffDays} días`;
+    return date.toLocaleDateString('es-VE', { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  function escHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  loadReviews();
+
 })();

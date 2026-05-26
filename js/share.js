@@ -208,7 +208,7 @@
 
       if (error || !data || data.length === 0) return;
 
-      list.innerHTML = data.map(r => {
+      const html = data.map(r => {
         const initial = r.name.charAt(0).toUpperCase();
         const stars = '⭐'.repeat(Math.min(5, Math.max(1, r.rating)));
         const date = formatReviewDate(r.created_at);
@@ -228,6 +228,7 @@
             <span class="review-date">${date}</span>
           </div>`;
       }).join('');
+      list.insertAdjacentHTML('afterbegin', html);
     } catch (_) {}
   }
 

@@ -171,11 +171,26 @@
         console.error('[Alleria] Supabase error:', error.message);
         return false;
       }
+
+      notifyTelegram({ rating, name, business, comment });
       return true;
     } catch (err) {
       console.error('[Alleria] Unexpected error:', err);
       return false;
     }
+  }
+
+  function notifyTelegram({ rating, name, business, comment }) {
+    const stars = '⭐'.repeat(rating);
+    const lugar = business ? `📍 ${business}` : '📍 No especificado';
+    const text = `${stars} NUEVA RESEÑA — Alleria\n👤 ${name}\n${lugar}\n💬 "${comment}"`;
+    const token = '8939547732:AAHqm4UgZj41CUzEcertm1FYJQZ7iM7e3yk';
+    const chatId = '8979825898';
+    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chatId, text })
+    }).catch(() => {});
   }
 
 })();

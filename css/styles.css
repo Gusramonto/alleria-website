@@ -2019,6 +2019,18 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
     var(--blanco);
 }
 
+/* Carita Alleria — marca de agua */
+.carita-wm {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: url('../assets/carita.png') no-repeat center / contain;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  user-select: none;
+}
+
 /* ¿Qué hace especial nuestro pan? */
 .why-section::before {
   content: '🌾';

@@ -1,0 +1,19 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 8 */4 * *'  # Cada 4 días a las 8am UTC
+  workflow_dispatch:         # Permite ejecutarlo manualmente si hace falta
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://fkpdjjttypblijnqssqz.supabase.co/rest/v1/testimonials?select=id&limit=1" \
+            -H "apikey: sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw" \
+            -H "Authorization: Bearer sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw")
+          echo "Supabase respondió con HTTP $STATUS"
+          [ "$STATUS" = "200" ] && echo "OK — proyecto activo" || echo "ADVERTENCIA — revisar proyecto"

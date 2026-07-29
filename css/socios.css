@@ -1,0 +1,458 @@
+/* =============================================
+   ALLERIA — socios.css
+   Landing co-branded del QR (/socios/[cliente])
+   Mobile-first. Hereda todos los tokens de styles.css.
+   Una sola acción primaria: seguir @alleriacoffeebar.
+   ============================================= */
+
+.socios-page {
+  background: var(--blanco);
+}
+
+/* Los elementos que dependen de un dato del local se ocultan con [hidden].
+   Esta regla debe ganarle a cualquier display: flex/inline-block de abajo,
+   o se verían etiquetas vacías y campos que aún no tocan aparecer. */
+.socios-page [hidden] { display: none !important; }
+
+/* ===== HEADER MÍNIMO ===== */
+.s-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: var(--blanco);
+  border-bottom: 1px solid var(--crema-border);
+}
+.s-header-logo {
+  height: 26px;
+  width: auto;
+}
+
+/* ===== 1. HERO ===== */
+.s-hero {
+  background: var(--crema);
+  padding-bottom: 36px;
+}
+
+.s-hero-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 32vh;
+  min-height: 170px;
+  overflow: hidden;
+  background: var(--crema-dark);
+}
+.s-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Foto del plato del local: más alto para que el plato se luzca */
+.s-hero-media--plato {
+  aspect-ratio: 4 / 3;
+  max-height: 40vh;
+}
+
+.s-hero-body {
+  padding-top: 24px;
+  text-align: center;
+}
+
+/* Crédito al anfitrión — el local es protagonista, Alleria firma */
+.s-cobrand {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--verde);
+  background: var(--blanco);
+  border: 1px solid var(--crema-border);
+  border-radius: var(--radius-pill);
+  padding: 7px 16px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.s-title {
+  font-size: clamp(1.65rem, 6.4vw, 2.6rem);
+  color: var(--negro);
+  line-height: 1.18;
+  margin-bottom: 12px;
+  text-wrap: balance;
+}
+.s-title em {
+  font-style: normal;
+  color: var(--verde);
+}
+
+.s-sub {
+  font-size: clamp(0.95rem, 3.4vw, 1.08rem);
+  color: var(--texto-suave);
+  line-height: 1.6;
+  margin-bottom: 22px;
+  max-width: 34ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== CTA PRIMARIO (único) ===== */
+.s-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  min-height: 54px;
+  padding: 15px 26px;
+  background: var(--instagram-grad);
+  color: var(--blanco);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+}
+.s-cta:hover, .s-cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  filter: saturate(1.1);
+}
+.s-cta:active { transform: translateY(0); }
+.s-cta svg { flex-shrink: 0; }
+
+.s-cta--big {
+  max-width: 420px;
+  min-height: 60px;
+  font-size: 1.06rem;
+}
+
+.s-cta-note {
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+  margin-top: 10px;
+}
+.s-cta-note--light { color: rgba(255,255,255,0.65); }
+
+/* ===== 2. PRUEBA SOCIAL ===== */
+.s-proof {
+  background: var(--blanco);
+  padding: 32px 0 34px;
+  border-bottom: 1px solid var(--crema-border);
+}
+.s-proof .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.s-proof-score {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.s-proof-num {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--verde);
+  line-height: 1;
+}
+.s-proof-stars { font-size: 0.9rem; letter-spacing: 1px; }
+.s-proof-score p {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  margin-top: 2px;
+}
+
+.s-quote {
+  max-width: 42ch;
+}
+.s-quote blockquote {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  color: var(--gris);
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.s-quote figcaption {
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+}
+
+/* ===== 3. TRES RAZONES ===== */
+.s-why {
+  background: var(--crema);
+  padding: 48px 0 52px;
+}
+.s-why .section-title { margin-bottom: 0; }
+.s-why-grid { margin-top: 28px; }
+
+/* ===== 4. PANES DE ESTE LOCAL ===== */
+.s-panes {
+  background: var(--blanco);
+  padding: 48px 0 52px;
+}
+.s-panes .section-title {
+  margin-bottom: 26px;
+  text-wrap: balance;
+}
+
+.s-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.s-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--crema-dark);
+  border: 1px solid var(--crema-border);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--gris);
+  line-height: 1.35;
+}
+.s-chips li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--verde);
+  flex-shrink: 0;
+}
+
+/* ===== 5. CTA PRIMARIO DOMINANTE ===== */
+.s-cta-block {
+  background: var(--gris);
+  padding: 56px 0 60px;
+  text-align: center;
+}
+.s-cta-block h2 {
+  font-size: clamp(1.4rem, 5.2vw, 2.1rem);
+  color: var(--blanco);
+  line-height: 1.25;
+  margin-bottom: 14px;
+  text-wrap: balance;
+}
+.s-cta-block > .container > p {
+  font-size: 0.98rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+  max-width: 38ch;
+  margin: 0 auto 26px;
+}
+
+/* ===== 6. RESEÑA DEL COMENSAL ===== */
+.s-review {
+  background: var(--crema);
+  padding: 44px 0 48px;
+  text-align: center;
+}
+.s-review-title {
+  font-size: clamp(1.2rem, 4.4vw, 1.6rem);
+  color: var(--gris);
+  margin-bottom: 6px;
+  text-wrap: balance;
+}
+.s-review-sub {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  margin-bottom: 18px;
+}
+
+.s-stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.s-star {
+  font-size: 2.1rem;
+  line-height: 1;
+  color: #d8cfbe;
+  padding: 4px 2px;
+  min-width: 44px;
+  min-height: 44px;
+  transition: color 150ms ease, transform 150ms ease;
+}
+.s-star:hover, .s-star:focus-visible { transform: scale(1.12); }
+.s-star.on { color: #f5b301; }
+
+.s-review-extra {
+  max-width: 420px;
+  margin: 18px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+.s-field { display: flex; flex-direction: column; gap: 5px; }
+.s-field span {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--gris);
+}
+.s-field em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--texto-suave);
+}
+.s-field input,
+.s-field textarea {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 0.95rem;
+  color: var(--gris);
+  background: var(--blanco);
+  border: 1px solid var(--crema-border);
+  border-radius: var(--radius-sm);
+  resize: vertical;
+}
+.s-field input:focus,
+.s-field textarea:focus {
+  outline: 2px solid var(--verde);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.s-review-send {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 24px;
+  background: var(--verde);
+  color: var(--blanco);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition);
+}
+.s-review-send:hover, .s-review-send:focus-visible { background: var(--verde-dark); }
+.s-review-send[disabled] { opacity: 0.6; cursor: default; }
+
+.s-review-ok, .s-review-err {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.s-review-ok  { color: var(--verde); }
+.s-review-err { color: #c0392b; }
+
+/* ===== 7. SECUNDARIO (callado, no compite) ===== */
+.s-secondary {
+  background: var(--blanco);
+  padding: 44px 0 48px;
+  text-align: center;
+}
+.s-secondary-title {
+  font-size: 1.2rem;
+  color: var(--gris);
+  margin-bottom: 6px;
+}
+.s-secondary-text {
+  font-size: 0.92rem;
+  color: var(--texto-suave);
+  margin-bottom: 18px;
+}
+
+.s-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 12px 24px;
+  border: 1.5px solid var(--whatsapp);
+  color: var(--whatsapp-dark);
+  background: var(--blanco);
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition), color var(--transition);
+}
+.s-wa:hover, .s-wa:focus-visible {
+  background: var(--whatsapp);
+  color: var(--blanco);
+}
+
+.s-locations {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  line-height: 1.5;
+}
+.s-locations strong { color: var(--gris); }
+.s-hours { font-size: 0.82rem; opacity: 0.85; }
+
+/* ===== FOOTER ===== */
+.s-footer { padding: 36px 0 40px; }
+.s-footer .footer-inner {
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.s-footer-logo {
+  height: 24px;
+  width: auto;
+  filter: invert(1);
+  opacity: 0.9;
+}
+.s-footer-tagline {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+/* Enlace al Instagram del anfitrión: presente pero deliberadamente discreto */
+.s-footer-socio {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+.s-footer-socio:hover { color: rgba(255,255,255,0.75); }
+
+/* ===== TABLET / DESKTOP ===== */
+@media (min-width: 768px) {
+  .s-hero-media {
+    max-height: 46vh;
+    aspect-ratio: 21 / 9;
+  }
+  .s-hero-body { padding-top: 32px; }
+  .s-hero { padding-bottom: 48px; }
+  .s-proof .container { flex-direction: row; justify-content: center; gap: 40px; }
+  .s-quote { text-align: left; border-left: 3px solid var(--crema-border); padding-left: 20px; }
+  .s-chips li { font-size: 0.95rem; }
+}
+
+@media (min-width: 1024px) {
+  .s-footer .footer-inner { flex-direction: column; text-align: center; }
+}
+
+/* ===== ACCESIBILIDAD ===== */
+.s-cta:focus-visible,
+.s-wa:focus-visible,
+.s-footer-socio:focus-visible {
+  outline: 3px solid var(--verde);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s-cta, .s-wa { transition: none; }
+  .s-cta:hover { transform: none; }
+}

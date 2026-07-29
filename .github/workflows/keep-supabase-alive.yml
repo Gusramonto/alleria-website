@@ -1,19 +1,70 @@
 name: Keep Supabase Alive
 
+# Supabase pausa los proyectos gratuitos tras ~7 días sin actividad.
+# Este trabajo hace una petición diaria para que eso no ocurra.
+#
+# Se ejecuta A DIARIO (antes era cada 3 días): si un día falla por una caída
+# puntual, todavía quedan 6 intentos antes de que Supabase pause el proyecto.
+
 on:
   schedule:
-    - cron: '0 8 */3 * *'  # Cada 3 días a las 8am UTC
-  workflow_dispatch:         # Permite ejecutarlo manualmente si hace falta
+    - cron: '0 8 * * *'      # Todos los días a las 8:00 UTC
+  workflow_dispatch:          # Botón para ejecutarlo a mano desde GitHub
+  push:
+    branches: [master]        # También al subir cambios: actividad extra gratis
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Supabase
+        env:
+          SUPABASE_URL: https://fkpdjjttypblijnqssqz.supabase.co
+          SUPABASE_KEY: sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw
         run: |
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
-            "https://fkpdjjttypblijnqssqz.supabase.co/rest/v1/testimonials?select=id&limit=1" \
-            -H "apikey: sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw" \
-            -H "Authorization: Bearer sb_publishable_83gsoV-W39D64rwsVWXrZg_YFo7D9Mw")
-          echo "Supabase respondió con HTTP $STATUS"
-          [ "$STATUS" = "200" ] && echo "OK — proyecto activo" || echo "ADVERTENCIA — revisar proyecto"
+          # NO usar 'set -e' aquí: si curl falla (proyecto pausado, DNS caído),
+          # el paso moría de inmediato sin decir nada. Ese era el bug anterior:
+          # 18 ejecuciones seguidas en rojo sin un solo mensaje útil.
+          set +e
+
+          URL="$SUPABASE_URL/rest/v1/testimonials?select=id&limit=1"
+          EXITO=0
+
+          # Un proyecto que está despertando suele responder 503 en el primer
+          # intento y tardar ~30 s en estar listo. Por eso reintentamos.
+          for INTENTO in 1 2 3; do
+            echo "--- Intento $INTENTO de 3 ---"
+
+            STATUS=$(curl -s -o /tmp/respuesta.txt -w "%{http_code}" \
+              --max-time 45 \
+              -H "apikey: $SUPABASE_KEY" \
+              -H "Authorization: Bearer $SUPABASE_KEY" \
+              "$URL")
+            CURL_EXIT=$?
+
+            if [ "$CURL_EXIT" -ne 0 ]; then
+              echo "curl no pudo conectar (código de error $CURL_EXIT)"
+            else
+              echo "Supabase respondió HTTP $STATUS"
+              echo "Cuerpo: $(head -c 200 /tmp/respuesta.txt)"
+              if [ "$STATUS" = "200" ]; then
+                EXITO=1
+                break
+              fi
+            fi
+
+            if [ "$INTENTO" -lt 3 ]; then
+              echo "Esperando 30 s antes de reintentar..."
+              sleep 30
+            fi
+          done
+
+          echo "-----------------------------------"
+          if [ "$EXITO" -eq 1 ]; then
+            echo "OK — el proyecto de Supabase está activo."
+            exit 0
+          else
+            echo "FALLO — Supabase no respondió correctamente tras 3 intentos."
+            echo "Revisa el panel: https://supabase.com/dashboard"
+            exit 1
+          fi

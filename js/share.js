@@ -172,25 +172,12 @@
         return false;
       }
 
-      notifyTelegram({ rating, name, business, comment });
+      window.alleriaAvisarResena?.({ rating, name, business, comment });
       return true;
     } catch (err) {
       console.error('[Alleria] Unexpected error:', err);
       return false;
     }
-  }
-
-  function notifyTelegram({ rating, name, business, comment }) {
-    const stars = '⭐'.repeat(rating);
-    const lugar = business ? `📍 ${business}` : '📍 No especificado';
-    const text = `${stars} NUEVA RESEÑA — Alleria\n👤 ${name}\n${lugar}\n💬 "${comment}"`;
-    const token = '8939547732:AAHqm4UgZj41CUzEcertm1FYJQZ7iM7e3yk';
-    const chatId = '8979825898';
-    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: chatId, text })
-    }).catch(() => {});
   }
 
   // ===== DYNAMIC REVIEWS =====
@@ -200,9 +187,13 @@
 
     try {
       const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+      // Solo se publican reseñas de 4 y 5 estrellas.
+      // Las de 3 o menos SÍ se guardan y las ves en Supabase, pero no salen
+      // en la web: cualquiera puede dejar una desde un QR sin que nadie apruebe.
       const { data, error } = await client
         .from('testimonials')
         .select('name, rating, comment, business, created_at')
+        .gte('rating', 4)
         .order('created_at', { ascending: false })
         .limit(6);
 

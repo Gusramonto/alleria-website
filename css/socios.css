@@ -427,6 +427,87 @@
 }
 .s-footer-socio:hover { color: rgba(255,255,255,0.75); }
 
+/* =============================================
+   DIRECTORIO — página "Dónde probar Alleria"
+   (/donde-probar). Reutiliza los mismos tokens.
+   ============================================= */
+.d-section {
+  background: var(--blanco);
+  padding: 48px 0 52px;
+}
+.d-section--allies { background: var(--crema); }
+.d-section .section-title { margin-bottom: 6px; }
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.d-card {
+  background: var(--blanco);
+  border: 1px solid var(--crema-border);
+  border-radius: var(--radius-md);
+  padding: 24px 22px;
+  box-shadow: var(--shadow-xs);
+}
+.d-section--allies .d-card { box-shadow: var(--shadow-sm); }
+
+.d-card h3 {
+  font-size: 1.2rem;
+  color: var(--verde);
+  margin-bottom: 8px;
+}
+.d-address {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.d-address em { font-size: 0.85rem; opacity: 0.85; }
+
+.d-chips {
+  justify-content: flex-start;
+  margin: 0 0 14px;
+}
+.d-chips li {
+  font-size: 0.82rem;
+  padding: 7px 14px;
+}
+
+.d-hours {
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+}
+
+.d-ig {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--verde);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.d-ig:hover { color: var(--verde-dark); }
+
+.d-cta-wrap {
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* CTA verde para la invitación B2B (aquí la acción es WhatsApp, no Instagram) */
+.s-cta--verde {
+  background: var(--whatsapp);
+}
+.s-cta--verde:hover, .s-cta--verde:focus-visible {
+  background: var(--whatsapp-dark);
+}
+
+@media (min-width: 768px) {
+  .d-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ===== TABLET / DESKTOP ===== */
 @media (min-width: 768px) {
   .s-hero-media {

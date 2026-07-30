@@ -63,7 +63,7 @@ window.ALLERIA_SOCIOS = {
     foto_plato: '/assets/socios/plato-hamburgueseria143.jpg',
     foto_plato_alt: 'Hamburguesa de La Hamburguesería 143 servida en pan de masa madre de Alleria',
     acento: '',
-    mostrar_en_directorio: false
+    mostrar_en_directorio: true
   },
 
   // ——— Bar 251 ———
@@ -78,7 +78,7 @@ window.ALLERIA_SOCIOS = {
     foto_alt: 'Panes de perro caliente en masa madre de Alleria',
     foto_plato: '',
     acento: '',
-    mostrar_en_directorio: false
+    mostrar_en_directorio: true
   },
 
   // ——— Hotel Tiffany ———
@@ -96,7 +96,7 @@ window.ALLERIA_SOCIOS = {
     foto_alt: 'Panes artesanales de masa madre de Alleria',
     foto_plato: '',
     acento: '',
-    mostrar_en_directorio: false
+    mostrar_en_directorio: true
   },
 
   // ——— Campobasso ———
@@ -112,7 +112,7 @@ window.ALLERIA_SOCIOS = {
     foto_alt: 'Hogaza de pan siciliano en masa madre de Alleria',
     foto_plato: '',
     acento: '',
-    mostrar_en_directorio: false
+    mostrar_en_directorio: true
   }
 
   // ——— fin de la lista ———

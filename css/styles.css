@@ -873,6 +873,21 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 .calc-result-ctas { display: flex; justify-content: center; margin-top: 20px; }
 
+/* Enlace al directorio de locales aliados (prueba social para el B2B) */
+.b2b-directorio-link {
+  text-align: center;
+  margin-top: 14px;
+}
+.b2b-directorio-link a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--verde);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+.b2b-directorio-link a:hover { color: var(--verde-dark); }
+
 /* ===== SCIENCE SECTION ===== */
 .science-section {
   background: var(--crema-dark);

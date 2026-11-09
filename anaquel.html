@@ -105,12 +105,13 @@ p{margin:0}
 .lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;position:relative;padding-bottom:20px;margin-bottom:34px}
 .lvl::after{content:"";position:absolute;left:-8px;right:-8px;bottom:0;height:20px;background:var(--cielo);border-radius:4px;box-shadow:0 8px 0 #6FAFD8,0 16px 18px -8px rgba(59,36,22,.35)}
 .slot{display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
-.pile{position:relative;height:150px;width:100%}
-.pile img{position:absolute;width:86%;max-height:104px;object-fit:contain;object-position:bottom;filter:drop-shadow(0 10px 8px rgba(59,36,22,.28));transition:transform .45s var(--ease),opacity .3s}
+.pile{position:relative;height:128px;width:100%}
+.pile img{position:absolute;left:7%;bottom:0;width:86%;max-height:118px;object-fit:contain;object-position:bottom;filter:drop-shadow(0 10px 8px rgba(59,36,22,.28));transition:transform .45s var(--ease),opacity .3s}
 .pile img.out{opacity:0;transform:translateY(-30px) scale(.9)}
 .pile .qb{position:absolute;top:0;right:4px;background:var(--tinta);color:var(--crema);font-weight:700;font-size:13px;border-radius:999px;padding:2px 9px;z-index:10}
 .tag{position:relative;z-index:3;background:var(--sol);border-radius:10px;padding:8px 8px 9px;width:100%;text-align:center;box-shadow:0 6px 12px -8px rgba(120,80,0,.8);transform:translateY(24px)}
-.tag b{display:block;font-size:13px;line-height:1.15;min-height:30px}
+.tag b{display:block;font-size:13.5px;line-height:1.15}
+.tag .fl{display:block;font-size:11.5px;line-height:1.25;min-height:29px;margin:2px 0 6px;color:var(--tinta2)}
 .tag .pv{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1}
 .tag .pv small{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.04em;display:block;opacity:.75;margin-top:2px}
 .mini-stp{display:flex;align-items:center;justify-content:center;gap:4px;margin-top:6px}
@@ -145,7 +146,15 @@ p{margin:0}
 .chips button{all:unset;cursor:pointer;padding:9px 16px;border-radius:999px;border:2px solid var(--linea);font-weight:700;font-size:14.5px;background:var(--blanco)}
 .chips button[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--crema)}
 .chips button:focus-visible{outline:3px solid var(--cielo3)}
-.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.crow{margin-bottom:30px}
+.crh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.crh h3{font-family:var(--hand);font-weight:400;font-size:36px;line-height:1}
+.crh h3 small{font-family:var(--sans);font-size:13px;color:var(--tinta2);margin-left:6px}
+.arr{display:flex;gap:8px}
+.arr button{all:unset;cursor:pointer;width:42px;height:42px;border-radius:50%;background:var(--tinta);color:var(--crema);display:grid;place-items:center;font-size:24px;line-height:1}
+.arr button:focus-visible{outline:3px solid var(--cielo3)}
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 32px)/3);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:thin}
+.track>.card{scroll-snap-align:start}
 .card{background:var(--blanco);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 30px -24px rgba(59,36,22,.7);transition:transform .3s var(--ease)}
 .card:hover{transform:translateY(-3px)}
 .card .im{position:relative;aspect-ratio:2.25/1;background:#EFE6DA;overflow:hidden}
@@ -259,7 +268,7 @@ footer a{color:var(--crema)}
 @media (max-width:980px){
   .shelfwrap{grid-template-columns:minmax(0,1fr)}
   .sum{position:static}
-  .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .track{grid-auto-columns:calc((100% - 16px)/2)}
   .cg{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:860px){
@@ -287,7 +296,9 @@ footer a{color:var(--crema)}
   .pile{height:122px}
   .pile img{max-height:86px}
   .tag{transform:translateY(12px)}
-  .cgrid,.cg{grid-template-columns:minmax(0,1fr)}
+  .cg{grid-template-columns:minmax(0,1fr)}
+  .track{grid-auto-columns:84%}
+  .arr{display:none}
   .stage{height:420px}
   .stage .vid{width:190px}
   .stage .ph{width:132px}
@@ -367,7 +378,7 @@ footer a{color:var(--crema)}
         <span class="kick">Su ganancia al mes</span>
         <h3 style="font-family:var(--serif);font-size:28px;margin-top:8px">¿Cuántas veces por semana vende este pedido?</h3>
         <div class="seg" role="group" aria-label="Reposiciones por semana">
-          <button type="button" data-r="1" aria-pressed="true">1 vez</button><button type="button" data-r="2" aria-pressed="false">2 veces</button><button type="button" data-r="3" aria-pressed="false">3 veces</button>
+          <button type="button" data-r="1" aria-pressed="false">1 vez</button><button type="button" data-r="2" aria-pressed="true">2 veces</button><button type="button" data-r="3" aria-pressed="false">3 veces</button><button type="button" data-r="4" aria-pressed="false">4 veces</button>
         </div>
       </div>
       <div class="out money" id="mOut">$0<small id="mTxt"></small></div>
@@ -380,10 +391,9 @@ footer a{color:var(--crema)}
     <div class="head rv">
       <span class="kick">Catálogo completo</span>
       <h2>Amplíe su surtido cuando quiera</h2>
-      <p class="lede">Además del pedido sugerido, horneamos todo esto. Toque «Agregar» y se suma a su pedido. Cada precio incluye empaque y etiqueta.</p>
+      <p class="lede">Además del pedido sugerido, horneamos todo esto. Deslice para ver más y toque «Agregar» para sumarlo a su pedido. Cada precio incluye empaque y etiqueta.</p>
     </div>
-    <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
-    <div class="cgrid" id="cgrid"></div>
+    <div id="cgrid"></div>
     <p class="note">Precios en USD por unidad de venta. «A usted» es lo que paga a Alleria; «Venta» es el precio sugerido al público: usted fija el suyo.</p>
   </div>
 </section>
@@ -510,32 +520,29 @@ const $=id=>document.getElementById(id);
 const rack=$("rack");
 [["mh-jal","mh-can","mh-ajo","jam"],["cb-ace","cb-tom","foc","ham"]].forEach(ids=>{const l=document.createElement("div");l.className="lvl";
   ids.forEach(id=>{const p=BY[id];const s=document.createElement("div");s.className="slot";
-    s.innerHTML=`<div class="pile" id="pile-${id}"><span class="qb"></span></div><div class="tag"><b>${p.nm}</b><span class="pv money">${f2(p.c)}<small>VENTA ${f2(p.v)} · GANA ${f2(p.g)}</small></span>
+    s.innerHTML=`<div class="pile" id="pile-${id}"><span class="qb"></span></div><div class="tag"><b>${p.nm}</b><span class="fl">${p.gm.split(" · ").slice(1).join(" · ")||p.gm}</span><span class="pv money">${f2(p.c)}<small>VENTA ${f2(p.v)} · GANA ${f2(p.g)}</small></span>
     <div class="mini-stp"><button type="button" data-m="${id}" aria-label="Quitar uno de ${p.nm}">−</button><output id="sq-${id}"></output><button type="button" data-p="${id}" aria-label="Agregar uno de ${p.nm}">+</button></div></div>`;
     l.appendChild(s)});rack.appendChild(l)});
-const foot=document.createElement("div");foot.className="foot";foot.innerHTML=`<span>Fotos de nuestros panes. En su tienda llegan empacados y con etiqueta.</span><span>Pedido mínimo $50</span>`;rack.appendChild(foot);
-function drawPile(id){const el=$("pile-"+id);if(!el)return;const p=BY[id],q=Q[id],n=Math.min(q,4);
-  const ims=[...el.querySelectorAll("img")];
-  if(ims.length<n){for(let i=ims.length;i<n;i++){const im=document.createElement("img");im.src=CUT(p.cut);im.alt="";im.className="out";
-      im.style.bottom=(i*13)+"px";im.style.left=(i%2?10:4)+"%";im.style.zIndex=10-i;el.appendChild(im);requestAnimationFrame(()=>requestAnimationFrame(()=>im.classList.remove("out")))}}
-  else ims.slice(n).forEach(im=>im.remove());
+const foot=document.createElement("div");foot.className="foot";foot.innerHTML=`<span>Mínimo 4 unidades por producto · pedido mínimo $50.</span><span>En su tienda llegan empacados y con etiqueta.</span>`;rack.appendChild(foot);
+function drawPile(id){const el=$("pile-"+id);if(!el)return;const p=BY[id],q=Q[id];
+  let im=el.querySelector("img");if(!im){im=document.createElement("img");im.src=CUT(p.cut);im.alt="";el.appendChild(im)}
+  im.style.opacity=q?1:.3;im.style.transform=q?"none":"scale(.92)";
   const qb=el.querySelector(".qb");qb.textContent="×"+q;qb.style.display=q?"":"none"}
 
 /* catálogo */
-const cats=["Artesanales","Panecillos","Molde","Clásicos","Dulces"];let curCat="Artesanales";
-const chips=$("chips"),cgrid=$("cgrid");
-cats.forEach(c=>{const b=document.createElement("button");b.type="button";b.textContent=c;b.setAttribute("aria-pressed",String(c===curCat));b.onclick=()=>{curCat=c;[...chips.children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));renderCat()};chips.appendChild(b)});
-function renderCat(){cgrid.innerHTML="";P.filter(p=>!p.s&&p.cat===curCat).forEach(p=>{const a=document.createElement("article");a.className="card";
-  a.innerHTML=`<div class="im">${p.img?`<img src="${IMG(p.img)}" alt="${p.nm}" loading="lazy">`:`<div class="esp"><i>¿cuál será?</i></div>`}</div>
+const cgrid=$("cgrid");
+function card(p){return `<article class="card"><div class="im">${p.img?`<img src="${IMG(p.img)}" alt="${p.nm}" loading="lazy">`:`<div class="esp"><i>¿cuál será?</i></div>`}</div>
   <div class="bd"><span class="nm">${p.nm}</span><span class="gm">${p.gm}</span>${p.ds?`<span class="ds">${p.ds}</span>`:""}
   <div class="prices"><div><small>A usted</small><b class="money">${f2(p.c)}</b></div><div><small>Venta</small><b class="money">${f2(p.v)}</b></div><div class="g"><small>Gana</small><b class="money">${f2(p.g)}</b></div>
-  <button class="add" type="button" data-add="${p.id}"></button></div></div>`;cgrid.appendChild(a)});paintAdds()}
+  <button class="add" type="button" data-add="${p.id}"></button></div></div></article>`}
+function renderCat(){const rows=[["Salados",P.filter(p=>!p.s&&p.cat!=="Dulces")],["Dulces",P.filter(p=>!p.s&&p.cat==="Dulces")]];
+  cgrid.innerHTML=rows.map(([t,l],i)=>`<div class="crow"><div class="crh"><h3>${t} <small>${l.length} productos</small></h3><span class="arr"><button type="button" data-t="${i}" data-dir="-1" aria-label="Ver anteriores de ${t}">‹</button><button type="button" data-t="${i}" data-dir="1" aria-label="Ver más de ${t}">›</button></span></div><div class="track" id="trk${i}">${l.map(card).join("")}</div></div>`).join("");paintAdds()}
 function paintAdds(){cgrid.querySelectorAll("[data-add]").forEach(b=>{const q=Q[b.dataset.add];b.classList.toggle("has",q>0);b.textContent=q>0?("✓ "+q+" · +1"):"+ Agregar";b.setAttribute("aria-label",(q>0?"En su pedido: "+q+". Agregar otro de ":"Agregar ")+BY[b.dataset.add].nm)})}
-cgrid.addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(!b)return;Q[b.dataset.add]=Math.min(99,Q[b.dataset.add]+1);calc()});
+cgrid.addEventListener("click",e=>{const ar=e.target.closest("[data-dir]");if(ar){const t=$("trk"+ar.dataset.t);t.scrollBy({left:+ar.dataset.dir*t.clientWidth*.9,behavior:"smooth"});return}const b=e.target.closest("[data-add]");if(!b)return;Q[b.dataset.add]=Math.min(99,Q[b.dataset.add]+1);calc()});
 renderCat();
 
 /* totales y envío */
-let reps=1;
+let reps=2;
 function totals(){let u=0,c=0,v=0,g=0;P.forEach(p=>{const q=Q[p.id];u+=q;c+=q*p.c;v+=q*p.v;g+=q*p.g});return{u,c,v,g}}
 function msg(){const ls=P.filter(p=>Q[p.id]>0).map(p=>`• ${Q[p.id]} × ${p.nm} (${p.gm.split(" · ")[0]}) = ${f2(Q[p.id]*p.c)}`);const t=totals();
   return `Hola Alleria. Quiero hacer un pedido para mi tienda.\nTienda: \nNombre: \n\n${ls.join("\n")}\n\nTotal: ${f2(t.c)}\n¿Cuándo pueden entregarlo?`}
@@ -550,7 +557,7 @@ function calc(){const t=totals();
   $("mOut").firstChild.nodeValue="$"+Math.round(t.g*reps*4.3).toLocaleString("es-VE");
   $("mTxt").textContent="de ganancia al mes si vende "+(reps===1?"una vez":reps+" veces")+" por semana el pedido que armó ("+f2(t.g)+" cada vez). Entregamos martes, jueves y sábado.";
   paintAdds();try{localStorage.setItem("alleria_pedido3",JSON.stringify(Q))}catch(e){}}
-rack.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.m||b.dataset.p;Q[id]=Math.max(0,Math.min(99,Q[id]+(b.dataset.p?1:-1)));calc()});
+rack.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.m||b.dataset.p;const q=Q[id];Q[id]=b.dataset.p?(q<4?4:Math.min(99,q+1)):(q<=4?0:q-1);calc()});
 $("reset").addEventListener("click",()=>{load();calc()});
 document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{reps=+b.dataset.r;document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));calc()}));
 calc();

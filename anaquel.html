@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pan de masa madre para su anaquel · Alleria</title>
-<meta name="description" content="Más ganancia por metro de anaquel, sin merma: catálogo, precios, condiciones y pedido de pan de masa madre Alleria para tiendas.">
+<meta name="description" content="Más ganancia por metro de anaquel, sin merma: pedido sugerido, catálogo completo, exhibidor sin costo y condiciones de Alleria para tiendas.">
 <meta name="robots" content="noindex, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Más ganancia por metro de anaquel, sin merma · Alleria">
-<meta property="og:description" content="Pan de masa madre para su tienda: cerca de 30 % de margen, cambio del pan que no se venda y crédito de 7 días.">
+<meta property="og:description" content="Pan de masa madre para su tienda: cerca de 28 % de margen, cambio del pan que no se venda, crédito de 7 días y exhibidor sin costo.">
 <meta property="og:image" content="https://alleria-website.vercel.app/assets/anaquel/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://alleria-website.vercel.app/anaquel">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#8DC3E4">
+<meta name="theme-color" content="#3B2416">
 <link rel="preload" href="/assets/anaquel/fonts/gochi-hand-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:"Gochi Hand";src:url(/assets/anaquel/fonts/gochi-hand-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
@@ -26,42 +26,44 @@
 @font-face{font-family:"DM Sans";src:url(/assets/anaquel/fonts/dm-sans-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
 </style>
 <style>
-/* Mundo Alleria (catálogo y etiqueta): celeste, amarillo de precio, coral de etiqueta, tinta café. Página comercial para dueños y encargados de compras: primero el negocio, después el pan. */
+/* Página de venta para dueños y encargados de compras. Mundo Alleria: celeste del catálogo, amarillo de precio, coral de etiqueta, tinta café. */
 :root{
-  --crema:#FBF7F0; --blanco:#FFFFFF; --cielo:#8DC3E4; --cielo2:#DCEEF8; --cielo3:#4E97C6;
+  --crema:#FBF7F0; --blanco:#FFFFFF; --cielo:#8DC3E4; --cielo2:#DCEEF8; --cielo3:#3F86B8;
   --sol:#FFD45E; --sol2:#FFF1C2; --coral:#F0A585; --coral2:#FBE3D8; --tinta:#3B2416; --tinta2:#6B5242; --linea:#EADFD2;
   --hand:"Gochi Hand","Comic Sans MS",cursive; --serif:"Cormorant Garamond",Georgia,serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --ease:cubic-bezier(.2,.75,.2,1); color-scheme:light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
-body{margin:0;background:var(--crema);color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--crema);z-index:40}
-img,video,svg{max-width:100%;display:block}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-section{padding-block:64px}
+body{margin:0;background:var(--crema);color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:72px}
 h1,h2,h3{margin:0;text-wrap:balance}
-h2{font-family:var(--hand);font-weight:400;font-size:clamp(36px,5.6vw,56px);line-height:1}
-h3{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.1}
+h2{font-family:var(--hand);font-weight:400;font-size:clamp(38px,5.6vw,60px);line-height:1}
 p{margin:0}
 .kick{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--tinta2)}
-.lede{font-size:clamp(17px,2vw,19px);color:var(--tinta2);max-width:58ch}
-.head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;max-width:760px}
-.num,.money{font-variant-numeric:lining-nums tabular-nums}
+.lede{font-size:clamp(17px,2vw,19px);color:var(--tinta2);max-width:60ch}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;max-width:780px}
+.money,.num{font-variant-numeric:lining-nums tabular-nums}
 :focus-visible{outline:3px solid var(--cielo3);outline-offset:3px;border-radius:8px}
-.btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15.5px;text-align:center;transition:transform .15s}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:15px 24px;border-radius:999px;font-weight:700;font-size:16px;text-align:center;transition:transform .15s,box-shadow .2s}
 .btn:active{transform:scale(.98)}
 .btn:focus-visible{outline:3px solid var(--cielo3);outline-offset:3px}
 .btn.wa{background:#25D366;color:#0B2E17}
+.btn.sol{background:var(--sol);color:var(--tinta);box-shadow:0 10px 24px -12px rgba(160,110,0,.7)}
 .btn.dark{background:var(--tinta);color:var(--crema)}
-.btn.line{border:2px solid var(--tinta);color:var(--tinta)}
-.btn svg{width:20px;height:20px}
-.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn.line{border:2px solid currentColor}
+.btn svg{width:20px;height:20px;flex:none}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.in{opacity:1;transform:none}
 
 /* barra */
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--crema);border-bottom:1px solid var(--linea)}
-.bar .wrap{display:flex;align-items:center;gap:16px;height:56px}
-.logo{font-family:var(--serif);font-weight:700;letter-spacing:.32em;font-size:17px;flex:none}
+.bar{position:sticky;top:0;z-index:30;background:rgba(251,247,240,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.bar .wrap{display:flex;align-items:center;gap:16px;height:58px}
+.logo{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-weight:700;letter-spacing:.32em;font-size:17px;flex:none}
+.logo img{width:30px;height:30px;object-fit:contain}
 .steps{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;justify-content:flex-end;min-width:0}
 .steps::-webkit-scrollbar{display:none}
 .steps a{flex:none;text-decoration:none;font-size:14px;color:var(--tinta2);padding:7px 12px;border-radius:999px}
@@ -69,187 +71,248 @@ p{margin:0}
 .prog{height:3px}.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cielo),var(--sol),var(--coral))}
 
 /* portada */
-.hero{padding-block:40px 56px}
-.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.hero{background:var(--tinta);color:var(--crema);padding-block:56px 0;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% 40%;height:120%;background:radial-gradient(closest-side,rgba(141,195,228,.35),transparent);pointer-events:none}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;position:relative}
 .hgrid>*{min-width:0}
-.hero h1{font-family:var(--hand);font-weight:400;font-size:clamp(46px,7.4vw,84px);line-height:.98;margin:14px 0 16px}
-.hero h1 mark{background:linear-gradient(transparent 60%,var(--sol) 60%);color:inherit;padding:0 .06em}
-.prom{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0}
-.prom div{background:var(--blanco);border:1px solid var(--linea);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:4px}
-.prom b{font-family:var(--serif);font-size:30px;line-height:1}
-.prom span{font-size:13.5px;color:var(--tinta2);line-height:1.3}
-.collage{position:relative;aspect-ratio:1/1;width:100%;max-width:470px;margin-inline:auto}
-.collage .bg{position:absolute;inset:4%;background:var(--cielo);border-radius:47% 53% 44% 56%/52% 42% 58% 48%}
-.collage figure{position:absolute;margin:0;background:var(--blanco);border-radius:16px;overflow:hidden;box-shadow:0 18px 34px -18px rgba(59,36,22,.55)}
-.collage figure img{width:100%;aspect-ratio:2.4/1;object-fit:cover}
-.collage figcaption{padding:8px 12px;font-size:13px;font-weight:700;display:flex;justify-content:space-between;gap:8px}
-.collage figcaption em{font-style:normal;background:var(--sol);padding:1px 8px;border-radius:999px}
-.collage .f1{left:2%;top:10%;width:62%;transform:rotate(-3deg)}
-.collage .f2{right:0;top:38%;width:58%;transform:rotate(3deg)}
-.collage .f3{left:8%;bottom:6%;width:56%;transform:rotate(-1.5deg)}
-@media (prefers-reduced-motion:no-preference){.collage .bg{animation:morph 9s ease-in-out infinite}@keyframes morph{50%{border-radius:55% 45% 52% 48%/45% 55% 45% 55%}}}
+.hero .kick{color:var(--cielo)}
+.hero h1{font-family:var(--hand);font-weight:400;font-size:clamp(48px,7.6vw,92px);line-height:.96;margin:16px 0 18px}
+.hero h1 mark{background:none;color:var(--sol)}
+.hero .lede{color:rgba(251,247,240,.82)}
+.prom{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}
+.prom div{border:1px solid rgba(251,247,240,.18);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,.04)}
+.prom b{font-family:var(--serif);font-size:42px;line-height:1;color:var(--sol)}
+.prom span{font-size:14px;color:rgba(251,247,240,.78);line-height:1.3}
+.hero .btn.line{color:var(--crema)}
+.stage{position:relative;height:560px}
+.stage .vid{position:absolute;left:50%;top:10px;width:250px;transform:translateX(-50%) rotate(-2deg);border-radius:28px;overflow:hidden;border:6px solid var(--crema);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);z-index:2;aspect-ratio:464/832;background:#222}
+.stage .vid video{width:100%;height:100%;object-fit:cover}
+.stage .ph{position:absolute;width:200px;border-radius:20px;overflow:hidden;border:5px solid var(--crema);box-shadow:0 24px 40px -18px rgba(0,0,0,.6)}
+.stage .ph img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.stage .p1{left:0;top:110px;transform:rotate(-8deg)}
+.stage .p2{right:0;top:170px;transform:rotate(7deg)}
+.stage .cap{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-family:var(--hand);font-size:26px;color:var(--sol);z-index:3}
+.proof{position:relative;border-top:1px solid rgba(251,247,240,.14);margin-top:40px;padding-block:22px;display:flex;align-items:center;gap:14px 30px;flex-wrap:wrap}
+.proof small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(251,247,240,.6);font-weight:700}
+.proof b{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.04em}
+.proof i{width:6px;height:6px;border-radius:50%;background:var(--coral);display:inline-block}
+
+/* anaquel interactivo */
+.shelfsec{background:var(--cielo2)}
+.shelfwrap{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);gap:24px;align-items:start}
+.shelfwrap>*{min-width:0}
+.rack{background:linear-gradient(180deg,#F7FBFE,#E8F3FA);border-radius:26px;padding:22px 18px 10px;box-shadow:0 30px 50px -36px rgba(59,36,22,.55),inset 0 0 0 1px #CFE3F1}
+.lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;position:relative;padding-bottom:20px;margin-bottom:34px}
+.lvl::after{content:"";position:absolute;left:-8px;right:-8px;bottom:0;height:20px;background:var(--cielo);border-radius:4px;box-shadow:0 8px 0 #6FAFD8,0 16px 18px -8px rgba(59,36,22,.35)}
+.slot{display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+.pile{position:relative;height:150px;width:100%}
+.pile img{position:absolute;width:86%;max-height:104px;object-fit:contain;object-position:bottom;filter:drop-shadow(0 10px 8px rgba(59,36,22,.28));transition:transform .45s var(--ease),opacity .3s}
+.pile img.out{opacity:0;transform:translateY(-30px) scale(.9)}
+.pile .qb{position:absolute;top:0;right:4px;background:var(--tinta);color:var(--crema);font-weight:700;font-size:13px;border-radius:999px;padding:2px 9px;z-index:10}
+.tag{position:relative;z-index:3;background:var(--sol);border-radius:10px;padding:8px 8px 9px;width:100%;text-align:center;box-shadow:0 6px 12px -8px rgba(120,80,0,.8);transform:translateY(24px)}
+.tag b{display:block;font-size:13px;line-height:1.15;min-height:30px}
+.tag .pv{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1}
+.tag .pv small{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.04em;display:block;opacity:.75;margin-top:2px}
+.mini-stp{display:flex;align-items:center;justify-content:center;gap:4px;margin-top:6px}
+.mini-stp button{all:unset;cursor:pointer;width:32px;height:32px;border-radius:50%;background:var(--tinta);color:var(--crema);display:grid;place-items:center;font-size:18px;font-weight:700}
+.mini-stp button:focus-visible{outline:3px solid var(--cielo3)}
+.mini-stp output{min-width:26px;font-weight:700;font-size:16px}
+.rack .foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13.5px;color:var(--tinta2);padding:4px 6px 10px}
+
+.sum{background:var(--tinta);color:var(--crema);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:12px;position:sticky;top:78px}
+.sum .r{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:15px}
+.sum .big b{font-family:var(--serif);font-size:40px;line-height:1}
+.sum .gain{background:rgba(255,212,94,.12);border:1px solid rgba(255,212,94,.35);border-radius:16px;padding:12px 14px}
+.sum .gain b{font-family:var(--serif);font-size:34px;color:var(--sol);line-height:1}
+.minbar{height:8px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}
+.minbar i{display:block;height:100%;background:var(--sol);transition:width .35s}
+.minmsg{font-size:13px;opacity:.85}
+.sum .btn{width:100%}
+.reset{all:unset;cursor:pointer;font-size:13px;text-decoration:underline;opacity:.8;align-self:flex-start}
+
+/* calculadora */
+.calc{margin-top:22px;background:var(--blanco);border-radius:24px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center;border:1px solid #CFE3F1}
+.calc>*{min-width:0}
+.seg{display:inline-flex;background:var(--cielo2);border-radius:999px;padding:4px;margin-top:12px}
+.seg button{all:unset;cursor:pointer;padding:10px 16px;border-radius:999px;font-weight:700;font-size:14.5px}
+.seg button[aria-pressed="true"]{background:var(--tinta);color:var(--crema)}
+.seg button:focus-visible{outline:3px solid var(--cielo3)}
+.calc .out{font-family:var(--serif);font-weight:700;font-size:clamp(54px,8vw,84px);line-height:.95;color:var(--tinta)}
+.calc .out small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--tinta2);display:block;margin-top:8px;line-height:1.4}
 
 /* catálogo */
-.cat{background:var(--cielo2)}
-.grid6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.pc{background:var(--blanco);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 24px -18px rgba(59,36,22,.6)}
-.pc .ph{position:relative;aspect-ratio:2.5/1;background:#EFE6DA}
-.pc .ph img{width:100%;height:100%;object-fit:cover}
-.pc .rol{position:absolute;left:12px;top:12px;background:var(--tinta);color:var(--crema);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
-.pc .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
-.pc .nm{font-family:var(--serif);font-weight:700;font-size:23px;line-height:1.1}
-.pc .gm{font-size:13.5px;color:var(--tinta2)}
-.pc .ds{font-size:14px;color:var(--tinta2)}
-.prices{margin-top:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding-top:10px;border-top:1px dashed var(--linea)}
-.prices div{display:flex;flex-direction:column;gap:2px}
-.prices small{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta2);font-weight:700}
-.prices b{font-size:18px}
-.prices .g b{background:var(--sol);border-radius:999px;padding:1px 10px;align-self:flex-start}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chips button{all:unset;cursor:pointer;padding:9px 16px;border-radius:999px;border:2px solid var(--linea);font-weight:700;font-size:14.5px;background:var(--blanco)}
+.chips button[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:var(--crema)}
+.chips button:focus-visible{outline:3px solid var(--cielo3)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--blanco);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 30px -24px rgba(59,36,22,.7);transition:transform .3s var(--ease)}
+.card:hover{transform:translateY(-3px)}
+.card .im{position:relative;aspect-ratio:2.25/1;background:#EFE6DA;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.card:hover .im img{transform:scale(1.05)}
+.card .badge{position:absolute;left:12px;top:12px;background:var(--sol);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:5px;flex:1}
+.card .nm{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.1}
+.card .gm{font-size:13px;color:var(--tinta2)}
+.card .ds{font-size:14px;color:var(--tinta2)}
+.prices{margin-top:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:6px;align-items:end;padding-top:12px;border-top:1px dashed var(--linea)}
+.prices small{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta2);font-weight:700}
+.prices b{font-size:17px}
+.prices .g b{background:var(--sol);border-radius:999px;padding:1px 8px}
+.add{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:var(--tinta);color:var(--crema);font-weight:700;font-size:13px;padding:8px 12px;white-space:nowrap}
+.add.has{background:var(--cielo3)}
+.add:focus-visible{outline:3px solid var(--cielo3)}
 .esp{display:grid;place-items:center;height:100%;background:repeating-linear-gradient(-45deg,var(--sol2) 0 14px,var(--sol) 14px 28px)}
 .esp i{font-family:var(--hand);font-style:normal;font-size:28px;background:var(--blanco);padding:4px 16px;border-radius:999px}
-.note{margin-top:16px;font-size:14px;color:var(--tinta2)}
-.more{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
-.more span{background:var(--blanco);padding:6px 12px;border-radius:999px;border:1px solid var(--linea)}
+.note{margin-top:16px;font-size:13.5px;color:var(--tinta2)}
 
-/* por qué */
+/* por qué + confianza */
 .why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.wc{background:var(--blanco);border:1px solid var(--linea);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:8px}
-.wc .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center}
+.wc{background:var(--blanco);border:1px solid var(--linea);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.wc .ic{width:50px;height:50px;border-radius:15px;display:grid;place-items:center}
 .wc .ic svg{width:24px;height:24px}
-.wc b{font-family:var(--serif);font-size:23px;line-height:1.1}
+.wc b{font-family:var(--serif);font-size:24px;line-height:1.1}
 .wc p{font-size:15px;color:var(--tinta2)}
-.metro{margin-top:16px;background:var(--tinta);color:var(--crema);border-radius:22px;padding:22px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:24px;align-items:center}
-.metro>*{min-width:0}
-.metro .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;font-weight:700}
-.mrow{display:grid;grid-template-columns:150px 1fr auto;gap:12px;align-items:center;margin-top:12px;font-size:14.5px}
-.mshelf{display:flex;gap:3px;height:42px;align-items:flex-end;border-bottom:5px solid rgba(255,255,255,.35)}
-.mshelf i{flex:1;border-radius:20px 20px 4px 4px;height:80%}
-.mrow b{font-family:var(--serif);font-size:26px}
-.metro .big{font-family:var(--serif);font-size:56px;font-weight:700;line-height:1;color:var(--sol)}
-.metro p{font-size:13.5px;opacity:.8;margin-top:6px}
-.fact{margin-top:14px;font-size:14.5px;color:var(--tinta2);background:var(--blanco);border-left:4px solid var(--cielo);padding:12px 16px;border-radius:0 12px 12px 0}
-
-/* condiciones */
-.cond{background:var(--sol2)}
-.cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.cc{background:var(--blanco);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:6px;border:1px solid var(--linea)}
-.cc .v{font-family:var(--serif);font-size:30px;font-weight:700;line-height:1}
-.cc b{font-size:15px}
-.cc p{font-size:14px;color:var(--tinta2)}
-.cc.hi{background:var(--tinta);color:var(--crema);border-color:var(--tinta)}
-.cc.hi p{color:rgba(251,247,240,.8)}
-.cc.hi .v{color:var(--sol)}
-.legal{margin-top:16px;font-size:13.5px;color:var(--tinta2);max-width:90ch}
+.trust{margin-top:22px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:22px;align-items:stretch}
+.trust>*{min-width:0}
+.found{position:relative;border-radius:24px;overflow:hidden;background:var(--cielo);min-height:380px}
+.found img{width:100%;height:100%;object-fit:cover;object-position:center 30%;position:absolute;inset:0}
+.found .q{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(251,247,240,.95);border-radius:16px;padding:14px 16px;font-size:14.5px}
+.found .q b{font-family:var(--hand);font-weight:400;font-size:24px;display:block;line-height:1.05;margin-bottom:4px}
+.quotes{background:var(--sol2);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.qwrap{position:relative;min-height:160px}
+.qt{position:absolute;inset:0;opacity:0;transition:opacity .6s;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.qt.on{opacity:1}
+.qt p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(26px,3.4vw,34px);line-height:1.15}
+.qt span{font-weight:700;font-size:14px;color:var(--tinta2)}
+.stars{color:#E6A700;letter-spacing:3px;font-size:18px}
+.dots{display:flex;gap:6px}
+.dots button{all:unset;cursor:pointer;width:10px;height:10px;border-radius:50%;background:rgba(59,36,22,.2);transition:width .3s}
+.dots button.on{background:var(--tinta);width:26px;border-radius:999px}
+.clients{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;margin-top:auto}
+.clients span{background:var(--blanco);border-radius:999px;padding:6px 12px;font-weight:700}
 
 /* exhibidor */
-.exh{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:36px;align-items:center}
+.exsec{background:linear-gradient(180deg,var(--crema),#F1E9DD)}
+.exh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
 .exh>*{min-width:0}
-.disp{max-width:380px;margin-inline:auto;filter:drop-shadow(0 26px 30px rgba(59,36,22,.28))}
-.path{display:flex;align-items:center;gap:0;margin:20px 0 8px}
-.path .d{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;background:var(--blanco);border:2px solid var(--cielo);flex:none}
-.path .d.v{background:var(--cielo2)}
-.path .ln{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--cielo) 0 8px,transparent 8px 14px);min-width:6px}
-.path .end{width:56px;height:56px;border-radius:16px;background:var(--sol);display:grid;place-items:center;flex:none}
+.render{position:relative;border-radius:28px;overflow:hidden;background:#EEE8E0;box-shadow:0 40px 60px -40px rgba(59,36,22,.6)}
+.render img{width:100%;aspect-ratio:880/1330;object-fit:cover;transform:scale(1.06);transition:transform 1.4s var(--ease)}
+.render.in img{transform:none}
+.free{position:absolute;right:18px;top:18px;width:124px;height:124px;border-radius:50%;background:var(--sol);display:grid;place-items:center;text-align:center;font-weight:700;line-height:1.05;box-shadow:0 14px 24px -10px rgba(120,80,0,.7);transform:rotate(10deg)}
+.free b{display:block;font-family:var(--hand);font-weight:400;font-size:34px}
+.free small{font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.path{display:flex;align-items:center;margin:22px 0 8px}
+.path .d{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;background:var(--blanco);border:2px solid var(--cielo);flex:none;transition:background .3s,color .3s,border-color .3s}
+.path .d.on{background:var(--tinta);color:var(--crema);border-color:var(--tinta)}
+.path .ln{flex:1;height:3px;background:var(--cielo2);min-width:4px;position:relative;overflow:hidden}
+.path .ln i{position:absolute;inset:0;background:var(--tinta);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.path .ln.on i{transform:none}
+.path .end{width:58px;height:58px;border-radius:16px;background:var(--blanco);border:2px dashed var(--cielo);display:grid;place-items:center;flex:none;transition:all .4s}
+.path .end.on{background:var(--sol);border:2px solid var(--sol);transform:scale(1.08)}
 .path .end svg{width:30px;height:30px}
 .plab{display:flex;justify-content:space-between;font-size:12.5px;color:var(--tinta2)}
-.exl{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:10px}
-.exl li{display:grid;grid-template-columns:26px 1fr;gap:10px;font-size:15.5px}
-.exl li span{width:26px;height:26px;border-radius:50%;background:var(--cielo2);display:grid;place-items:center;font-size:13px;font-weight:700}
+.exl{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:12px}
+.exl li{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:16px}
+.exl li svg{width:30px;height:30px;padding:6px;border-radius:50%;background:var(--cielo2)}
 
+/* condiciones */
+.cond{background:var(--tinta);color:var(--crema)}
+.cond .kick{color:var(--cielo)}
+.cond .lede{color:rgba(251,247,240,.8)}
+.cg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}
+.cg details{background:rgba(255,255,255,.05);border:1px solid rgba(251,247,240,.15);border-radius:18px;transition:background .2s}
+.cg details[open]{background:rgba(255,255,255,.1)}
+.cg summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:44px 1fr 18px;gap:12px;align-items:center;padding:16px}
+.cg summary::-webkit-details-marker{display:none}
+.cg summary .ic{width:44px;height:44px;border-radius:12px;background:var(--sol);color:var(--tinta);display:grid;place-items:center}
+.cg summary .ic svg{width:22px;height:22px}
+.cg summary b{display:block;font-size:16px}
+.cg summary small{display:block;font-size:13.5px;color:rgba(251,247,240,.72)}
+.cg summary .ch{transition:transform .25s;opacity:.7;font-size:20px}
+.cg details[open] .ch{transform:rotate(45deg)}
+.cg details p{padding:0 16px 16px 72px;font-size:14px;color:rgba(251,247,240,.82)}
+.cg details.hi{border-color:var(--sol)}
+.legal{margin-top:18px;font-size:13px;color:rgba(251,247,240,.65);max-width:90ch}
 
-.dx{position:relative;width:100%;max-width:340px;margin:0 auto 18px;filter:drop-shadow(0 28px 26px rgba(59,36,22,.25))}
-.dx::after{content:"";position:absolute;left:8%;right:2%;bottom:-16px;height:18px;border-radius:50%;background:rgba(59,36,22,.18);filter:blur(6px);z-index:-1}
-.dx-body,.dx-base{position:relative}
-.dx-body::after,.dx-base::after{content:"";position:absolute;top:0;bottom:0;right:-22px;width:22px;background:linear-gradient(90deg,#5E9FCB,#4682AE);transform:skewY(30deg);transform-origin:left top}
-.dx-base::after{background:linear-gradient(90deg,#4682AE,#3C739B)}
-.dx-top{background:var(--cielo);border-radius:46% 46% 0 0/26px 26px 0 0;padding:26px 18px 14px;text-align:center;position:relative;z-index:1;box-shadow:inset 0 -6px 0 rgba(59,36,22,.08)}
-.dx-plate{background:var(--crema);border-radius:10px;padding:12px 8px 9px;display:flex;flex-direction:column;align-items:center;gap:3px}
-.dx-plate b{font-family:var(--serif);font-weight:700;font-size:clamp(28px,8vw,36px);letter-spacing:.3em;line-height:1;padding-left:.3em}
-.dx-plate small{font-size:10px;letter-spacing:.42em;font-weight:700;color:var(--tinta2);padding-left:.42em}
-.dx-hand{display:block;font-family:var(--hand);font-size:clamp(30px,8.4vw,38px);color:#fff;line-height:1.1;margin-top:8px;text-shadow:0 2px 0 rgba(59,36,22,.15)}
-.dx-body{background:linear-gradient(180deg,#F4FAFD,#E4F1F9);padding:12px 12px 0;display:flex;flex-direction:column;gap:12px;border-left:6px solid var(--cielo);border-right:6px solid var(--cielo)}
-.dx-sh{position:relative;background:linear-gradient(180deg,#D7EAF6,#EEF6FB);border-radius:8px 8px 0 0;padding:10px 8px 0;display:flex;gap:6px;box-shadow:inset 0 10px 14px -10px rgba(59,36,22,.35)}
-.dx-sh img{flex:1;min-width:0;height:96px;object-fit:cover;border-radius:10px 10px 2px 2px;box-shadow:0 6px 10px -6px rgba(59,36,22,.5)}
-.dx-sh.two img{height:96px}
-.dx-lip{position:absolute;left:-4px;right:-4px;bottom:-14px;height:20px;background:var(--cielo);border-radius:3px;display:grid;place-items:center;box-shadow:0 4px 0 #6FAFD8}
-.dx-lip em{font-style:normal;background:var(--sol);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:2px 12px;border-radius:999px}
-.dx-sh:last-child{margin-bottom:18px}
-.dx-base{background:var(--cielo);color:#fff;text-align:center;font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:14px 8px;border-radius:0 0 6px 6px}
-
-/* pedido */
-.ped{background:var(--cielo2)}
-.pgrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:22px;align-items:start}
-.pgrid>*{min-width:0}
-.lines{background:var(--blanco);border-radius:22px;padding:6px 18px;border:1px solid var(--linea)}
-.lnr{display:grid;grid-template-columns:52px minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--linea)}
-.lnr:last-child{border-bottom:0}
-.lnr img,.lnr .ph{width:52px;height:52px;border-radius:12px;object-fit:cover}
-.lnr .ph{background:repeating-linear-gradient(-45deg,var(--sol2) 0 7px,var(--sol) 7px 14px)}
-.lnr b{font-family:var(--serif);font-size:19px;display:block;line-height:1.1}
-.lnr span{font-size:13px;color:var(--tinta2)}
-.stp{display:inline-flex;align-items:center;border:2px solid var(--linea);border-radius:999px;overflow:hidden;background:var(--blanco)}
-.stp button{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;font-size:20px;font-weight:700}
-.stp button:focus-visible{outline:3px solid var(--cielo3)}
-.stp output{min-width:26px;text-align:center;font-weight:700}
-.lnr .sub{font-weight:700;min-width:64px;text-align:right}
-.tot{background:var(--tinta);color:var(--crema);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:11px;position:sticky;top:76px}
-.tot .r{display:flex;justify-content:space-between;gap:12px;font-size:15px;align-items:baseline}
-.tot .r.big b{font-family:var(--serif);font-size:38px;line-height:1}
-.tot .r.gain b{color:var(--sol);font-family:var(--serif);font-size:30px}
-.minbar{height:10px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}
-.minbar i{display:block;height:100%;background:var(--sol);transition:width .35s}
-.minmsg{font-size:13.5px}
-.tot label{font-size:13px;opacity:.8}
-.tot input{font:inherit;font-size:16px;padding:11px 13px;border-radius:12px;border:0;width:100%;color:var(--tinta);background:var(--crema)}
-.tot .fn{font-size:12.5px;opacity:.75}
-.tot .btn{width:100%}
-.tot .btn.line{border-color:var(--crema);color:var(--crema)}
-.reset{all:unset;cursor:pointer;font-size:13px;text-decoration:underline;opacity:.8;align-self:flex-start}
+/* cierre */
+.close{background:var(--cielo);text-align:center}
+.close h2{margin-bottom:12px}
+.close .lede{margin:0 auto 24px;color:var(--tinta)}
+.close .row{justify-content:center}
+.close .btn.line{color:var(--tinta)}
 
 footer{background:var(--tinta);color:var(--crema);padding-block:36px}
 footer .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;font-size:14.5px}
 footer b{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
 footer a{color:var(--crema)}
 
-@media (max-width:900px){
-  section{padding-block:48px}
-  .hgrid,.exh,.pgrid,.metro{grid-template-columns:minmax(0,1fr)}
-  .collage{max-width:380px}
-  .grid6{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .why{grid-template-columns:minmax(0,1fr)}
+/* barra fija móvil */
+.dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--tinta);color:var(--crema);border-radius:20px;padding:10px 10px 10px 16px;display:none;align-items:center;gap:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(160%);transition:transform .35s var(--ease)}
+.dock.show{transform:none}
+.dock .t{flex:1;min-width:0;line-height:1.15}
+.dock .t b{font-family:var(--serif);font-size:24px;display:block}
+.dock .t small{font-size:12px;opacity:.75}
+.dock .btn{padding:12px 16px;font-size:14.5px}
+
+@media (max-width:980px){
+  .shelfwrap{grid-template-columns:minmax(0,1fr)}
+  .sum{position:static}
   .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .tot{position:static}
+  .cg{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  section{padding-block:52px}
+  .hgrid,.exh,.trust,.calc{grid-template-columns:minmax(0,1fr)}
+  .stage{height:470px;max-width:440px;margin-inline:auto;width:100%}
+  .stage .vid{width:210px}
+  .stage .ph{width:160px}
+  .why{grid-template-columns:minmax(0,1fr)}
+  footer{padding-bottom:110px}
   footer .cols{grid-template-columns:minmax(0,1fr)}
-  .logo{display:none}
+  .logo span{display:none}
   .steps{justify-content:flex-start}
-  .dx{max-width:290px}
+  .dock{display:flex}
+  .render{max-width:460px;margin-inline:auto;width:100%}
 }
-@media (max-width:540px){
-  .grid6{grid-template-columns:minmax(0,1fr)}
+@media (max-width:560px){
   .prom{grid-template-columns:minmax(0,1fr)}
-  .collage{display:none}
-  .prom div{flex-direction:row;align-items:baseline;gap:12px}
-  .prom b{font-size:26px;min-width:76px}
-  .cgrid{grid-template-columns:minmax(0,1fr)}
-  .lnr{grid-template-columns:44px minmax(0,1fr) auto;row-gap:6px}
-  .lnr img,.lnr .ph{width:44px;height:44px}
-  .lnr .sub{grid-column:2/-1;text-align:left;min-width:0;font-size:14px}
-  .mrow{grid-template-columns:84px 1fr auto}
+  .prom div{flex-direction:row;align-items:center;gap:14px;padding:12px 14px}
+  .prom b{font-size:34px;min-width:92px}
+  .rack{padding:16px 12px 8px}
+  .lvl{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:58px;padding-bottom:0;margin-bottom:58px}
+  .lvl::after{display:none}
+  .slot::before{content:"";position:absolute;left:-6px;right:-6px;top:118px;height:16px;background:var(--cielo);border-radius:3px;box-shadow:0 6px 0 #6FAFD8;z-index:0}
+  .pile{height:122px}
+  .pile img{max-height:86px}
+  .tag{transform:translateY(12px)}
+  .cgrid,.cg{grid-template-columns:minmax(0,1fr)}
+  .stage{height:420px}
+  .stage .vid{width:190px}
+  .stage .ph{width:132px}
+  .free{width:100px;height:100px}
+  .free b{font-size:28px}
+  .proof{gap:6px 14px}
+  .proof small{width:100%}
+  .proof b{font-size:20px}
+  .proof i{display:none}
+  .seg button{padding:9px 12px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
 <nav class="bar" aria-label="Secciones">
   <div class="wrap">
-    <span class="logo">ALLERIA</span>
+    <span class="logo"><img src="/assets/anaquel/tag.webp" alt=""><span>ALLERIA</span></span>
     <div class="steps" id="steps">
-      <a href="#catalogo">Catálogo y precios</a>
-      <a href="#porque">Por qué le conviene</a>
-      <a href="#condiciones">Condiciones</a>
+      <a href="#anaquel">Pedido sugerido</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#confianza">Por qué Alleria</a>
       <a href="#exhibidor">Exhibidor</a>
-      <a href="#pedido">Su pedido</a>
+      <a href="#condiciones">Condiciones</a>
     </div>
   </div>
   <div class="prog"><i id="prog"></i></div>
@@ -260,133 +323,132 @@ footer a{color:var(--crema)}
     <div>
       <span class="kick">Alleria · Pan de masa madre para tiendas</span>
       <h1>Más ganancia por metro de anaquel, <mark>sin merma</mark>.</h1>
-      <p class="lede">Pan artesanal de masa madre que su cliente suma a la compra de queso, charcutería o vino. Usted fija su precio; nosotros nos encargamos de que siempre haya pan fresco.</p>
+      <p class="lede">Pan artesanal que su cliente suma a la compra de queso, charcutería o vino. Llega empacado y etiquetado, listo para vender. Lo que no se venda, se lo cambiamos.</p>
       <div class="prom">
-        <div><b class="num">≈30 %</b><span>de margen en cada pan, con el precio sugerido</span></div>
-        <div><b class="num">0 %</b><span>de merma: el pan que no se venda se lo cambiamos</span></div>
-        <div><b class="num">7 días</b><span>de crédito desde el primer pedido</span></div>
+        <div><b class="num" data-count="28" data-pre="≈" data-suf=" %">≈28 %</b><span>de margen en cada pan, con el precio sugerido</span></div>
+        <div><b class="num">0 %</b><span>de merma: el pan que no se venda se cambia</span></div>
+        <div><b class="num" data-count="7" data-suf=" días">7 días</b><span>de crédito desde el primer pedido</span></div>
       </div>
-      <div class="row"><a class="btn dark" href="#catalogo">Ver catálogo y precios</a><a class="btn line" href="#pedido">Armar mi pedido</a></div>
+      <div class="row"><a class="btn sol" href="#anaquel">Ver el pedido sugerido</a><a class="btn line" href="#catalogo">Catálogo completo</a></div>
     </div>
-    <div class="collage" aria-hidden="true">
-      <div class="bg"></div>
-      <figure class="f1"><img src="/assets/anaquel/mini-hogazas.jpg" alt=""><figcaption>Pack 3 mini hogazas<em class="money">gana $3,00</em></figcaption></figure>
-      <figure class="f2"><img src="/assets/anaquel/ciabatta.jpg" alt=""><figcaption>Pack 2 ciabattas<em class="money">gana $1,50</em></figcaption></figure>
-      <figure class="f3"><img src="/assets/anaquel/sandwich-integral.jpg" alt=""><figcaption>Integral 7 semillas<em class="money">gana $2,25</em></figcaption></figure>
+    <div class="stage" aria-hidden="true">
+      <div class="ph p1"><img src="/assets/anaquel/real-hamburguesa.jpg" alt=""></div>
+      <div class="vid"><video src="/assets/anaquel/real-focaccia.mp4" poster="/assets/anaquel/real-focaccia-poster.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="ph p2"><img src="/assets/anaquel/real-ciabatta.jpg" alt=""></div>
+      <span class="cap">Así llega a su tienda</span>
     </div>
   </div>
+  <div class="wrap"><div class="proof"><small>Ya trabajan con Alleria</small><b>Iacobozzi</b><i></i><b>Hotel Tiffany</b><i></i><b>Restaurante Campobasso</b></div></div>
 </header>
 
-<section id="catalogo" class="cat">
+<section id="anaquel" class="shelfsec">
   <div class="wrap">
-    <div class="head">
-      <span class="kick">Catálogo y precios</span>
-      <h2>Seis panes que se venden solos en su anaquel</h2>
-      <p class="lede">Cada uno cumple una función distinta. Al lado de cada precio, lo que usted gana por unidad.</p>
+    <div class="head rv">
+      <span class="kick">Pedido sugerido</span>
+      <h2>Así se ve su anaquel con Alleria</h2>
+      <p class="lede">Este es el surtido que más se pide hoy. Toque <b>+</b> o <b>−</b> en cada precio y vea al instante cuánto invierte y cuánto gana.</p>
     </div>
-    <div class="grid6" id="grid6"></div>
-    <p class="note">Precios en USD por unidad de venta, con empaque y etiqueta incluidos. «Venta sugerida» le deja cerca del 30 %: usted fija su precio.</p>
-    <div class="more"><b>Bajo pedido:</b><span>Focaccia</span><span>Roll de pan de jamón</span><span>Pan de hamburguesa con chía · pack de 4</span><span>Pan campesino</span><span>Roles dulces</span><span>Panecillos</span></div>
+    <div class="shelfwrap">
+      <div class="rack rv" id="rack"></div>
+      <aside class="sum" aria-live="polite">
+        <div class="r"><span>Unidades</span><b class="num" id="tU">0</b></div>
+        <div class="r big"><span>Su inversión</span><b class="money" id="tC">$0,00</b></div>
+        <div class="r"><span>Venta al precio sugerido</span><b class="money" id="tV">$0,00</b></div>
+        <div class="gain r"><span>Usted gana</span><b class="money" id="tG">$0,00</b></div>
+        <div class="minbar"><i id="tMin"></i></div>
+        <span class="minmsg" id="tMinMsg"></span>
+        <a class="btn wa" id="sendWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Enviar pedido por WhatsApp</a>
+        <a class="btn line" id="sendMail">Enviar por correo</a>
+        <button class="reset" type="button" id="reset">Volver al pedido sugerido</button>
+      </aside>
+    </div>
+    <div class="calc rv">
+      <div>
+        <span class="kick">Su ganancia al mes</span>
+        <h3 style="font-family:var(--serif);font-size:28px;margin-top:8px">¿Cuántas veces por semana vende este pedido?</h3>
+        <div class="seg" role="group" aria-label="Reposiciones por semana">
+          <button type="button" data-r="1" aria-pressed="true">1 vez</button><button type="button" data-r="2" aria-pressed="false">2 veces</button><button type="button" data-r="3" aria-pressed="false">3 veces</button>
+        </div>
+      </div>
+      <div class="out money" id="mOut">$0<small id="mTxt"></small></div>
+    </div>
   </div>
 </section>
 
-<section id="porque">
+<section id="catalogo">
   <div class="wrap">
-    <div class="head">
-      <span class="kick">Por qué le conviene</span>
+    <div class="head rv">
+      <span class="kick">Catálogo completo</span>
+      <h2>Amplíe su surtido cuando quiera</h2>
+      <p class="lede">Además del pedido sugerido, horneamos todo esto. Toque «Agregar» y se suma a su pedido. Cada precio incluye empaque y etiqueta.</p>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+    <div class="cgrid" id="cgrid"></div>
+    <p class="note">Precios en USD por unidad de venta. «A usted» es lo que paga a Alleria; «Venta» es el precio sugerido al público: usted fija el suyo.</p>
+  </div>
+</section>
+
+<section id="confianza">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kick">Por qué Alleria</span>
       <h2>El pan no compite con su surtido: lo hace vender más</h2>
     </div>
     <div class="why">
-      <div class="wc"><span class="ic" style="background:var(--sol2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h11.2L21 7H7"/><circle cx="10" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg></span><b>Sube el ticket</b><p>Quien entra por queso, charcutería o vino se lleva además el pan. Es venta adicional sobre el cliente que ya tiene.</p></div>
-      <div class="wc"><span class="ic" style="background:var(--cielo2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><b>Trae al cliente de vuelta</b><p>El pan se acaba en la semana. Quien encuentra buen pan en su tienda tiene una razón para volver, y nunca compra solo el pan.</p></div>
-      <div class="wc"><span class="ic" style="background:var(--coral2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9z"/></svg></span><b>Lo distingue</b><p>Mini hogazas de tres sabores y ciabattas: en los ocho puntos que recorrimos no las tiene nadie. Y junto al pan artesanal, sus quesos se ven mejor.</p></div>
+      <div class="wc rv"><span class="ic" style="background:var(--sol2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h11.2L21 7H7"/><circle cx="10" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg></span><b>Sube el ticket</b><p>Quien entra por queso, charcutería o vino se lleva además el pan. Venta adicional sobre el cliente que ya tiene.</p></div>
+      <div class="wc rv"><span class="ic" style="background:var(--cielo2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><b>Trae al cliente de vuelta</b><p>El pan se acaba en la semana. Quien encuentra buen pan en su tienda vuelve, y nunca compra solo el pan.</p></div>
+      <div class="wc rv"><span class="ic" style="background:var(--coral2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9z"/></svg></span><b>Lo distingue</b><p>Masa madre con más de 24 horas de fermentación, sin levadura comercial. Y junto al pan, sus quesos se ven mejor.</p></div>
     </div>
-    <div class="metro">
-      <div>
-        <span class="k">Un metro de anaquel, cada vez que se vende completo</span>
-        <div class="mrow"><span>Lo que hay hoy<br><small style="opacity:.7">4 hogazas de 800 g</small></span><div class="mshelf"><i style="background:#D9B98A"></i><i style="background:#D9B98A"></i><i style="background:#D9B98A"></i><i style="background:#D9B98A"></i></div><b class="money">$8,00</b></div>
-        <div class="mrow"><span>Con Alleria<br><small style="opacity:.7">4 packs de 3 mini hogazas</small></span><div class="mshelf"><i style="background:var(--coral)"></i><i style="background:var(--coral)"></i><i style="background:var(--coral)"></i><i style="background:var(--coral)"></i></div><b class="money" style="color:var(--sol)">$12,00</b></div>
+    <div class="trust">
+      <div class="found rv"><img src="/assets/anaquel/fundadores.jpg" alt="Gustavo y Eftimia, fundadores de Alleria" loading="lazy"><div class="q"><b>No queremos ser otro proveedor.</b>Somos Gustavo y Eftimia. Queremos ser socios: si su negocio crece, Barquisimeto crece.</div></div>
+      <div class="quotes rv">
+        <span class="kick">Lo que dicen nuestros clientes</span>
+        <div class="qwrap" id="qwrap"></div>
+        <div class="dots" id="dots"></div>
+        <div class="clients"><small style="font-weight:700;color:var(--tinta2)">Ya en:</small><span>Iacobozzi</span><span>Hotel Tiffany</span><span>Restaurante Campobasso</span></div>
       </div>
-      <div><span class="big num">+50 %</span><p>Ganancia del establecimiento por el mismo espacio, con los precios sugeridos. La rotación real de su tienda la medimos juntos con las primeras entregas.</p></div>
     </div>
-    <p class="fact">Recorrimos ocho puntos de venta de Barquisimeto: la masa madre solo aparece en un formato de 800 g a $6,50, sin producto de entrada ni variedad. Ese es el espacio que le proponemos ocupar.</p>
   </div>
 </section>
 
-<section id="condiciones" class="cond">
-  <div class="wrap">
-    <div class="head">
-      <span class="kick">Condiciones comerciales</span>
-      <h2>Claras desde el primer pedido</h2>
-    </div>
-    <div class="cgrid">
-      <div class="cc hi"><span class="v">Cambio</span><b>Lo que no se venda, se cambia</b><p>El pan que no se venda o llegue dañado se lo cambiamos siempre por pan fresco en la siguiente entrega.</p></div>
-      <div class="cc"><span class="v num">7 días</span><b>Crédito desde el primer pedido</b><p>El cupo arranca en $55 y sube a $110 cuando la tienda paga dos veces a tiempo. Con un atraso de más de 7 días, los pedidos pasan a contado hasta ponerse al día.</p></div>
-      <div class="cc"><span class="v num">$50</span><b>Pedido mínimo</b><p>Para acceder al precio de mayorista. Por debajo de ese monto lo atendemos a precio de tienda.</p></div>
-      <div class="cc"><span class="v">Mar · Jue · Sáb</span><b>Entregas frecuentes</b><p>Le llevamos poco y venimos seguido. Con pedidos menores ajustamos a una o dos entregas, para que el pan llegue recién horneado.</p></div>
-      <div class="cc"><span class="v">Según rotación</span><b>Sin consignación</b><p>Ajustamos las cantidades entrega por entrega: solo lo que su anaquel puede mover.</p></div>
-      <div class="cc"><span class="v num">3 y 5 días</span><b>Frescura real</b><p>Pan artesanal, 3 días. Pan de molde, 5 días. Sin conservantes, sin levadura comercial.</p></div>
-      <div class="cc"><span class="v num">15 mil</span><b>Clientes para su tienda</b><p>La etiquetamos en Instagram ante nuestros seguidores, le dejamos habladores para el anaquel y hacemos una degustación para arrancar.</p></div>
-      <div class="cc"><span class="v">USD · BCV</span><b>Pago y factura</b><p>Nota de entrega en USD, pagadera en bolívares a la tasa oficial del BCV del día del pago. Si necesita factura, se emite ese mismo día.</p></div>
-    </div>
-    <p class="legal">Los precios pueden variar con el tiempo; cualquier ajuste se informa con anticipación. Los precios de venta al público son sugeridos: la decisión final es del establecimiento.</p>
-  </div>
-</section>
-
-<section id="exhibidor">
+<section id="exhibidor" class="exsec">
   <div class="wrap exh">
-    <div class="dx" role="img" aria-label="Exhibidor de piso Alleria con tres niveles de pan de masa madre">
-      <div class="dx-top"><div class="dx-plate"><b>ALLERIA</b><small>COFFEE BAR</small></div><span class="dx-hand">Masa madre</span></div>
-      <div class="dx-body">
-        <div class="dx-sh"><img src="/assets/anaquel/mini-hogazas.jpg" alt=""><span class="dx-lip"><em>Mini hogazas</em></span></div>
-        <div class="dx-sh"><img src="/assets/anaquel/ciabatta.jpg" alt=""><span class="dx-lip"><em>Ciabattas</em></span></div>
-        <div class="dx-sh two"><img src="/assets/anaquel/sandwich-integral.jpg" alt=""><img src="/assets/anaquel/sandwich-blanco.jpg" alt=""><span class="dx-lip"><em>Pan de molde</em></span></div>
-      </div>
-      <div class="dx-base">Hecho con tiempo · sin aditivos</div>
-    </div>
-    <div>
+    <div class="render rv"><img src="/assets/anaquel/exhibidor.jpg" alt="Exhibidor de piso Alleria con tres niveles de pan de masa madre empacado" loading="lazy"><span class="free"><span><b>Sin costo</b><small>para su tienda</small></span></span></div>
+    <div class="rv">
       <span class="kick">Exhibidor Alleria</span>
-      <h2 style="margin-top:10px">Cuando el pan rota, le llevamos un exhibidor propio</h2>
-      <p class="lede" style="margin-top:12px">Validada la rotación en su tienda y completadas 6 compras, instalamos un exhibidor de piso con la marca Alleria: más visibilidad para el pan, un punto de venta propio en su tienda y más ventas sin quitarle espacio a su anaquel.</p>
-      <div class="path" aria-label="Seis compras hasta el exhibidor">
-        <span class="d v">1</span><span class="ln"></span><span class="d">2</span><span class="ln"></span><span class="d">3</span><span class="ln"></span><span class="d">4</span><span class="ln"></span><span class="d">5</span><span class="ln"></span><span class="d">6</span><span class="ln"></span>
+      <h2 style="margin-top:10px">Su pan, con su propio punto de venta</h2>
+      <p class="lede" style="margin-top:14px">Cuando validamos la rotación en su tienda y completa <b>6 compras</b>, instalamos un exhibidor de piso con la marca Alleria. Sin costo para usted: le da protagonismo al pan y libera sus anaqueles.</p>
+      <div class="path" id="path" aria-label="Seis compras hasta el exhibidor">
+        <span class="d">1</span><span class="ln"><i></i></span><span class="d">2</span><span class="ln"><i></i></span><span class="d">3</span><span class="ln"><i></i></span><span class="d">4</span><span class="ln"><i></i></span><span class="d">5</span><span class="ln"><i></i></span><span class="d">6</span><span class="ln"><i></i></span>
         <span class="end"><svg viewBox="0 0 24 24" fill="none" stroke="#3B2416" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v4H6zM6 7h12v14H6zM6 12h12M6 16.5h12"/></svg></span>
       </div>
-      <div class="plab"><span>Primera compra</span><span>Exhibidor Alleria</span></div>
+      <div class="plab"><span>Primera compra</span><span>Exhibidor instalado</span></div>
       <ul class="exl">
-        <li><span>1</span>Tres niveles: mini hogazas arriba, ciabattas al centro y pan de molde abajo.</li>
-        <li><span>2</span>Lo ubicamos con usted donde más se vende: cerca de la caja o junto a quesos y charcutería.</li>
-        <li><span>3</span>Lo reponemos en cada entrega, para que siempre se vea lleno y fresco.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#3B2416" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>Tres niveles, en el lugar que más vende: junto a la caja o a quesos y charcutería.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#3B2416" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>No ocupa sus anaqueles: el pan gana su propio espacio.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#3B2416" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>Lo reponemos en cada entrega, para que siempre se vea lleno y fresco.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="pedido" class="ped">
+<section id="condiciones" class="cond">
   <div class="wrap">
-    <div class="head">
-      <span class="kick">Su primer pedido</span>
-      <h2>Pruebe toda la categoría por $52,85</h2>
-      <p class="lede">Viene cargado con nuestra sugerencia. Ajuste las cantidades y envíenoslo; a crédito de 7 días.</p>
+    <div class="head rv">
+      <span class="kick">Condiciones comerciales</span>
+      <h2>Claras desde el primer pedido</h2>
+      <p class="lede">Toque cada una para ver el detalle.</p>
     </div>
-    <div class="pgrid">
-      <div class="lines" id="lines"></div>
-      <aside class="tot" aria-live="polite">
-        <div class="r"><span>Unidades</span><b class="num" id="tU">0</b></div>
-        <div class="r big"><span>Total del pedido</span><b class="money" id="tC">$0,00</b></div>
-        <div class="r gain"><span>Si vende todo, gana</span><b class="money" id="tG">$0,00</b></div>
-        <div class="minbar"><i id="tMin"></i></div>
-        <span class="minmsg" id="tMinMsg"></span>
-        <label for="fTienda">Nombre de su tienda</label>
-        <input id="fTienda" type="text" autocomplete="organization" placeholder="Nombre de la tienda">
-        <label for="fNombre">Su nombre</label>
-        <input id="fNombre" type="text" autocomplete="name" placeholder="Nombre y apellido">
-        <a class="btn wa" id="sendWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Enviar pedido por WhatsApp</a>
-        <a class="btn line" id="sendMail">Enviar por correo</a>
-        <a class="btn line" id="ctaDeg" target="_blank" rel="noopener">Prefiero una degustación primero</a>
-        <button class="reset" type="button" id="reset">Volver a la sugerencia</button>
-      </aside>
-    </div>
+    <div class="cg" id="cg"></div>
+    <p class="legal">Los precios pueden variar con el tiempo; cualquier ajuste se informa con anticipación. Los precios de venta al público son sugeridos: la decisión final es del establecimiento.</p>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap rv">
+    <h2>Pruébelo con un pedido. Sus números lo confirman.</h2>
+    <p class="lede">Le llevamos una degustación recién horneada y armamos juntos el pedido para su tienda.</p>
+    <div class="row"><a class="btn dark" id="ctaDeg" target="_blank" rel="noopener">Agendar una degustación</a><a class="btn line" href="#anaquel">Revisar mi pedido</a></div>
   </div>
 </section>
 
@@ -398,54 +460,142 @@ footer a{color:var(--crema)}
   </div>
 </footer>
 
+<div class="dock" id="dock"><div class="t"><b class="money" id="dT">$0,00</b><small id="dS">0 unidades · gana $0,00</small></div><a class="btn wa" id="dWa" target="_blank" rel="noopener">Enviar pedido</a></div>
+
 <script>
 (function(){
 const WA="584122632864",MAIL="alleriacoffebar@gmail.com";
 const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
 const f2=n=>"$"+n.toFixed(2).replace(".",",");
-const IMG=n=>"/assets/anaquel/"+n+".jpg";
+const IMG=n=>"/assets/anaquel/cat/"+n+".jpg", CUT=n=>"/assets/anaquel/cut/"+n+".webp";
+/* Precios: catálogo Alleria y nota de entrega NE-000027. Pesos: etiquetas. */
 const P=[
- {id:"pack3",rol:"El más rentable",nm:"Pack 3 mini hogazas",gm:"3 × 200 g",img:"mini-hogazas",c:7.25,v:10.25,ds:"Jalapeño, tocineta y gouda de búfala · canela, nuez y pasas · ajo, mantequilla y orégano. Tres sabores en un empaque.",s:2},
- {id:"mini",rol:"Para probar",nm:"Mini hogaza",gm:"200 g · un sabor",img:"mini-hogazas",c:2.70,v:3.75,ds:"La puerta de entrada a la masa madre por menos de $4.",s:2},
- {id:"ciab",rol:"Lo que falta",nm:"Pack 2 ciabattas",gm:"2 × 200 g",img:"ciabatta",c:3.75,v:5.25,ds:"De aceitunas negras o de tomate seco. Corteza crujiente, miga abierta.",s:2},
- {id:"int",rol:"El más pedido",nm:"Sándwich integral 7 semillas",gm:"1 kg · 8 a 9 sándwiches",img:"sandwich-integral",c:5.50,v:7.75,ds:"Un kilo frente a los 800 g de la competencia.",s:2},
- {id:"bla",rol:"El mejor precio",nm:"Sándwich blanco",gm:"1 kg · 8 a 9 sándwiches",img:"sandwich-blanco",c:4.65,v:6.75,ds:"Un kilo por $0,25 más que la hogaza de 800 g.",s:2},
- {id:"esp",rol:"Novedad",nm:"Especial rotativo",gm:"500 g · cambia de sabor",img:null,c:5.15,v:7.25,ds:"Sabores de temporada y ediciones limitadas, para la zona de caja.",s:1}
+ {id:"mh-jal",cat:"Artesanales",nm:"Mini hogaza jalapeño",gm:"200 g · jalapeño, tocineta y gouda de búfala",img:"mini",cut:"mini",c:2.70,v:3.75,s:4},
+ {id:"mh-can",cat:"Artesanales",nm:"Mini hogaza canela",gm:"200 g · canela, nuez y pasas",img:"mini",cut:"mini",c:2.70,v:3.75,s:4},
+ {id:"mh-ajo",cat:"Artesanales",nm:"Mini hogaza ajo",gm:"200 g · mantequilla, ajo y orégano",img:"mini",cut:"mini",c:2.70,v:3.75,s:4},
+ {id:"jam",cat:"Artesanales",nm:"Roll pan de jamón",gm:"200 g · jamón, tocineta, pasas y aceitunas",img:"panjamon",cut:"panjamon",c:3.05,v:4.25,s:4},
+ {id:"cb-ace",cat:"Artesanales",nm:"Ciabatta aceitunas",gm:"200 g · aceitunas negras",img:"ciabatta",cut:"ciabatta",c:2.00,v:2.75,s:4},
+ {id:"cb-tom",cat:"Artesanales",nm:"Ciabatta tomate seco",gm:"200 g · tomate seco",img:"ciabatta",cut:"ciabatta",c:2.00,v:2.75,s:4},
+ {id:"foc",cat:"Artesanales",nm:"Focaccia",gm:"16 × 13 cm · aceite de oliva",img:"focaccia",cut:"focaccia",c:2.00,v:2.75,s:4},
+ {id:"ham",cat:"Panecillos",nm:"Pan de hamburguesa",gm:"Pack de 4 · con chía · 320 g",img:"hamburguesa",cut:"hamburguesa",c:4.00,v:5.50,s:4},
+ {id:"mh-pack",cat:"Artesanales",nm:"Pack 3 mini hogazas",gm:"3 × 200 g · los tres sabores",img:"mini",c:7.25,v:10.25,s:0,ds:"Los tres sabores en un empaque: el más rentable por espacio."},
+ {id:"cb-nat",cat:"Artesanales",nm:"Ciabatta natural",gm:"Unidad",img:"ciabatta",c:1.65,v:2.25,s:0},
+ {id:"cb-p2",cat:"Artesanales",nm:"Pack 2 ciabattas con aceitunas",gm:"2 unidades",img:"ciabatta",c:3.75,v:5.25,s:0},
+ {id:"cb-mix",cat:"Artesanales",nm:"Pack mixto de ciabattas",gm:"1 natural + 1 con aceitunas",img:"ciabatta",c:3.40,v:4.75,s:0},
+ {id:"jam40",cat:"Artesanales",nm:"Pan de jamón de 40 cm",gm:"Pieza entera",img:"panjamon",c:14.65,v:18.25,s:0},
+ {id:"esp",cat:"Artesanales",nm:"Especial rotativo",gm:"500 g · el sabor va cambiando",img:null,c:5.15,v:7.25,s:0,ds:"Ediciones de temporada y limitadas."},
+ {id:"perro",cat:"Panecillos",nm:"Pan de perro caliente",gm:"Bolsa de 6",img:"perro",c:4.45,v:6.25,s:0,ds:"Aguanta salsas y no se desarma."},
+ {id:"pinita",cat:"Panecillos",nm:"Piñita",gm:"Bolsa de 6",img:"pinita",c:3.20,v:4.45,s:0,ds:"Mini pan suave para desayunos y meriendas."},
+ {id:"deli",cat:"Panecillos",nm:"Pan deli",gm:"Bolsa de 6",img:"deli",c:3.20,v:4.45,s:0,ds:"Liviano y versátil, para sándwiches ligeros."},
+ {id:"sb",cat:"Molde",nm:"Sándwich blanco",gm:"1 kg · 8 a 9 sándwiches · 5 días",img:"sand-blanco",c:4.65,v:6.75,s:0},
+ {id:"si",cat:"Molde",nm:"Sándwich integral 7 semillas",gm:"1 kg · 8 a 9 sándwiches · 5 días",img:"sand-int",c:5.50,v:7.75,s:0},
+ {id:"sbp",cat:"Molde",nm:"Sándwich blanco pequeño",gm:"6 a 7 sándwiches · 5 días",img:"sand-blanco-p",c:4.10,v:5.75,s:0},
+ {id:"sip",cat:"Molde",nm:"Sándwich integral pequeño",gm:"6 a 7 sándwiches · 5 días",img:"sand-int-p",c:4.80,v:6.75,s:0},
+ {id:"camp",cat:"Clásicos",nm:"Pan campesino",gm:"Unidad",img:"campesino",c:1.65,v:2.25,s:0,ds:"Corteza gruesa, para sopas y tablas de queso."},
+ {id:"campi",cat:"Clásicos",nm:"Pan campesino integral",gm:"Unidad",img:"campesino-int",c:2.00,v:2.75,s:0},
+ {id:"cani",cat:"Clásicos",nm:"Pan canilla",gm:"Unidad",img:"canilla",c:1.30,v:1.75,s:0,ds:"El rey de los pepitos: aguanta peso sin colapsar."},
+ {id:"cro",cat:"Clásicos",nm:"Croissant",gm:"Unidad",img:"croissant",c:1.65,v:2.25,s:0},
+ {id:"rcan",cat:"Dulces",nm:"Rol de canela",gm:"Unidad",img:"rol-canela",c:2.95,v:4.05,s:0},
+ {id:"rcho",cat:"Dulces",nm:"Rol de chocolate",gm:"Unidad",img:"rol-choco",c:3.05,v:4.25,s:0},
+ {id:"rman",cat:"Dulces",nm:"Rol de manzana",gm:"Unidad · con crumble",img:"rol-manzana",c:3.05,v:4.25,s:0},
+ {id:"gol",cat:"Dulces",nm:"Golfeado",gm:"Unidad",img:"golfeado",c:3.05,v:4.25,s:0}
 ];
 P.forEach(p=>p.g=+(p.v-p.c).toFixed(2));
-const grid=document.getElementById("grid6");
-P.forEach(p=>{const a=document.createElement("article");a.className="pc";
-  a.innerHTML=`<div class="ph">${p.img?`<img src="${IMG(p.img)}" alt="${p.nm}" loading="lazy">`:`<div class="esp"><i>¿cuál será?</i></div>`}<span class="rol">${p.rol}</span></div>
-  <div class="bd"><span class="nm">${p.nm}</span><span class="gm">${p.gm}</span><span class="ds">${p.ds}</span>
-  <div class="prices"><div><small>A usted</small><b class="money">${f2(p.c)}</b></div><div><small>Venta sug.</small><b class="money">${f2(p.v)}</b></div><div class="g"><small>Usted gana</small><b class="money">${f2(p.g)}</b></div></div></div>`;
-  grid.appendChild(a)});
-
+const BY=Object.fromEntries(P.map(p=>[p.id,p]));
 const Q={};const load=()=>P.forEach(p=>Q[p.id]=p.s);load();
-try{const s=JSON.parse(localStorage.getItem("alleria_pedido2")||"null");if(s)P.forEach(p=>{if(Number.isInteger(s[p.id])&&s[p.id]>=0&&s[p.id]<100)Q[p.id]=s[p.id]})}catch(e){}
-const lines=document.getElementById("lines");
-P.forEach(p=>{const d=document.createElement("div");d.className="lnr";
-  d.innerHTML=`${p.img?`<img src="${IMG(p.img)}" alt="" loading="lazy">`:`<span class="ph"></span>`}<div><b>${p.nm}</b><span>${p.gm.split(" · ")[0]} · ${f2(p.c)} c/u</span></div>
-  <span class="stp"><button type="button" aria-label="Quitar uno de ${p.nm}" data-m="${p.id}">−</button><output id="q-${p.id}"></output><button type="button" aria-label="Agregar uno de ${p.nm}" data-p="${p.id}">+</button></span><span class="sub money" id="s-${p.id}"></span>`;
-  lines.appendChild(d)});
-lines.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.m||b.dataset.p;Q[id]=Math.max(0,Math.min(99,Q[id]+(b.dataset.p?1:-1)));calc()});
-const fT=document.getElementById("fTienda"),fN=document.getElementById("fNombre");
-try{fT.value=localStorage.getItem("alleria_tienda")||"";fN.value=localStorage.getItem("alleria_nombre")||""}catch(e){}
-function msg(){const ls=P.filter(p=>Q[p.id]>0).map(p=>`• ${Q[p.id]} × ${p.nm} (${p.gm.split(" · ")[0]}) = ${f2(Q[p.id]*p.c)}`);const t=P.reduce((a,p)=>a+Q[p.id]*p.c,0);
-  return `Hola Alleria. Quiero hacer un pedido para mi anaquel.\nTienda: ${fT.value.trim()||"(por indicar)"}\nNombre: ${fN.value.trim()||"(por indicar)"}\n\n${ls.join("\n")}\n\nTotal: ${f2(t)} (a crédito de 7 días)\n¿Cuándo pueden entregarlo?`}
-function calc(){let u=0,c=0,g=0;P.forEach(p=>{const q=Q[p.id];u+=q;c+=q*p.c;g+=q*p.g;document.getElementById("q-"+p.id).textContent=q;document.getElementById("s-"+p.id).textContent=f2(q*p.c)});
-  document.getElementById("tU").textContent=u;document.getElementById("tC").textContent=f2(c);document.getElementById("tG").textContent=f2(g);
-  document.getElementById("tMin").style.width=Math.min(100,c/50*100)+"%";
-  document.getElementById("tMinMsg").textContent=c>=50?(c<=55?"Cumple el mínimo de $50 y entra en su cupo de crédito inicial de $55.":"Cumple el mínimo de $50. Su cupo de crédito inicial es de $55: el resto, de contado."):"Le faltan "+f2(50-c)+" para el pedido mínimo de $50.";
-  const t=msg();document.getElementById("sendWa").href=wa(t);
-  document.getElementById("sendMail").href="mailto:"+MAIL+"?subject="+encodeURIComponent("Pedido de anaquel · "+(fT.value.trim()||"Nueva tienda"))+"&body="+encodeURIComponent(t);
-  try{localStorage.setItem("alleria_pedido2",JSON.stringify(Q))}catch(e){}}
-[fT,fN].forEach(i=>i.addEventListener("input",()=>{try{localStorage.setItem("alleria_tienda",fT.value);localStorage.setItem("alleria_nombre",fN.value)}catch(e){}calc()}));
-document.getElementById("reset").addEventListener("click",()=>{load();calc()});calc();
-document.getElementById("ctaDeg").href=wa("Hola Alleria. Vi la propuesta para anaquel y me gustaría agendar una degustación en mi tienda.");
-const links=[...document.querySelectorAll("#steps a")],secs=links.map(a=>document.querySelector(a.getAttribute("href"))),prog=document.getElementById("prog");
+try{const s=JSON.parse(localStorage.getItem("alleria_pedido3")||"null");if(s)P.forEach(p=>{if(Number.isInteger(s[p.id])&&s[p.id]>=0&&s[p.id]<100)Q[p.id]=s[p.id]})}catch(e){}
+const $=id=>document.getElementById(id);
+
+/* anaquel */
+const rack=$("rack");
+[["mh-jal","mh-can","mh-ajo","jam"],["cb-ace","cb-tom","foc","ham"]].forEach(ids=>{const l=document.createElement("div");l.className="lvl";
+  ids.forEach(id=>{const p=BY[id];const s=document.createElement("div");s.className="slot";
+    s.innerHTML=`<div class="pile" id="pile-${id}"><span class="qb"></span></div><div class="tag"><b>${p.nm}</b><span class="pv money">${f2(p.c)}<small>VENTA ${f2(p.v)} · GANA ${f2(p.g)}</small></span>
+    <div class="mini-stp"><button type="button" data-m="${id}" aria-label="Quitar uno de ${p.nm}">−</button><output id="sq-${id}"></output><button type="button" data-p="${id}" aria-label="Agregar uno de ${p.nm}">+</button></div></div>`;
+    l.appendChild(s)});rack.appendChild(l)});
+const foot=document.createElement("div");foot.className="foot";foot.innerHTML=`<span>Fotos de nuestros panes. En su tienda llegan empacados y con etiqueta.</span><span>Pedido mínimo $50</span>`;rack.appendChild(foot);
+function drawPile(id){const el=$("pile-"+id);if(!el)return;const p=BY[id],q=Q[id],n=Math.min(q,4);
+  const ims=[...el.querySelectorAll("img")];
+  if(ims.length<n){for(let i=ims.length;i<n;i++){const im=document.createElement("img");im.src=CUT(p.cut);im.alt="";im.className="out";
+      im.style.bottom=(i*13)+"px";im.style.left=(i%2?10:4)+"%";im.style.zIndex=10-i;el.appendChild(im);requestAnimationFrame(()=>requestAnimationFrame(()=>im.classList.remove("out")))}}
+  else ims.slice(n).forEach(im=>im.remove());
+  const qb=el.querySelector(".qb");qb.textContent="×"+q;qb.style.display=q?"":"none"}
+
+/* catálogo */
+const cats=["Artesanales","Panecillos","Molde","Clásicos","Dulces"];let curCat="Artesanales";
+const chips=$("chips"),cgrid=$("cgrid");
+cats.forEach(c=>{const b=document.createElement("button");b.type="button";b.textContent=c;b.setAttribute("aria-pressed",String(c===curCat));b.onclick=()=>{curCat=c;[...chips.children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));renderCat()};chips.appendChild(b)});
+function renderCat(){cgrid.innerHTML="";P.filter(p=>!p.s&&p.cat===curCat).forEach(p=>{const a=document.createElement("article");a.className="card";
+  a.innerHTML=`<div class="im">${p.img?`<img src="${IMG(p.img)}" alt="${p.nm}" loading="lazy">`:`<div class="esp"><i>¿cuál será?</i></div>`}</div>
+  <div class="bd"><span class="nm">${p.nm}</span><span class="gm">${p.gm}</span>${p.ds?`<span class="ds">${p.ds}</span>`:""}
+  <div class="prices"><div><small>A usted</small><b class="money">${f2(p.c)}</b></div><div><small>Venta</small><b class="money">${f2(p.v)}</b></div><div class="g"><small>Gana</small><b class="money">${f2(p.g)}</b></div>
+  <button class="add" type="button" data-add="${p.id}"></button></div></div>`;cgrid.appendChild(a)});paintAdds()}
+function paintAdds(){cgrid.querySelectorAll("[data-add]").forEach(b=>{const q=Q[b.dataset.add];b.classList.toggle("has",q>0);b.textContent=q>0?("✓ "+q+" · +1"):"+ Agregar";b.setAttribute("aria-label",(q>0?"En su pedido: "+q+". Agregar otro de ":"Agregar ")+BY[b.dataset.add].nm)})}
+cgrid.addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(!b)return;Q[b.dataset.add]=Math.min(99,Q[b.dataset.add]+1);calc()});
+renderCat();
+
+/* totales y envío */
+let reps=1;
+function totals(){let u=0,c=0,v=0,g=0;P.forEach(p=>{const q=Q[p.id];u+=q;c+=q*p.c;v+=q*p.v;g+=q*p.g});return{u,c,v,g}}
+function msg(){const ls=P.filter(p=>Q[p.id]>0).map(p=>`• ${Q[p.id]} × ${p.nm} (${p.gm.split(" · ")[0]}) = ${f2(Q[p.id]*p.c)}`);const t=totals();
+  return `Hola Alleria. Quiero hacer un pedido para mi tienda.\nTienda: \nNombre: \n\n${ls.join("\n")}\n\nTotal: ${f2(t.c)}\n¿Cuándo pueden entregarlo?`}
+function calc(){const t=totals();
+  P.forEach(p=>{const o=$("sq-"+p.id);if(o)o.textContent=Q[p.id];drawPile(p.id)});
+  $("tU").textContent=t.u;$("tC").textContent=f2(t.c);$("tV").textContent=f2(t.v);$("tG").textContent=f2(t.g);
+  $("tMin").style.width=Math.min(100,t.c/50*100)+"%";
+  $("tMinMsg").textContent=t.c>=50?"Cumple el pedido mínimo de $50. Margen sobre la venta: "+(t.v?Math.round(t.g/t.v*100):0)+" %.":"Le faltan "+f2(50-t.c)+" para el pedido mínimo de $50.";
+  const m=msg();$("sendWa").href=wa(m);$("dWa").href=wa(m);
+  $("sendMail").href="mailto:"+MAIL+"?subject="+encodeURIComponent("Pedido de anaquel")+"&body="+encodeURIComponent(m);
+  $("dT").textContent=f2(t.c);$("dS").textContent=t.u+" unidades · gana "+f2(t.g);
+  $("mOut").firstChild.nodeValue="$"+Math.round(t.g*reps*4.3).toLocaleString("es-VE");
+  $("mTxt").textContent="de ganancia al mes si vende "+(reps===1?"una vez":reps+" veces")+" por semana el pedido que armó ("+f2(t.g)+" cada vez). Entregamos martes, jueves y sábado.";
+  paintAdds();try{localStorage.setItem("alleria_pedido3",JSON.stringify(Q))}catch(e){}}
+rack.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.m||b.dataset.p;Q[id]=Math.max(0,Math.min(99,Q[id]+(b.dataset.p?1:-1)));calc()});
+$("reset").addEventListener("click",()=>{load();calc()});
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{reps=+b.dataset.r;document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));calc()}));
+calc();
+$("ctaDeg").href=wa("Hola Alleria. Vi la propuesta para anaquel y me gustaría agendar una degustación en mi tienda.");
+
+/* testimonios del catálogo Alleria */
+const T=[["Las focaccias son las mejores que he probado.","Paola V."],["¡Quiero ciabatta con aceitunas todos los días!","Pedro C."],["El pan integral de masa madre es una deliciosa sorpresa.","Ángela L."],["Saludables, deliciosos y a buen precio. La mejor combinación.","Duglas G."],["El siciliano es mi favorito.","Jorge A."]];
+const qw=$("qwrap"),dots=$("dots");let qi=0,qtm;
+T.forEach((t,i)=>{const d=document.createElement("div");d.className="qt"+(i?"":" on");d.innerHTML=`<span class="stars" aria-label="5 estrellas">★★★★★</span><p>«${t[0]}»</p><span>— ${t[1]}</span>`;qw.appendChild(d);
+  const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Testimonio "+(i+1));if(!i)b.className="on";b.onclick=()=>{show(i);clearInterval(qtm)};dots.appendChild(b)});
+function show(i){qi=i;[...qw.children].forEach((x,j)=>x.classList.toggle("on",j===i));[...dots.children].forEach((x,j)=>x.classList.toggle("on",j===i))}
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches)qtm=setInterval(()=>show((qi+1)%T.length),4500);
+
+/* condiciones */
+const ICS={swap:'<path d="M4 7h13l-3-3M20 17H7l3 3"/>',card:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/>',box:'<path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7"/>',truck:'<path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/>',chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',chat:'<path d="M21 12a8 8 0 0 1-11.7 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/>',star:'<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9z"/>',cam:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>',bill:'<path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/>'};
+const C=[
+ ["swap","Cambio de pan, siempre","Lo que no se venda, se cambia","El pan que no se venda o llegue dañado se lo cambiamos por pan fresco en la siguiente entrega. Confiamos en lo que hacemos.",1],
+ ["card","Crédito de 7 días","Desde el primer pedido","El cupo arranca en $55 y sube a $110 cuando la tienda paga dos veces a tiempo. Con un atraso de más de 7 días, los pedidos pasan a contado hasta ponerse al día.",1],
+ ["box","Pedido mínimo $50","Para precio de mayorista","Por debajo de ese monto lo atendemos a precio de tienda."],
+ ["truck","Martes, jueves y sábado","Entregas programadas","Le llevamos poco y venimos seguido, para que su anaquel siempre tenga pan reciente. Con pedidos menores ajustamos a una o dos entregas."],
+ ["chart","Lote inicial y acompañamiento","Sin consignación","Le decimos cuánto pedir de cada pan para que rote sin sobrantes y ajustamos entrega por entrega según sus ventas."],
+ ["chat","Pedidos por WhatsApp","Un asesor dedicado","Directo, sin intermediarios. Un contacto que lo ayuda con el producto y el maridaje."],
+ ["star","Degustación sin riesgo","Pruebe antes de comprometerse","Llevamos pan recién horneado a su tienda para que usted y su equipo lo prueben antes de ampliar su oferta."],
+ ["cam","Instagram: 15 mil seguidores","Clientes para su tienda","La promocionamos al menos una vez por semana etiquetando su tienda, y le dejamos habladores para el anaquel."],
+ ["bill","USD a tasa BCV","Factura el mismo día","Nota de entrega en USD, pagadera en bolívares a la tasa oficial del BCV del día del pago. Si necesita factura, se emite ese mismo día."]
+];
+const cg=$("cg");C.forEach(c=>{const d=document.createElement("details");if(c[4])d.className="hi";
+  d.innerHTML=`<summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICS[c[0]]}</svg></span><span><b>${c[1]}</b><small>${c[2]}</small></span><span class="ch" aria-hidden="true">+</span></summary><p>${c[3]}</p>`;cg.appendChild(d)});
+
+/* animaciones */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const path=$("path");let pathDone=false;
+function runPath(){if(pathDone)return;pathDone=true;const ds=[...path.querySelectorAll(".d")],ls=[...path.querySelectorAll(".ln")],end=path.querySelector(".end");
+  ds.forEach((d,i)=>setTimeout(()=>{d.classList.add("on");ls[i].classList.add("on");if(i===ds.length-1)setTimeout(()=>end.classList.add("on"),300)},250+i*280))}
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){runPath();o.disconnect()}}),{threshold:.6}).observe(path);
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.querySelectorAll("[data-count]").forEach(el=>{const to=+el.dataset.count,pre=el.dataset.pre||"",suf=el.dataset.suf||"";let t0=null;
+  const st=ts=>{t0=t0||ts;const k=Math.min(1,(ts-t0)/1100);el.textContent=pre+Math.round(to*(1-Math.pow(1-k,3)))+suf;if(k<1)requestAnimationFrame(st)};el.textContent=pre+"0"+suf;setTimeout(()=>requestAnimationFrame(st),350)});
+
+/* navegación, progreso y barra móvil */
+const links=[...document.querySelectorAll("#steps a")],secs=links.map(a=>document.querySelector(a.getAttribute("href"))),prog=$("prog"),dock=$("dock"),sum=document.querySelector(".sum");
 function onScroll(){const h=document.documentElement;prog.style.width=Math.min(100,h.scrollTop/((h.scrollHeight-h.clientHeight)||1)*100)+"%";
   let k=-1;secs.forEach((s,j)=>{if(s.getBoundingClientRect().top<innerHeight*.4)k=j});
-  links.forEach((a,j)=>{const on=j===k;if(on&&!a.classList.contains("on")){const st=document.getElementById("steps");st.scrollTo({left:a.offsetLeft-st.clientWidth/2+a.clientWidth/2,behavior:"smooth"})}a.classList.toggle("on",on)})}
+  links.forEach((a,j)=>{const on=j===k;if(on&&!a.classList.contains("on")){const st=$("steps");st.scrollTo({left:a.offsetLeft-st.clientWidth/2+a.clientWidth/2,behavior:"smooth"})}a.classList.toggle("on",on)});
+  const r=sum.getBoundingClientRect();dock.classList.toggle("show",h.scrollTop>innerHeight*.8&&!(r.top<innerHeight&&r.bottom>0))}
 addEventListener("scroll",onScroll,{passive:true});onScroll();
 })();
 </script>

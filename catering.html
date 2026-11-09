@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Catering de masa madre · Alleria</title>
+<title>Catering gourmet de paninis de masa madre · Alleria</title>
 <meta name="description" content="Catering de masa madre para empresas en Barquisimeto: te calculamos las cantidades, te llevamos todo empacado y listo para repartir, o montamos el evento completo.">
 <meta name="robots" content="noindex, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tú quedas bien. Nosotros nos encargamos. · Catering Alleria">
-<meta property="og:description" content="Catering de masa madre para empresas: empacado y listo para repartir, o el evento montado completo.">
+<meta property="og:title" content="Catering gourmet de paninis de masa madre · Alleria">
+<meta property="og:description" content="Tú quedas bien con paninis de masa madre en tu reunión o evento. Te llevamos todo listo para repartir, o montamos el evento completo. Barquisimeto.">
 <meta property="og:image" content="https://alleria-website.vercel.app/assets/catering/og.jpg">
 <meta property="og:url" content="https://alleria-website.vercel.app/catering">
 <meta name="twitter:card" content="summary_large_image">
@@ -305,7 +305,8 @@ footer .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px
 footer b{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
 footer a{color:var(--crema)}
 .dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--tinta);color:var(--crema);border-radius:20px;padding:10px 10px 10px 16px;display:none;align-items:center;gap:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(160%);transition:transform .35s var(--ease)}
-.dock.show{transform:none}
+.dock:not(.show){visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+.dock.show{transform:none;visibility:visible}
 .dock .t{flex:1;min-width:0;line-height:1.2;font-size:13px}
 .dock .t b{display:block;font-size:16px}
 .dock .btn{padding:12px 16px;font-size:14.5px}
@@ -368,9 +369,9 @@ footer a{color:var(--crema)}
   <div class="awning" aria-hidden="true"></div>
   <div class="wrap hgrid">
     <div>
-      <span class="kick">Catering de masa madre para empresas</span>
-      <h1>Tú quedas bien.<span>Nosotros nos encargamos.</span></h1>
-      <p class="lede">¿Te tocó organizar la comida de la reunión, el taller o la celebración? ¡Cuenta con nosotros! Dinos cuántos son: te calculamos las cantidades y te llevamos todo empacado, a tiempo y listo para repartir.</p>
+      <span class="kick">Catering gourmet para empresas · Barquisimeto</span>
+      <h1>Tú quedas bien<span>con paninis de masa madre.</span></h1>
+      <p class="lede">Paninis de focaccia, bocaditos, dulces y bebidas para tu reunión, taller o celebración. ¿Te tocó organizarlo? ¡Cuenta con nosotros! Dinos cuántos son: te calculamos las cantidades y te llevamos todo empacado, a tiempo y listo para repartir. Tú quedas bien; nosotros nos encargamos.</p>
       <div class="chips">
         <span class="chip"><i>✓</i>Te calculamos cuánto pedir</span>
         <span class="chip"><i>✓</i>Empacado y listo para repartir</span>

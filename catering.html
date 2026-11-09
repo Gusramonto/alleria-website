@@ -80,13 +80,13 @@ p{margin:0}
 .chip{display:inline-flex;align-items:center;gap:8px;background:var(--crema);border-radius:999px;padding:9px 14px;font-weight:700;font-size:14.5px;box-shadow:0 8px 18px -12px rgba(51,32,26,.6)}
 .chip i{width:22px;height:22px;border-radius:50%;background:var(--coral);display:grid;place-items:center;color:#fff;font-style:normal;font-size:13px}
 .orbit{position:relative;aspect-ratio:1/1;max-width:540px;margin-inline:auto;width:100%}
-.orbit .plate{position:absolute;inset:10%;border-radius:50%;overflow:hidden;border:14px solid var(--crema);box-shadow:0 40px 60px -30px rgba(51,32,26,.7)}
+.orbit .plate{position:absolute;inset:4%;border-radius:50%;overflow:hidden;border:14px solid var(--crema);box-shadow:0 40px 60px -30px rgba(51,32,26,.7)}
 .orbit .plate img{width:100%;height:100%;object-fit:cover}
 .orbit .fl{position:absolute;filter:drop-shadow(0 18px 16px rgba(51,32,26,.35));z-index:3}
-.orbit .o2{width:30%;left:-2%;top:4%}
-.orbit .o3{width:24%;right:0;top:2%}
-.orbit .o4{width:30%;right:-2%;bottom:8%}
-.orbit .o5{width:28%;left:0;bottom:6%}
+.orbit .o2{width:24%;left:-6%;top:0}
+.orbit .o3{width:19%;right:-4%;top:-2%}
+.orbit .o4{width:25%;right:-7%;bottom:6%}
+.orbit .o5{width:22%;left:-6%;bottom:4%}
 .orbit .tag{position:absolute;z-index:6;background:var(--coral);color:#fff;font-family:var(--hand);font-size:24px;padding:4px 16px;border-radius:999px;transform:rotate(-6deg);left:30%;bottom:1%;box-shadow:0 10px 18px -10px rgba(120,30,0,.8);white-space:nowrap}
 @media (prefers-reduced-motion:no-preference){
   .orbit .o2,.orbit .o4{animation:fl 6s ease-in-out infinite}
@@ -94,25 +94,56 @@ p{margin:0}
   @keyframes fl{50%{transform:translateY(-10px) rotate(2deg)}}
 }
 
+.quick{background:var(--tinta);color:var(--crema)}
+.quick .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-block:16px}
+.quick p{font-size:16px;flex:1;min-width:220px}
+.quick p b{color:var(--sol)}
+.quick .btn{padding:12px 18px;font-size:15px}
+.quick .btn.ghost{color:var(--crema)}
+.fwa{position:fixed;right:18px;bottom:18px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);text-decoration:none}
+.fwa svg{width:34px;height:34px;fill:#fff}
+.fwa span{position:absolute;right:72px;background:var(--tinta);color:var(--crema);font-weight:700;font-size:14px;padding:8px 12px;border-radius:12px;white-space:nowrap}
 /* preocupaciones */
 .worry{background:var(--crema)}
 .wgrid6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.wc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1000px;min-height:210px;display:block}
-.wc .in{position:relative;width:100%;height:100%;min-height:210px;transition:transform .7s var(--ease);transform-style:preserve-3d}
+.wc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1000px;min-height:230px;display:block}
+.wc .in{position:relative;width:100%;height:100%;min-height:230px;transition:transform .7s var(--ease);transform-style:preserve-3d}
 .wc.flip .in{transform:rotateY(180deg)}
 .wc .f,.wc .b{position:absolute;inset:0;border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:10px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
 .wc .f{background:var(--blanco);box-shadow:0 16px 30px -24px rgba(51,32,26,.7);border:2px solid var(--linea)}
-.wc .f .q{font-family:var(--block);font-size:24px;line-height:1.05;color:var(--tinta)}
-.wc .f p{font-size:14.5px;color:var(--tinta2)}
-.wc .f .t{margin-top:auto;font-size:13px;font-weight:700;color:var(--coral)}
+.wc .f .q{font-family:var(--block);font-size:25px;line-height:1.05;color:var(--tinta)}
+.wc .f p{font-size:16.5px;line-height:1.4;color:var(--tinta);font-weight:500}
+.wc .f .t{margin-top:auto;font-size:14px;font-weight:700;color:var(--coral)}
 .wc .b{background:var(--tinta);color:var(--crema);transform:rotateY(180deg)}
 .wc .b .s{font-family:var(--block);font-size:20px;color:var(--sol);line-height:1.05}
-.wc .b p{font-size:15px;color:rgba(253,249,238,.88)}
+.wc .b p{font-size:16.5px;line-height:1.4;color:var(--crema)}
 .wc:focus-visible{outline:3px solid var(--cielo3);outline-offset:4px;border-radius:22px}
 .wfoot{margin-top:20px;font-family:var(--hand);font-size:26px;color:var(--coral)}
 
 /* lo que más piden */
 .menu{background:var(--cielo2)}
+.sw2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-bottom:16px}
+.big{background:var(--blanco);border-radius:26px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);box-shadow:0 18px 30px -26px rgba(51,32,26,.8)}
+.big .im{position:relative;background:var(--crema2);min-height:250px}
+.big .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.big .im img.cut{object-fit:contain;padding:6%}
+.big .badge{position:absolute;left:12px;top:12px;background:var(--sol);font-weight:700;font-size:12.5px;padding:5px 11px;border-radius:999px;z-index:1}
+.big .badge.b2{background:var(--cielo)}
+.big .bd{padding:20px;display:flex;flex-direction:column;gap:8px}
+.big h3{font-size:26px}
+.big p{font-size:15px;color:var(--tinta2)}
+.price{font-family:var(--block);font-size:34px;color:var(--tinta);line-height:1;margin-top:auto}
+.price small{font-family:var(--sans);font-size:13px;color:var(--tinta2);font-weight:500;margin-left:4px}
+.prem3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:34px}
+.pc{background:rgba(255,255,255,.7);border-radius:18px;padding:10px;display:grid;grid-template-columns:70px 1fr auto;gap:12px;align-items:center}
+.pc .th{width:70px;height:70px;border-radius:14px;overflow:hidden;background:var(--coral2);display:grid;place-items:center}
+.pc .th img{width:100%;height:100%;object-fit:cover}
+.pc .th i{font-style:normal;font-size:30px}
+.pc b{display:block;font-size:15px}
+.pc small{display:block;font-size:12.5px;color:var(--tinta2);line-height:1.3}
+.pc .pr{font-family:var(--block);font-size:20px;color:var(--tinta)}
+.subh{font-family:var(--block);font-weight:400;font-size:24px;color:var(--tinta);margin:6px 0 12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.subh span{font-family:var(--sans);font-size:14px;color:var(--tinta2)}
 .mgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .mc{background:var(--blanco);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 30px -26px rgba(51,32,26,.8)}
 .mc .im{aspect-ratio:4/3;position:relative;overflow:hidden;background:var(--crema2)}
@@ -124,6 +155,9 @@ p{margin:0}
 .mc p{font-size:14.5px;color:var(--tinta2);line-height:1.45}
 .opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
 .opts span{font-size:12.5px;font-weight:700;background:var(--crema);border:1px solid var(--linea);border-radius:999px;padding:4px 10px}
+.opts span em{font-style:normal;color:var(--coral);margin-left:4px}
+.mc .from{font-family:var(--block);font-size:22px;color:var(--tinta)}
+.mc .from small{font-family:var(--sans);font-size:12.5px;color:var(--tinta2);font-weight:500}
 .diet{margin-top:18px;display:flex;gap:12px;align-items:center;background:var(--blanco);border-radius:18px;padding:14px 18px;font-size:15px;border:2px dashed var(--cielo)}
 .diet b{color:var(--cielo3)}
 .prem{margin-top:34px;border-top:2px dashed rgba(60,141,191,.35);padding-top:26px}
@@ -218,11 +252,25 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .out .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;font-weight:700}
 .out h3{color:var(--sol);font-size:30px}
 .out ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
-.out li{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(253,249,238,.18)}
-.out li img{width:44px;height:44px;object-fit:contain}
+.out li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(253,249,238,.18)}
+.out li .rt{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.stp{display:inline-flex;align-items:center;background:rgba(255,255,255,.1);border-radius:999px}
+.stp button{all:unset;cursor:pointer;width:30px;height:30px;display:grid;place-items:center;font-size:18px;font-weight:700;color:var(--crema)}
+.stp button:focus-visible{outline:2px solid var(--sol)}
+.stp output{min-width:28px;text-align:center;font-family:var(--block);font-size:16px;color:var(--sol)}
+.out li .sub{font-size:12.5px;opacity:.8}
+.addrow{display:flex;gap:8px}
+.addrow select{flex:1;min-width:0;font:inherit;font-size:14.5px;padding:10px 12px;border-radius:12px;border:0;background:var(--crema);color:var(--tinta)}
+.addrow button{all:unset;cursor:pointer;background:var(--sol);color:var(--tinta);font-weight:700;font-size:14px;padding:10px 14px;border-radius:12px}
+.tot{display:flex;flex-direction:column;gap:6px;border-top:2px solid rgba(253,249,238,.25);padding-top:12px}
+.tot div{display:flex;justify-content:space-between;font-size:14.5px}
+.tot .gt{font-size:16px;font-weight:700}
+.tot .gt b{font-family:var(--block);font-size:30px;color:var(--sol);font-weight:400}
+.reset2{all:unset;cursor:pointer;font-size:13px;text-decoration:underline;opacity:.8;align-self:flex-start}
+.out li img{width:40px;height:40px;object-fit:contain}
 .out li b{font-size:15px;display:block;line-height:1.2}
 .out li small{font-size:12.5px;opacity:.7}
-.out li .q{font-family:var(--block);font-size:20px;color:var(--sol);white-space:nowrap}
+
 .out .inc{font-size:13.5px;background:rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;line-height:1.45}
 .out .btn{width:100%}
 .out .fine{font-size:12.5px;opacity:.7;text-align:center}
@@ -264,6 +312,8 @@ footer a{color:var(--crema)}
 
 @media (max-width:980px){
   .wgrid6,.mgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sw2{grid-template-columns:minmax(0,1fr)}
+  .prem3{grid-template-columns:minmax(0,1fr)}
   .plist{grid-template-columns:repeat(2,minmax(0,1fr))}
   .steps3,.wgrid{grid-template-columns:minmax(0,1fr)}
   .out{position:static}
@@ -279,10 +329,14 @@ footer a{color:var(--crema)}
   footer{padding-bottom:110px}
   footer .cols{grid-template-columns:minmax(0,1fr)}
   .dock{display:flex}
+  .fwa{display:none}
   .awning{height:64px}
 }
 @media (max-width:560px){
   .wgrid6,.mgrid,.plist{grid-template-columns:minmax(0,1fr)}
+  .big{grid-template-columns:minmax(0,1fr)}
+  .big .im{min-height:220px}
+  .quick .btn{flex:1}
   .wc,.wc .in{min-height:190px}
   .svc{grid-template-columns:minmax(0,1fr)}
   .ppl output{font-size:46px;min-width:76px}
@@ -321,12 +375,12 @@ footer a{color:var(--crema)}
         <span class="chip"><i>✓</i>Le calculamos cuánto pedir</span>
         <span class="chip"><i>✓</i>Empacado y listo para repartir</span>
         <span class="chip"><i>✓</i>Cotización y factura</span>
-        <span class="chip"><i>✓</i>Opciones sin gluten y sin azúcar</span>
+        <span class="chip"><i>✓</i>100 % masa madre</span>
       </div>
-      <div class="row"><a class="btn coral" href="#planificador">Calcular mi pedido</a><a class="btn ghost" href="#menu">Ver lo que más piden</a></div>
+      <div class="row"><a class="btn wa" id="hWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Pedir por WhatsApp</a><a class="btn coral" href="#planificador">Calcular mi pedido</a><a class="btn ghost" href="/assets/catering/menu-catering-alleria.pdf" download>Descargar el menú</a></div>
     </div>
     <div class="orbit" aria-hidden="true">
-      <div class="plate"><img src="/assets/catering/ph/bandeja.jpg" alt=""></div>
+      <div class="plate"><img src="/assets/catering/ph/empacado-papel.jpg" alt=""></div>
       <img class="fl o2" src="/assets/catering/cut/galleta-choco.webp" alt="">
       <img class="fl o3" src="/assets/catering/cut/lim-rosada.webp" alt="">
       <img class="fl o4" src="/assets/catering/cut/chiqui.webp" alt="">
@@ -335,6 +389,14 @@ footer a{color:var(--crema)}
     </div>
   </div>
 </header>
+
+<div class="quick">
+  <div class="wrap">
+    <p><b>¿Sin tiempo para leer?</b> Escríbanos cuántos son y la fecha. Nosotros le armamos el pedido.</p>
+    <a class="btn wa" id="qWa" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <a class="btn ghost" href="/assets/catering/menu-catering-alleria.pdf" download>Descargar menú con precios (PDF)</a>
+  </div>
+</div>
 
 <section id="preocupa" class="worry">
   <div class="wrap">
@@ -355,18 +417,24 @@ footer a{color:var(--crema)}
       <h2>Sencillo, rico y fácil de repartir</h2>
       <p class="lede">Lo que las empresas nos piden una y otra vez. Todo en masa madre, hecho el mismo día.</p>
     </div>
-    <div class="mgrid">
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/empacado-papel.jpg" alt="Sándwiches de focaccia empacados en papel Alleria"><span class="badge">El más pedido</span></div><div class="bd"><h3>Sándwich de focaccia</h3><p>Focaccia de masa madre de 8 × 12 cm con jamón y queso gouda, y su toque especial. Empacado uno por uno.</p><div class="opts"><span>Pesto</span><span>Tocineta crispy</span><span>Pimentón asado</span></div></div></article>
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/bocadito.jpg" alt="Bocadito de focaccia"><span class="badge">Para el coffee break</span></div><div class="bd"><h3>Bandeja de bocaditos</h3><p>Bocaditos de focaccia para picar de pie, entre una conversación y otra. Mínimo 12 por bandeja, sabor a convenir.</p><div class="opts"><span>12 bocaditos</span><span>Sin cubiertos</span></div></div></article>
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/focaccia-bandeja.jpg" alt="Bandeja de focaccia de tomate"></div><div class="bd"><h3>Bandeja de focaccia</h3><p>Una bandeja de 26 × 40 cm para el centro de la mesa, con salsa para untar.</p><div class="opts"><span>Tomate</span><span>Mantequilla de ajo</span><span>Aceitunas</span><span>Pesto cremoso</span><span>Napolitana cremosa</span></div></div></article>
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/galletas.jpg" alt="Galletas de avena"></div><div class="bd"><h3>Galletas</h3><p>En tamaño grande o mediano, y palmeritas de masa madre.</p><div class="opts"><span>Avena y arándanos</span><span>Chispas de chocolate</span><span>Polvorosa de almendra</span><span>Zanahoria</span><span>Sin gluten y sin azúcar</span></div></div></article>
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/marmoleado.jpg" alt="Ponqué marmoleado"></div><div class="bd"><h3>Postres</h3><p>En porción individual, o en versión degustación para compartir.</p><div class="opts"><span>Tiramisú</span><span>Tres leches</span><span>Ponqué de limón</span><span>Marmoleado</span><span>Mini brownies</span><span>Mini cupcakes</span></div></div></article>
-      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/jarras.jpg" alt="Jarras de limonada y té"></div><div class="bd"><h3>Bebidas</h3><p>Por litro, en jarra, o jugos naturales en envase individual.</p><div class="opts"><span>Limonada menta</span><span>Limonada rosada</span><span>Té de frutos rojos</span><span>Jugo de naranja</span><span>Fresa</span><span>Parchita</span></div></div></article>
+    <p class="subh">Sándwiches <span>Focaccia de masa madre de 8 × 12 cm, empacada uno por uno</span></p>
+    <div class="sw2">
+      <article class="big rv"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Sándwich de focaccia con pollo, pesto, gouda y tocineta"><span class="badge">El más pedido</span></div><div class="bd"><h3>Pollo pesto</h3><p>Focaccia de masa madre con pollo, pesto, queso gouda y tocineta.</p><span class="price">$6,5<small>c/u</small></span></div></article>
+      <article class="big rv"><div class="im"><img src="/assets/catering/ph/sandwich-papel.jpg" alt="Sándwich de focaccia empacado en papel Alleria"><span class="badge b2">El más económico</span></div><div class="bd"><h3>Sencillo</h3><p>Focaccia de masa madre con jamón y queso gouda, y su toque especial.</p><div class="opts"><span>Pesto</span><span>Tocineta crispy</span><span>Pimentón asado</span></div><span class="price">$4,5<small>c/u</small></span></div></article>
     </div>
-    <p class="diet rv"><span style="font-size:26px">🌱</span><span>¿Alguien de su equipo no come gluten, azúcar o carne? <b>Tenemos galletas sin gluten y sin azúcar, y sándwich capresse.</b> Nadie se queda sin comer.</span></p>
-    <div class="prem rv">
-      <div class="ph"><b>¿Una ocasión especial? Sándwiches premium</b><span>Toque «Elegir» y se suman a su pedido.</span></div>
-      <div class="plist" id="plist"></div>
+    <div class="prem3 rv">
+      <div class="pc"><span class="th"><i>🍅</i></span><div><b>Capresse</b><small>Mozzarella, pesto y tomate</small></div><span class="pr">$6</span></div>
+      <div class="pc"><span class="th"><img src="/assets/catering/ph/diosa.jpg" alt=""></span><div><b>Prosciutto</b><small>Pesto, mozzarella cremosa, rúgula y pimentón asado</small></div><span class="pr">$10</span></div>
+      <div class="pc"><span class="th"><img src="/assets/catering/ph/signora.jpg" alt=""></span><div><b>Mortadella con pistacho</b><small>Confit de tomate, pesto, parmesano y rúgula</small></div><span class="pr">$10</span></div>
+    </div>
+    <p class="subh">Para compartir, dulces y bebidas</p>
+    <div class="mgrid">
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/bandeja.jpg" alt="Bandeja de bocaditos de focaccia"><span class="badge">Para el coffee break</span></div><div class="bd"><h3>Bandeja de bocaditos</h3><p>12 bocaditos de focaccia del sándwich sencillo, para picar de pie. Sabor a convenir.</p><span class="from">$9<small> la bandeja de 12</small></span></div></article>
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/focaccia-bandeja.jpg" alt="Bandeja de focaccia de tomate"></div><div class="bd"><h3>Bandeja de focaccia</h3><p>26 × 40 cm para el centro de la mesa, con salsa para untar: pesto cremoso o napolitana cremosa.</p><div class="opts"><span>Tomate</span><span>Mantequilla de ajo</span><span>Aceitunas</span></div><span class="from">$20<small> la bandeja</small></span></div></article>
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/galletas.jpg" alt="Galletas de avena"></div><div class="bd"><h3>Galletas</h3><p>Tamaño mediano o grande.</p><div class="opts"><span>Avena y arándanos<em>$2 / $3</em></span><span>Polvorosa de almendra<em>$2 / $3</em></span><span>Chispas de chocolate<em>$2,5 / $3,5</em></span><span>Palmeritas<em>2 mini $1 · grande $1</em></span></div></div></article>
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/marmoleado.jpg" alt="Ponqué marmoleado"></div><div class="bd"><h3>Postres</h3><p>En porción individual o para compartir.</p><div class="opts"><span>Ponqué de limón<em>$3</em></span><span>Ponqué marmoleado<em>$3,5</em></span><span>Mini brownies × 12<em>$8</em></span><span>Mini cupcakes × 12<em>$6</em></span></div></div></article>
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/jarras.jpg" alt="Jarras de limonada y té"></div><div class="bd"><h3>Bebidas</h3><p>Por litro en jarra, o jugos naturales en envase individual.</p><div class="opts"><span>Limonada menta<em>$7 L</em></span><span>Limonada rosada<em>$8 L</em></span><span>Té de frutos rojos<em>$7 L</em></span><span>Jugo naranja, fresa o parchita<em>$2</em></span></div></div></article>
+      <article class="mc rv"><div class="im"><img src="/assets/catering/ph/montaje-girasoles.jpg" alt="Mesa montada por Alleria"><span class="badge">Opcional</span></div><div class="bd"><h3>Experiencia Alleria</h3><p>Montamos, preparamos al momento, servimos café filtrado y recogemos. Se suma a cualquier pedido.</p><span class="from">+$70<small> por evento</small></span></div></article>
     </div>
   </div>
 </section>
@@ -393,9 +461,9 @@ footer a{color:var(--crema)}
       <article class="oc rv">
         <div class="gal"><img src="/assets/catering/ph/montaje-girasoles.jpg" alt="Mesa montada por Alleria con girasoles"><img src="/assets/catering/ph/montaje-plancha.jpg" alt="Plancha para sándwiches en el evento"><img src="/assets/catering/ph/jarras.jpg" alt="Jarras de bebidas"></div>
         <div class="bd">
-          <div class="lab"><em>2</em><span>Experiencia completa</span></div>
+          <div class="lab"><em>2</em><span>Experiencia completa · +$70</span></div>
           <h3>Experiencia Alleria</h3>
-          <p>Vamos a su evento y nos ocupamos de todo. Usted solo recibe a sus invitados.</p>
+          <p>Vamos a su evento y nos ocupamos de todo. Usted solo recibe a sus invitados. Se suman $70 por evento a lo que pida.</p>
           <ul><li>Montamos la mesa antes de que lleguen sus invitados</li><li>Preparamos los sándwiches al momento, calientes</li><li>Servimos café filtrado de especialidad</li><li>Al final recogemos y dejamos todo en orden</li></ul>
           <div class="brew"><div><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"><span>Guayabo · 6 a 8 tazas</span></div><div><img src="/assets/catering/ph/chemex.jpg" alt="Café filtrado en Chemex"><span>Chemex · 5 tazas</span></div></div>
           <span class="for">Para lanzamientos, visitas de clientes, aniversarios y cierres de año.</span>
@@ -411,7 +479,7 @@ footer a{color:var(--crema)}
     <div class="head rv">
       <span class="kick">Calcule su pedido</span>
       <h2>¿Cuánto pedir? Se lo decimos en 30 segundos</h2>
-      <p class="lede">Elija la ocasión, cuántas personas son y la forma de servicio. Le mostramos cuánto de cada cosa, para que no falte ni sobre. Después nos lo envía y le respondemos con el precio.</p>
+      <p class="lede">Elija la ocasión, cuántas personas son y la forma de servicio. Le sugerimos cuánto de cada cosa; usted suma, quita o agrega lo que quiera y ve el total al instante.</p>
     </div>
     <div class="steps3">
       <div class="ctrl rv">
@@ -422,7 +490,7 @@ footer a{color:var(--crema)}
         <p class="lbl"><em>3</em>¿Cómo lo quiere?</p>
         <div class="svc" role="group" aria-label="Forma de servicio">
           <button type="button" class="sv" data-s="ent" aria-pressed="true"><b>Entrega lista <span class="star">La más pedida</span></b><small>Todo empacado y listo para repartir, a la hora acordada.</small></button>
-          <button type="button" class="sv" data-s="exp" aria-pressed="false"><b>Experiencia Alleria</b><small>Montamos, preparamos al momento, servimos café filtrado y recogemos.</small></button>
+          <button type="button" class="sv" data-s="exp" aria-pressed="false"><b>Experiencia Alleria</b><small>Montamos, preparamos al momento, servimos café filtrado y recogemos. +$70.</small></button>
         </div>
         <div class="table" id="table" aria-hidden="true"><div class="top"></div><div class="cloth"></div></div>
         <div class="tcap" aria-hidden="true"><span class="barista" id="barista">☕ Equipo Alleria sirviendo en su evento</span><span class="more" id="more"></span></div>
@@ -431,9 +499,12 @@ footer a{color:var(--crema)}
         <span class="k" id="oK">Su pedido</span>
         <h3 id="oT"></h3>
         <ul id="oList"></ul>
+        <div class="addrow"><label class="sr" for="addSel" style="position:absolute;left:-9999px">Agregar producto</label><select id="addSel"></select><button type="button" id="addBtn">+ Agregar</button></div>
+        <div class="tot" id="oTot"></div>
         <div class="inc" id="oInc"></div>
         <a class="btn wa" id="oWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Pedir mi cotización</a>
-        <span class="fine">Es una sugerencia: la ajustamos con usted. Le respondemos con el precio exacto.</span>
+        <button type="button" class="reset2" id="reset">Volver a la sugerencia</button>
+        <span class="fine">Total estimado. Le confirmamos el precio final en la cotización.</span>
       </aside>
     </div>
   </div>
@@ -460,8 +531,8 @@ footer a{color:var(--crema)}
 <section class="close">
   <div class="wrap rv">
     <h2>Usted queda bien.<span>Nosotros nos encargamos.</span></h2>
-    <p class="lede">Díganos la fecha, cuántos son y la ocasión. Le respondemos con el pedido y su precio.</p>
-    <div class="row"><a class="btn ink" id="cWa" target="_blank" rel="noopener">Escribirnos por WhatsApp</a><a class="btn ghost" href="#planificador">Calcular mi pedido</a></div>
+    <p class="lede">Díganos la fecha, cuántos son y la ocasión. Le respondemos con el pedido y su precio. ¿Prefiere que lo llamemos? Escríbanos y lo llamamos.</p>
+    <div class="row"><a class="btn ink" id="cWa" target="_blank" rel="noopener">Escribirnos por WhatsApp</a><a class="btn ghost" href="/assets/catering/menu-catering-alleria.pdf" download>Descargar el menú (PDF)</a></div>
   </div>
 </section>
 
@@ -473,71 +544,79 @@ footer a{color:var(--crema)}
   </div>
 </footer>
 
-<div class="dock" id="dock"><div class="t"><b id="dT"></b>Cotización por WhatsApp</div><a class="btn wa" id="dWa" target="_blank" rel="noopener">Pedir</a></div>
+<a class="fwa" id="fWa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><span>¿Le ayudamos?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg></a>
+<div class="dock" id="dock"><div class="t"><b id="dT"></b><span id="dS">Total estimado</span></div><a class="btn wa" id="dWa" target="_blank" rel="noopener">WhatsApp</a></div>
 
 <script>
 (function(){
 const WA="584122632864";const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
 const $=id=>document.getElementById(id);
 const CUT=n=>"/assets/catering/cut/"+n+".webp", PH=n=>"/assets/catering/ph/"+n+".jpg";
-const C=Math.ceil;
+const C=Math.ceil, f2=n=>"$"+(Math.round(n*100)/100).toFixed(2).replace(".",",").replace(",00","");
+const EXP_FEE=70;
 
 /* ---- preocupaciones ---- */
 const W=[
- ["¿Cuánto pido?","Si falta, queda mal. Si sobra, se botó el presupuesto.","Se lo calculamos","Nos dice cuántos son y la ocasión, y le decimos cuánto de cada cosa. Más abajo lo puede calcular usted mismo."],
+ ["¿Otra vez lo mismo?","Los mismos pasapalos de siempre, y nadie los recuerda.","Algo que se comenta","Pan de masa madre artesanal, hecho ese mismo día. Sus invitados lo notan, y saben quién lo eligió."],
+ ["¿Cuánto pido?","Si falta, queda mal. Si sobra, se botó el presupuesto.","Se lo calculamos","Nos dice cuántos son y la ocasión, y le decimos cuánto de cada cosa. Más abajo lo puede calcular usted mismo, con precios."],
  ["¿Llegará a tiempo?","La reunión empieza a las 9 y la comida no puede llegar a las 9 y media.","Hora acordada, hora cumplida","Confirmamos la hora de entrega con usted y llegamos antes de que empiece."],
  ["¿Cómo lo reparto?","Bandejas, servilletas, cortar, servir… y la reunión ya empezó.","Listo para entregar","Cada sándwich viene empacado con nuestra marca. Se reparte en un minuto, sin platos ni cubiertos."],
- ["¿Y quien no come…?","Siempre hay alguien sin gluten, sin azúcar o sin carne.","Nadie se queda sin comer","Galletas sin gluten y sin azúcar, y sándwich capresse. Díganos cuántos y lo incluimos."],
- ["¿Cómo lo justifico?","Administración pide cotización y factura antes de aprobar.","Todo por escrito","Le enviamos la cotización para aprobar y emitimos factura."],
- ["¿Otra vez lo mismo?","Los mismos pasapalos de siempre, y nadie los recuerda.","Algo que se comenta","Pan de masa madre artesanal, hecho ese mismo día. Sus invitados lo notan, y saben quién lo eligió."]
+ ["¿Y si somos muchos?","No es lo mismo atender a 8 que a 80.","De 6 a más de 100","Mismo cuidado para un equipo pequeño que para toda la empresa. Le ajustamos cantidades y entregas."],
+ ["¿Cómo lo justifico?","Administración pide cotización y factura antes de aprobar.","Todo por escrito","Le enviamos la cotización para aprobar y emitimos factura."]
 ];
 const wg=$("worries");
-W.forEach((w,i)=>{const b=document.createElement("button");b.type="button";b.className="wc rv";b.setAttribute("aria-label",w[0]+" Toque para ver la solución");
+W.forEach(w=>{const b=document.createElement("button");b.type="button";b.className="wc rv";b.setAttribute("aria-label",w[0]+" Toque para ver la solución");
   b.innerHTML=`<div class="in"><div class="f"><span class="q">${w[0]}</span><p>${w[1]}</p><span class="t">Toque para ver cómo lo resolvemos →</span></div><div class="b"><span class="s">${w[2]}</span><p>${w[3]}</p></div></div>`;
   b.onclick=()=>b.classList.toggle("flip");wg.appendChild(b)});
 
-/* ---- premium (catálogo de catering) ---- */
-const PREM=[
- {id:"prosc",nm:"Prosciutto",d:"Prosciutto, pesto, mozzarella cremosa, rúgula y pimentón asado",th:PH("diosa")},
- {id:"mort",nm:"Mortadella con pistacho",d:"Confit de tomate, pesto, parmesano y rúgula",th:PH("signora")},
- {id:"pollo",nm:"Pollo y pesto",d:"Gouda, pollo, tocino y pesto",th:CUT("chiqui"),cut:1},
- {id:"capre",nm:"Capresse",d:"Mozzarella, pesto y tomate · vegetariano",th:null}
+/* ---- productos (catálogo de catering) ---- */
+const PR=[
+ {id:"pp",nm:"Sándwich pollo pesto",u:"c/u",p:6.5,img:"chiqui",g:"Sándwiches"},
+ {id:"sen",nm:"Sándwich sencillo",u:"c/u",p:4.5,img:"chiqui",sub:"Jamón y gouda con pesto, tocineta o pimentón",g:"Sándwiches"},
+ {id:"cap",nm:"Sándwich capresse",u:"c/u",p:6,img:"chiqui",g:"Sándwiches"},
+ {id:"pro",nm:"Sándwich prosciutto",u:"c/u",p:10,img:"picara",g:"Sándwiches"},
+ {id:"mor",nm:"Sándwich mortadella con pistacho",u:"c/u",p:10,img:"favorita",g:"Sándwiches"},
+ {id:"boc",nm:"Bandeja de 12 bocaditos",u:"bandeja",p:9,img:"chiqui",g:"Para compartir"},
+ {id:"foc",nm:"Bandeja de focaccia 26 × 40",u:"bandeja",p:20,img:"chiqui",sub:"Con salsa para untar",g:"Para compartir"},
+ {id:"gm",nm:"Galleta mediana avena o almendra",u:"c/u",p:2,img:"galleta-choco",g:"Galletas"},
+ {id:"gmc",nm:"Galleta mediana chispas de chocolate",u:"c/u",p:2.5,img:"galleta-choco",g:"Galletas"},
+ {id:"gg",nm:"Galleta grande avena o almendra",u:"c/u",p:3,img:"galleta-choco",g:"Galletas"},
+ {id:"ggc",nm:"Galleta grande chispas de chocolate",u:"c/u",p:3.5,img:"galleta-choco",g:"Galletas"},
+ {id:"pal",nm:"2 mini palmeritas",u:"par",p:1,img:"galleta-choco",g:"Galletas"},
+ {id:"pl",nm:"Ponqué de limón",u:"porción",p:3,img:"ponque",g:"Postres"},
+ {id:"pm",nm:"Ponqué marmoleado",u:"porción",p:3.5,img:"ponque",g:"Postres"},
+ {id:"mb",nm:"Mini brownies × 12",u:"caja",p:8,img:"tresleches",g:"Postres"},
+ {id:"mc",nm:"Mini cupcakes × 12",u:"caja",p:6,img:"ponque",g:"Postres"},
+ {id:"lm",nm:"Limonada menta",u:"litro",p:7,img:"lim-menta",g:"Bebidas"},
+ {id:"lr",nm:"Limonada rosada",u:"litro",p:8,img:"lim-rosada",g:"Bebidas"},
+ {id:"te",nm:"Té de frutos rojos",u:"litro",p:7,img:"te",g:"Bebidas"},
+ {id:"ju",nm:"Jugo natural individual",u:"c/u",p:2,img:"lim-rosada",sub:"Naranja, fresa o parchita",g:"Bebidas"}
 ];
-const picked=new Set();const pl=$("plist");
-PREM.forEach(p=>{const d=document.createElement("div");d.className="pi";d.dataset.id=p.id;
-  d.innerHTML=`<span class="th ${p.cut?"cutimg":""}">${p.th?`<img src="${p.th}" alt="">`:"<i>🍅</i>"}</span><div><b>${p.nm}</b><small>${p.d}</small><button type="button" data-p="${p.id}">+ Elegir</button></div>`;pl.appendChild(d)});
-pl.addEventListener("click",e=>{const b=e.target.closest("[data-p]");if(!b)return;const id=b.dataset.p;picked.has(id)?picked.delete(id):picked.add(id);
-  pl.querySelectorAll(".pi").forEach(x=>{const on=picked.has(x.dataset.id);x.classList.toggle("sel",on);x.querySelector("button").textContent=on?"✓ En mi pedido":"+ Elegir"});plan()});
+const BY=Object.fromEntries(PR.map(p=>[p.id,p]));
 
 /* ---- planificador ---- */
 const MO={
- des:{nm:"Desayuno de trabajo",sh:"Desayuno",sub:"Antes de las 10",ico:"lim-rosada"},
- cof:{nm:"Coffee break",sh:"Coffee break",sub:"Media mañana o tarde",ico:"galleta-choco"},
- alm:{nm:"Almuerzo ligero",sh:"Almuerzo",sub:"Reunión de mediodía",ico:"chiqui"},
- cel:{nm:"Celebración",sh:"Celebración",sub:"Cumpleaños, cierre, logro",ico:"tresleches"}
+ des:{nm:"Desayuno de trabajo",sh:"Desayuno",sub:"Antes de las 10",ico:"lim-rosada",sug:n=>({sen:n,ju:n,gm:n})},
+ cof:{nm:"Coffee break",sh:"Coffee break",sub:"Media mañana o tarde",ico:"galleta-choco",sug:n=>({boc:C(n*2/12),gm:n,lm:C(n*.25)})},
+ alm:{nm:"Almuerzo ligero",sh:"Almuerzo",sub:"Reunión de mediodía",ico:"chiqui",sug:n=>({pp:n,ju:n,pl:n})},
+ cel:{nm:"Celebración",sh:"Celebración",sub:"Cumpleaños, cierre, logro",ico:"tresleches",sug:n=>({foc:C(n/10),boc:C(n*3/12),mb:C(n*1.5/12),lr:C(n*.3)})}
 };
-let mo="cof",svc="ent";
+let mo="cof",svc="ent";let Q={};
 const momEl=$("moments");
 Object.entries(MO).forEach(([k,m])=>{const b=document.createElement("button");b.type="button";b.className="mo";b.dataset.k=k;b.setAttribute("aria-pressed",String(k===mo));
-  b.innerHTML=`<img src="${CUT(m.ico)}" alt=""><b>${m.sh}</b><small>${m.sub}</small>`;b.onclick=()=>{mo=k;momEl.querySelectorAll(".mo").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));plan()};momEl.appendChild(b)});
-const ppl=$("ppl");ppl.addEventListener("input",plan);
+  b.innerHTML=`<img src="${CUT(m.ico)}" alt=""><b>${m.sh}</b><small>${m.sub}</small>`;b.onclick=()=>{mo=k;momEl.querySelectorAll(".mo").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));suggest()};momEl.appendChild(b)});
+const ppl=$("ppl");ppl.addEventListener("input",suggest);
 function setSvc(s){svc=s;document.querySelectorAll(".sv").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.s===s)));plan()}
 document.querySelectorAll(".sv").forEach(b=>b.addEventListener("click",()=>setSvc(b.dataset.s)));
 document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{setSvc(b.dataset.go);$("planificador").scrollIntoView({behavior:"smooth"})}));
-function sandwich(n){
-  if(picked.size){const names=[...picked].map(id=>PREM.find(p=>p.id===id).nm);return{img:"chiqui",q:n,nm:"Sándwiches premium",sub:names.join(", ")+(svc==="exp"?" · preparados al momento":"")}}
-  return{img:"chiqui",q:n,nm:"Sándwiches de focaccia",sub:"Jamón y gouda con pesto, tocineta o pimentón"+(svc==="exp"?" · preparados al momento":" · empacados uno por uno")};
-}
-function items(n){
-  let L;
-  if(mo==="des")L=[sandwich(n),{img:"lim-rosada",q:n,nm:"Jugos naturales",sub:"Naranja, fresa o parchita, en envase individual"},{img:"galleta-choco",q:n,nm:"Galletas medianas",sub:"Avena, chocolate, almendra o zanahoria"}];
-  else if(mo==="cof")L=[{img:"chiqui",q:C(n*2/12),nm:"Bandejas de bocaditos de focaccia",sub:"12 bocaditos cada una · 2 por persona"},{img:"galleta-choco",q:n,nm:"Galletas medianas",sub:"Un sabor o varios"},{img:"lim-menta",q:C(n*.25)+" L",nm:"Limonada o té de frutos rojos",sub:"En jarra"}];
-  else if(mo==="alm")L=[sandwich(n),{img:"lim-rosada",q:n,nm:"Jugos naturales",sub:"Naranja, fresa o parchita"},{img:"ponque",q:n,nm:"Postre individual",sub:"Tres leches, tiramisú o ponqué"}];
-  else L=[{img:"chiqui",q:C(n/10),nm:"Bandejas de focaccia",sub:"26 × 40 cm, con salsa para untar"},{img:"chiqui",q:C(n*3/12),nm:"Bandejas de bocaditos",sub:"12 bocaditos cada una"},{img:"tresleches",q:C(n/8),nm:"Postres para compartir",sub:"Tres leches, mini brownies o mini cupcakes"},{img:"lim-rosada",q:C(n*.3)+" L",nm:"Limonada rosada",sub:"En jarra"}];
-  if(mo==="cel"&&picked.size){const s=sandwich(n);L.splice(1,1,s)}
-  if(svc==="exp")L.push({img:"americano",q:C(n/7),nm:"Café filtrado de especialidad",sub:"Guayabo o Chemex, servido por nuestro equipo"});
-  return L;
-}
+function suggest(){Q=MO[mo].sug(+ppl.value);plan()}
+$("reset").onclick=suggest;
+/* agregar */
+const sel=$("addSel");let g0="";
+sel.innerHTML='<option value="">Agregar otro producto…</option>'+PR.map(p=>{let h="";if(p.g!==g0){h=(g0?"</optgroup>":"")+`<optgroup label="${p.g}">`;g0=p.g}return h+`<option value="${p.id}">${p.nm} · ${f2(p.p)} ${p.u}</option>`}).join("")+"</optgroup>";
+$("addBtn").onclick=()=>{const id=sel.value;if(!id)return;Q[id]=(Q[id]||0)+(BY[id].u==="c/u"||BY[id].u==="porción"?+ppl.value:1);sel.value="";plan()};
+$("oList").addEventListener("click",e=>{const b=e.target.closest("[data-d]");if(!b)return;const id=b.dataset.id,d=+b.dataset.d,st=BY[id].u==="c/u"||BY[id].u==="porción"?1:1;Q[id]=Math.max(0,(Q[id]||0)+d*st);if(!Q[id])delete Q[id];plan()});
+/* mesa */
 const table=$("table");const seats=[];const ctrs=[];
 for(let i=0;i<24;i++){const s=document.createElement("span");s.className="seat";s.innerHTML='<img alt="">';table.appendChild(s);seats.push(s)}
 [[38,46,14],[52,40,11],[63,47,12],[46,58,11],[58,58,10]].forEach(p=>{const c=document.createElement("span");c.className="ctr";c.style.left=p[0]+"%";c.style.top=p[1]+"%";c.style.width=p[2]+"%";c.innerHTML='<img alt="">';table.appendChild(c);ctrs.push(c)});
@@ -545,33 +624,39 @@ const more=$("more");
 function setImg(im,src){if(im.dataset.src!==src){im.src=src;im.dataset.src=src}}
 function plan(){const n=+ppl.value;$("pplOut").textContent=n;ppl.style.setProperty("--p",((n-6)/(120-6)*100)+"%");
   $("pplHint").textContent=n<=12?"Una reunión de equipo":n<=30?"Un área completa":n<=60?"Un evento de empresa":"Un gran evento";
-  const m=MO[mo],its=items(n);
+  const m=MO[mo];const ids=Object.keys(Q).filter(k=>Q[k]>0);
   $("oK").textContent=svc==="exp"?"Su pedido · Experiencia Alleria":"Su pedido · Entrega lista";
   $("oT").textContent=m.nm+" para "+n;
-  $("oList").innerHTML=its.map(i=>`<li><img src="${CUT(i.img)}" alt=""><div><b>${i.nm}</b><small>${i.sub}</small></div><span class="q">${i.q}</span></li>`).join("");
+  let sum=0;
+  $("oList").innerHTML=ids.map(id=>{const p=BY[id],q=Q[id],t=q*p.p;sum+=t;return `<li><img src="${CUT(p.img)}" alt=""><div><b>${p.nm}</b><span class="sub">${f2(p.p)} ${p.u}${p.sub?" · "+p.sub:""}</span></div><div class="rt"><span class="stp"><button type="button" data-id="${id}" data-d="-1" aria-label="Quitar uno de ${p.nm}">−</button><output>${q}</output><button type="button" data-id="${id}" data-d="1" aria-label="Agregar uno de ${p.nm}">+</button></span><span class="sub">${f2(t)}</span></div></li>`}).join("")
+   +(svc==="exp"?`<li><img src="${CUT("americano")}" alt=""><div><b>Café filtrado de especialidad</b><span class="sub">Guayabo o Chemex, servido por nuestro equipo</span></div><div class="rt"><span class="sub">Incluido</span></div></li>`:"");
+  const tot=sum+(svc==="exp"?EXP_FEE:0);
+  $("oTot").innerHTML=`<div><span>Productos</span><span>${f2(sum)}</span></div>${svc==="exp"?`<div><span>Experiencia Alleria</span><span>${f2(EXP_FEE)}</span></div>`:""}<div class="gt"><span>Total estimado</span><b>${f2(tot)}</b></div><div><span>Por persona</span><span>${f2(tot/n)}</span></div>`;
   $("oInc").innerHTML=svc==="exp"?"<b>Incluye:</b> montaje de la mesa, sándwiches preparados al momento, café filtrado servido por nuestro equipo y recogida al final.":"<b>Incluye:</b> todo empacado con la marca Alleria, entregado en su oficina a la hora acordada, listo para repartir.";
-  const cap=innerWidth<560?14:24,vis=Math.min(n,cap),seatSrc=CUT(mo==="cof"||mo==="cel"?"chiqui":"chiqui");
-  const seatAlt=mo==="des"?"lim-rosada":mo==="cof"?"galleta-choco":mo==="alm"?"chiqui":"tresleches";
+  const cap=innerWidth<560?14:24,vis=Math.min(n,cap);
+  const first=ids[0]?BY[ids[0]].img:"chiqui",second=ids[1]?BY[ids[1]].img:first;
   seats.forEach((s,i)=>{const on=i<vis;if(on){const a=-Math.PI/2+i/vis*Math.PI*2;s.style.left=(50+40*Math.cos(a))+"%";s.style.top=(50+38*Math.sin(a))+"%";
-      s.style.setProperty("--s",(innerWidth<560?(vis>10?11:13):(vis>16?7.5:vis>10?9:10.5))+"%");setImg(s.querySelector("img"),CUT(i%2&&mo!=="alm"?seatAlt:"chiqui"))}
+      s.style.setProperty("--s",(innerWidth<560?(vis>10?11:13):(vis>16?7.5:vis>10?9:10.5))+"%");setImg(s.querySelector("img"),CUT(i%2?second:first))}
     s.classList.toggle("on",on);s.style.transitionDelay=(on?i*18:0)+"ms"});
-  const cImgs=its.slice(1).map(i=>CUT(i.img));
+  const cImgs=[...new Set(ids.slice(1).map(id=>BY[id].img))].concat(svc==="exp"?["americano"]:[]).map(CUT);
   ctrs.forEach((c,i)=>{const src=cImgs[i];if(src)setImg(c.querySelector("img"),src);c.classList.toggle("on",!!src)});
   more.textContent=n>cap?"+"+(n-cap)+" personas más":"";more.style.visibility=n>cap?"visible":"hidden";
   $("barista").style.visibility=svc==="exp"?"visible":"hidden";
-  const msg=`Hola Alleria. Quiero cotizar un catering para mi empresa.\n\nOcasión: ${m.nm}\nPersonas: ${n}\nServicio: ${svc==="exp"?"Experiencia Alleria (montaje en el lugar)":"Entrega lista (empacado)"}\n\nPedido sugerido:\n${its.map(i=>"• "+i.q+" × "+i.nm+" ("+i.sub+")").join("\n")}\n\nFecha: \nHora: \nLugar: \nEmpresa: \n¿Necesito factura?: `;
-  $("oWa").href=wa(msg);$("dWa").href=wa(msg);$("dT").textContent=m.sh+" · "+n+" personas"}
-plan();addEventListener("resize",plan);
-$("cWa").href=wa("Hola Alleria. Quiero organizar la comida de un evento de mi empresa. ¿Me ayudan con el pedido y el precio?");
+  const msg=`Hola Alleria. Quiero cotizar un catering para mi empresa.\n\nOcasión: ${m.nm}\nPersonas: ${n}\nServicio: ${svc==="exp"?"Experiencia Alleria (montaje en el lugar, +$70)":"Entrega lista (empacado)"}\n\nPedido:\n${ids.map(id=>"• "+Q[id]+" × "+BY[id].nm+" = "+f2(Q[id]*BY[id].p)).join("\n")}\n\nTotal estimado: ${f2(tot)}\n\nFecha: \nHora: \nLugar: \nEmpresa: \n¿Necesito factura?: `;
+  $("oWa").href=wa(msg);$("dWa").href=wa(msg);$("dT").textContent=m.sh+" · "+n+" personas";$("dS").textContent="Total estimado "+f2(tot)}
+suggest();addEventListener("resize",plan);
+const hi=wa("Hola Alleria. Quiero pedir comida para un evento de mi empresa. Somos __ personas, para el día __.");
+["hWa","qWa","fWa","cWa"].forEach(id=>$(id)&&($(id).href=hi));
 
 /* ---- animaciones y navegación ---- */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 const links=[...document.querySelectorAll("#nav a")],secs=links.map(a=>document.querySelector(a.getAttribute("href"))),dock=$("dock"),out=document.querySelector(".out");
 function onS(){let k=-1;secs.forEach((s,j)=>{if(s.getBoundingClientRect().top<innerHeight*.4)k=j});links.forEach((a,j)=>a.classList.toggle("on",j===k));
-  const r=out.getBoundingClientRect();dock.classList.toggle("show",scrollY>innerHeight*.9&&!(r.top<innerHeight&&r.bottom>0))}
+  const r=out.getBoundingClientRect();dock.classList.toggle("show",scrollY>innerHeight*.6&&!(r.top<innerHeight&&r.bottom>0))}
 addEventListener("scroll",onS,{passive:true});onS();
 })();
 </script>
+
 </body>
 </html>

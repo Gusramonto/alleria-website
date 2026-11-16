@@ -393,7 +393,7 @@ footer a{color:var(--crema)}
         <span class="chip"><i>✓</i>Cotización y factura</span>
         <span class="chip"><i>✓</i>100 % masa madre</span>
       </div>
-      <p class="facts3"><span>Pedido mínimo $40</span><span>Pide con 48 h de anticipación</span><span>Barquisimeto y Cabudare</span></p>
+      <p class="facts3"><span>Pedido mínimo: 5 personas</span><span>Pide con 2 días de anticipación</span><span>Pago 50 % al pedir y 50 % el día antes</span><span>Toda Barquisimeto · el delivery lo paga el cliente</span></p>
       <div class="row"><a class="btn wa" id="hWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Pedir por WhatsApp</a><a class="btn coral" href="#planificador">Calcular mi pedido</a><a class="btn ghost" href="/assets/catering/menu-catering-alleria.pdf" download>Descargar el menú</a></div>
     </div>
     <div class="orbit" aria-hidden="true">
@@ -552,10 +552,10 @@ footer a{color:var(--crema)}
       <h2>Todo claro desde el primer mensaje</h2>
     </div>
     <div class="hgrid2">
-      <div class="hc rv"><span class="v">$40</span><b>Pedido mínimo</b><p>Equivale a unos 9 paninis sencillos. Desde ahí, armamos el pedido a la medida de tu evento.</p></div>
-      <div class="hc rv"><span class="v">48 h</span><b>Anticipación</b><p>Pide con 48 horas de anticipación. Para la Experiencia Alleria, con 5 días. ¿Es urgente? Escríbenos y vemos cómo te ayudamos.</p></div>
-      <div class="hc rv"><span class="v">Zona</span><b>Barquisimeto y Cabudare</b><p>El delivery se cobra aparte y depende de la zona. Te lo confirmamos en la cotización, antes de que pagues.</p></div>
-      <div class="hc dark rv"><span class="v">50 / 50</span><b>Pago</b><p>50 % para confirmar la fecha y 50 % el día antes del evento. En dólares, o en bolívares a la tasa oficial del BCV del día de cada pago.</p></div>
+      <div class="hc rv"><span class="v">5</span><b>Pedido mínimo</b><p>Para 5 personas como mínimo. Desde ahí, armamos el pedido a la medida de tu evento.</p></div>
+      <div class="hc rv"><span class="v">2 días</span><b>Anticipación</b><p>Pide con al menos 2 días de anticipación. ¿Es urgente? Escríbenos y vemos cómo te ayudamos.</p></div>
+      <div class="hc rv"><span class="v">Zona</span><b>Toda Barquisimeto</b><p>El delivery o el transporte lo paga el cliente. Te confirmamos el monto en la cotización, antes de que pagues.</p></div>
+      <div class="hc dark rv"><span class="v">50 / 50</span><b>Pago</b><p>50 % al hacer el pedido y 50 % el día antes de la actividad. En dólares, o en bolívares a la tasa oficial del BCV del día de cada pago.</p></div>
       <div class="hc rv"><span class="v">Cambios</span><b>Hasta 48 h antes</b><p>Hasta 48 horas antes del evento puedes cambiar la fecha o cancelar y te devolvemos tu anticipo. Dentro de las 48 horas previas ya compramos los insumos y preparamos tu pedido, por eso el anticipo no es reembolsable.</p></div>
       <div class="hc rv"><span class="v">Factura</span><b>Todo por escrito</b><p>Te enviamos la cotización para aprobar y emitimos factura.</p></div>
     </div>
@@ -573,8 +573,8 @@ footer a{color:var(--crema)}
 <footer>
   <div class="wrap cols">
     <div><b>Contacto</b>WhatsApp +58 412-263 2864<br>alleriacoffebar@gmail.com<br><a href="https://instagram.com/alleriacoffeebar" target="_blank" rel="noopener">@alleriacoffeebar</a></div>
-    <div><b>Barquisimeto</b>Nueva Segovia, calle 6 entre carreras 1 y 2, edificio Chamonix, local 2</div>
-    <div><b>Cabudare</b>Las Mercedes, calle 5, lote 20, #20-37 (detrás de Panadería San Benito) · Lun a sáb, 8 a. m. a 8 p. m.</div>
+    <div><b>Tienda · Barquisimeto</b>Nueva Segovia, calle 6 entre carreras 1 y 2, edificio Chamonix, local 2 · Lun a sáb, 8 a. m. a 8 p. m.</div>
+    <div><b>Panificadora (producción), Cabudare</b>Las Mercedes, calle 5, lote 20, #20-37</div>
   </div>
 </footer>
 
@@ -666,7 +666,7 @@ function plan(){const n=+ppl.value;$("pplOut").textContent=n;ppl.style.setProper
   $("oList").innerHTML=ids.map(id=>{const p=BY[id],q=Q[id],t=q*p.p;sum+=t;return `<li><img src="${CUT(p.img)}" alt=""><div><b>${p.nm}</b><span class="sub">${f2(p.p)} ${p.u}${p.sub?" · "+p.sub:""}</span></div><div class="rt"><span class="stp"><button type="button" data-id="${id}" data-d="-1" aria-label="Quitar uno de ${p.nm}">−</button><output>${q}</output><button type="button" data-id="${id}" data-d="1" aria-label="Agregar uno de ${p.nm}">+</button></span><span class="sub">${f2(t)}</span></div></li>`}).join("")
    +(svc==="exp"?`<li><img src="${CUT("americano")}" alt=""><div><b>Café filtrado de especialidad</b><span class="sub">Guayabo o Chemex, servido por nuestro equipo</span></div><div class="rt"><span class="sub">Incluido</span></div></li>`:"");
   const fee=expFee(n),tot=sum+(svc==="exp"?fee:0);
-  $("oTot").innerHTML=`<div><span>Productos</span><span>${f2(sum)}</span></div>${svc==="exp"?`<div><span>Experiencia Alleria (${n} personas)</span><span>${f2(fee)}</span></div>`:""}<div><span>Delivery</span><span>Según zona</span></div><div class="gt"><span>Total estimado</span><b>${f2(tot)}</b></div><div><span>Por persona</span><span>${f2(tot/n)}</span></div>${sum<40?`<div class="minw">Te faltan ${f2(40-sum)} en productos para el pedido mínimo de $40.</div>`:""}`;
+  $("oTot").innerHTML=`<div><span>Productos</span><span>${f2(sum)}</span></div>${svc==="exp"?`<div><span>Experiencia Alleria (${n} personas)</span><span>${f2(fee)}</span></div>`:""}<div><span>Delivery</span><span>Lo paga el cliente</span></div><div class="gt"><span>Total estimado</span><b>${f2(tot)}</b></div><div><span>Por persona</span><span>${f2(tot/n)}</span></div>${n<5?`<div class="minw">El pedido mínimo es para 5 personas.</div>`:""}`;
   $("oInc").innerHTML=svc==="exp"?"<b>Incluye:</b> montaje de la mesa, sándwiches preparados al momento, café filtrado servido por nuestro equipo y recogida al final.":"<b>Incluye:</b> todo empacado con la marca Alleria, entregado en tu oficina a la hora acordada, listo para repartir.";
   const cap=innerWidth<560?14:24,vis=Math.min(n,cap);
   const first=ids[0]?BY[ids[0]].img:"chiqui",second=ids[1]?BY[ids[1]].img:first;

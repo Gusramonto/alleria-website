@@ -157,7 +157,7 @@ p{margin:0}
 .sc .bd{padding:14px 16px 16px;border-top:6px solid var(--c)}
 .ing{display:flex;flex-wrap:wrap;gap:6px}
 .ing span{font-size:13px;font-weight:700;background:var(--crema);border:1px solid var(--linea);border-radius:999px;padding:4px 10px}
-.formats{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);gap:14px;align-items:stretch}
+.formats{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:stretch;margin-bottom:18px}
 .fm{background:var(--tinta);color:var(--crema);border-radius:24px;padding:16px;display:flex;gap:14px;align-items:center}
 .fm .pics{display:flex;flex:none}
 .fm .pics img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--tinta);background:var(--crema)}
@@ -170,8 +170,10 @@ p{margin:0}
 
 /* armador */
 .premh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:8px 0 12px;border-top:2px dashed rgba(60,141,191,.35);padding-top:22px}
-.premh span{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#8A6416}
-.premh b{font-family:var(--block);font-weight:400;font-size:30px;color:var(--tinta)}
+.premh.clas{border-top:0;padding-top:0}
+.premh.clas span{color:var(--cielo3)}
+.premh span{font-family:var(--block);font-size:26px;line-height:1;color:#8A6416}
+.premh b{font-family:var(--block);font-weight:400;font-size:26px;color:var(--tinta);background:var(--blanco);border-radius:999px;padding:2px 14px}
 .premh small{font-size:14px;color:var(--tinta2)}
 .sab2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-bottom:18px}
 .sp{background:var(--blanco);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:150px minmax(0,1fr);box-shadow:0 18px 30px -26px rgba(51,32,26,.8);border-left:6px solid var(--c)}
@@ -379,8 +381,6 @@ footer .priv{opacity:.6;font-size:12.5px}
   .sab,.why3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pgrid,.tgrid{grid-template-columns:minmax(0,1fr)}
   .out{position:static}
-  .formats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .formats .price{grid-column:span 2}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
@@ -401,7 +401,6 @@ footer .priv{opacity:.6;font-size:12.5px}
 }
 @media (max-width:560px){
   .sab,.why3,.formats,.steps{grid-template-columns:minmax(0,1fr)}
-  .formats .price{grid-column:auto}
   .cgrid{grid-template-columns:minmax(0,1fr)}
   .fc{height:340px}
   .giftg{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
@@ -427,9 +426,9 @@ footer .priv{opacity:.6;font-size:12.5px}
     <div class="nav" id="nav">
       <a href="#detalles">Su noche</a>
       <a href="#sabores">Sabores</a>
+      <a href="#masamadre">Masa madre</a>
       <a href="#armar">Su pedido</a>
       <a href="#compania">Nuestro equipo</a>
-      <a href="#masamadre">Masa madre</a>
       <a href="#reservar">Reservar</a>
     </div>
     <a class="btn coral" href="#armar">Armar el pedido</a>
@@ -443,7 +442,7 @@ footer .priv{opacity:.6;font-size:12.5px}
     <div>
       <div class="host"><img src="/assets/sac/logo-sac.png" alt="Grupo SAC" width="104" height="104"><div><small>Propuesta exclusiva para</small><b>Lic. Juan Pablo Pérez</b><span>Grupo SAC</span></div></div>
       <h1>La noche de sus clientes<span>merece un sabor que se recuerde.</span></h1>
-      <p class="lede">Paninis de masa madre de Alleria para que sus 150 invitados se sientan atendidos como lo que son: especiales.</p>
+      <p class="lede">Paninis de masa madre de Alleria, servidos por nuestro equipo, en una noche que sus clientes van a comentar.</p>
       <div class="ticket" role="list">
         <div role="listitem"><small>Fecha</small><b>Jueves 3 de diciembre</b></div>
         <div role="listitem"><small>Hora</small><b>5:00 a 8:00 p. m.</b></div>
@@ -454,12 +453,12 @@ footer .priv{opacity:.6;font-size:12.5px}
     </div>
     <div class="stage" aria-hidden="true">
       <div class="plate"><img src="/assets/catering/ph/jefa.jpg" alt=""></div>
-      <span class="tag">$6,50 por invitado</span>
+      <span class="tag">desde $6,50 por invitado</span>
     </div>
   </div>
 </header>
 
-<div class="bridge"><p>Usted ya los probó en MD Conference. <em>Ahora, que los disfruten sus clientes.</em></p></div>
+<div class="bridge"><p>Lo que usted disfruta en MD Conference, <em>ahora en la noche de sus clientes.</em></p></div>
 
 <section id="detalles" class="care">
   <div class="wrap">
@@ -484,20 +483,39 @@ footer .priv{opacity:.6;font-size:12.5px}
       <h2>El que usted ya conoce, y más para sorprender</h2>
       <p class="lede">Todos en focaccia de masa madre de Alleria, horneada por nosotros.</p>
     </div>
+    <div class="premh clas rv"><span>Clásicos</span><b>$6,50</b><small>por invitado · completo, o medio panini + dulce</small></div>
     <div class="sab">
       <article class="sc rv" style="--c:var(--pp)"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Panini de pollo pesto"><span class="badge">El de MD Conference</span><div class="nm"><h3>Pollo pesto</h3></div></div><div class="bd"><div class="ing"><span>Pollo</span><span>Pesto</span><span>Tocineta</span><span>Gouda de búfala</span></div></div></article>
       <article class="sc rv" style="--c:var(--rb)"><div class="im"><img src="/assets/catering/ph/empacado-2.jpg" alt="Paninis envueltos en papel Alleria"><span class="badge" style="background:var(--coral2)">Nuevo</span><div class="nm"><h3>Roast beef</h3></div></div><div class="bd"><div class="ing"><span>Roast beef</span><span>Mantequilla de ajo</span><span>Mozzarella</span></div></div></article>
       <article class="sc rv" style="--c:var(--pa)"><div class="im"><img src="/assets/sac/pastrami.jpg" alt="Panini de pastrami con coleslaw"><span class="badge" style="background:#EBDDF0">Nuevo</span><div class="nm"><h3>Pastrami</h3></div></div><div class="bd"><div class="ing"><span>Pastrami</span><span>Pepinillos</span><span>Gouda</span><span>Coleslaw</span><span>Salsa golf</span></div></div></article>
+    </div>
+    <div class="formats">
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/sandwich-papel.jpg" alt=""></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
     </div>
     <div class="premh rv"><span>Opción premium</span><b>$8,50</b><small>por panini completo</small></div>
     <div class="sab2">
       <article class="sp rv" style="--c:#B8862B"><img src="/assets/catering/ph/diosa.jpg" alt="Panini de prosciutto"><div><h3>Prosciutto</h3><div class="ing"><span>Prosciutto</span><span>Pesto</span><span>Mozzarella cremosa</span><span>Rúgula</span><span>Pimentón asado</span></div></div></article>
       <article class="sp rv" style="--c:#C9577A"><img src="/assets/catering/ph/signora.jpg" alt="Panini de mortadela con pistacho"><div><h3>Mortadela con pistacho</h3><div class="ing"><span>Mortadela con pistacho</span><span>Confit de tomate</span><span>Pesto</span><span>Parmesano</span><span>Rúgula</span></div></div></article>
     </div>
-    <div class="formats">
-      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/sandwich-papel.jpg" alt=""></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
-      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
-      <div class="price rv"><b>$6,50</b><small>por invitado · clásicos en cualquier combinación</small></div>
+  </div>
+</section>
+
+<section class="why" id="masamadre">
+  <div class="wrap mgrid">
+    <div class="mm-ph rv"><img src="/assets/sac/hogaza.jpg" alt="Hogaza de la focaccia de masa madre de Alleria"><span>24 horas de fermentación</span></div>
+    <div>
+      <div class="head rv" style="margin-bottom:22px">
+        <span class="kick">Por qué es premium</span>
+        <h2>La diferencia está en la masa madre</h2>
+        <p class="lede" style="color:var(--tinta)">Por eso sus invitados notan la diferencia desde el primer bocado.</p>
+      </div>
+      <div class="mm">
+        <div class="rv"><span>24 h</span><div><b>Fermentación natural</b><p>Sin levadura comercial: el tiempo hace el trabajo.</p></div></div>
+        <div class="rv"><span>✓</span><div><b>Más fácil de digerir</b><p>La fermentación larga deja un pan que cae ligero.</p></div></div>
+        <div class="rv"><span>✓</span><div><b>Más sabor</b><p>Corteza dorada y miga aireada.</p></div></div>
+        <div class="rv"><span>0</span><div><b>Conservantes</b><p>Harina, agua, sal y tiempo. Nada más.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -561,29 +579,9 @@ footer .priv{opacity:.6;font-size:12.5px}
         <li><b>Montaje antes de que lleguen</b><span>La mesa lista antes del primer invitado.</span></li>
         <li><b>Atención durante las tres horas</b><span>Tres personas de Alleria en el salón, pendientes de cada detalle.</span></li>
         <li><b>La mesa siempre servida</b><span>Reponemos mientras sus invitados conversan.</span></li>
-        <li><b>Un barista en la barra de café</b><span>Gustavo, fundador de Alleria, prepara cada café.</span></li>
         <li><b>Retiro al final</b><span>El salón queda como lo encontramos.</span></li>
       </ol>
-      <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados se lleven el recuerdo de la noche.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="why" id="masamadre">
-  <div class="wrap mgrid">
-    <div class="mm-ph rv"><img src="/assets/sac/hogaza.jpg" alt="Hogaza de la focaccia de masa madre de Alleria"><span>24 horas de fermentación</span></div>
-    <div>
-      <div class="head rv" style="margin-bottom:22px">
-        <span class="kick">Por qué es premium</span>
-        <h2>La diferencia está en la masa madre</h2>
-        <p class="lede" style="color:var(--tinta)">Por eso sus invitados notan la diferencia desde el primer bocado.</p>
-      </div>
-      <div class="mm">
-        <div class="rv"><span>24 h</span><div><b>Fermentación natural</b><p>Sin levadura comercial: el tiempo hace el trabajo.</p></div></div>
-        <div class="rv"><span>✓</span><div><b>Más fácil de digerir</b><p>La fermentación larga deja un pan que cae ligero.</p></div></div>
-        <div class="rv"><span>✓</span><div><b>Más sabor</b><p>Corteza dorada, miga aireada y un sabor que se nota en cada bocado.</p></div></div>
-        <div class="rv"><span>0</span><div><b>Conservantes</b><p>Harina, agua, sal y tiempo. Nada más.</p></div></div>
-      </div>
+      <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados conozcan nuestros panes de masa madre.</p></div></div>
     </div>
   </div>
 </section>
@@ -644,15 +642,15 @@ const L=$("lights");for(let i=0;i<22;i++){const s=document.createElement("i");s.
 const CARDS={
  host:[
   ["/assets/catering/ph/empacado-papel.jpg","Que se sientan especiales","Premium en cada detalle","Masa madre de Alleria, empacada una por una. Así se siente una invitación exclusiva."],
-  ["/assets/catering/ph/box.jpg","Usted, con sus clientes","Del resto nos encargamos","Llegamos antes, montamos, reponemos durante las tres horas y retiramos al final."],
+  ["/assets/catering/ph/bandeja.jpg","Un gusto para cada invitado","Cinco sabores","Clásicos y premium, para que cada cliente encuentre el suyo."],
   ["/assets/catering/ph/incondicional.jpg","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
   ["/assets/sac/pan-jamon.jpg","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada: el premio que todos quieren ganar."]
  ],
  guest:[
-  ["/assets/catering/ph/amiga.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
+  ["/assets/catering/ph/box.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
   ["/assets/catering/ph/sanduchito.jpg","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se disfruta de pie, sin cubiertos."],
-  ["/assets/catering/ph/bandeja.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
-  ["/assets/catering/ph/chemex.jpg","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
+  ["/assets/catering/ph/amiga.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
+  ["/assets/catering/ph/chemex.jpg","Un café que no esperaban","Barra de café de especialidad","Gustavo, fundador de Alleria, lo prepara al momento en tres métodos de extracción."]
  ]
 };
 const cg=$("cards");

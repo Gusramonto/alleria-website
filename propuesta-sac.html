@@ -437,7 +437,7 @@ footer .priv{opacity:.6;font-size:12.5px}
   <div class="wrap">
     <div class="head c rv">
       <span class="kick">Su noche</span>
-      <h2>Lo que queremos que pase esa noche</h2>
+      <h2>Así será su noche</h2>
       <p class="lede">Toque cada tarjeta.</p>
     </div>
     <div class="tabwrap rv"><div class="tabs" role="tablist" aria-label="Para quién">
@@ -539,7 +539,7 @@ footer .priv{opacity:.6;font-size:12.5px}
       <div class="head rv" style="margin-bottom:22px">
         <span class="kick">Por qué es premium</span>
         <h2>La diferencia está en la masa madre</h2>
-        <p class="lede" style="color:var(--tinta)">La misma que hace distinto a nuestro pan hace distinto a su refrigerio.</p>
+        <p class="lede" style="color:var(--tinta)">Por eso sus invitados notan la diferencia desde el primer bocado.</p>
       </div>
       <div class="mm">
         <div class="rv"><span>24 h</span><div><b>Fermentación natural</b><p>Sin levadura comercial: el tiempo hace el trabajo.</p></div></div>
@@ -555,9 +555,9 @@ footer .priv{opacity:.6;font-size:12.5px}
   <div class="wrap tgrid">
     <div class="ph rv"><img src="/assets/anaquel/fundadores.jpg" alt="Eftimía y Gustavo, fundadores de Alleria"><span>Eftimía y Gustavo</span></div>
     <div class="rv">
-      <span class="kick">Ya nos eligen</span>
+      <span class="kick">Empresas que ya lo viven</span>
       <div class="brands"><span>MD Conference</span><span>Consumeta</span><span>Movistar</span></div>
-      <p class="quote">Usted ya sabe cómo sabe. <em>Ahora queremos que lo sepan sus clientes.</em></p>
+      <p class="quote">Usted ya lo disfruta. <em>Ahora, también sus aliados.</em></p>
     </div>
   </div>
 </section>
@@ -620,7 +620,7 @@ const CARDS={
 };
 const cg=$("cards");
 function cards(t){cg.classList.remove("hint");cg.innerHTML="";CARDS[t].forEach((w,i)=>{const b=document.createElement("button");b.type="button";b.className="fc";b.setAttribute("aria-label",w[1]+". Toque para ver más");
-  b.innerHTML=`<div class="in"><div class="f"><img src="${w[0]}" alt="" loading="lazy"><span class="num">0${i+1}</span><span class="q">${w[1]}</span><span class="rule"></span><span class="t"><i aria-hidden="true">+</i>Descubrir</span></div><div class="b"><span class="k">Lo que hacemos</span><span class="s">${w[2]}</span><span class="rule"></span><p>${w[3]}</p></div></div>`;
+  b.innerHTML=`<div class="in"><div class="f"><img src="${w[0]}" alt="" loading="lazy"><span class="num">0${i+1}</span><span class="q">${w[1]}</span><span class="rule"></span><span class="t"><i aria-hidden="true">+</i>Descubrir</span></div><div class="b"><span class="k">Así será</span><span class="s">${w[2]}</span><span class="rule"></span><p>${w[3]}</p></div></div>`;
   b.onclick=()=>b.classList.toggle("flip");cg.appendChild(b)});void cg.offsetWidth;cg.classList.add("hint")}
 document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",String(x===b)));cards(b.dataset.t)}));
 cards("host");cg.classList.remove("hint");

@@ -261,13 +261,21 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .gf .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px}
 .gf b{font-family:var(--block);font-weight:400;font-size:20px;line-height:1.05}
 .gf p{font-size:14.5px;color:var(--tinta2)}
+.raffle{height:100%;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,#4A2E22,var(--noche))}
+.raffle .tk{width:78%;background:var(--crema);border-radius:12px;padding:16px 18px;position:relative;transform:rotate(-4deg);box-shadow:0 18px 28px -14px rgba(0,0,0,.8);border-left:2px dashed var(--linea);display:flex;flex-direction:column;gap:2px}
+.raffle .tk::before,.raffle .tk::after{content:"";position:absolute;left:-9px;width:18px;height:18px;border-radius:50%;background:#3a2419}
+.raffle .tk::before{top:-9px}.raffle .tk::after{bottom:-9px}
+.raffle small{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--coral)}
+.raffle b{font-family:var(--serif);font-size:24px;line-height:1.05}
+.raffle em{font-style:normal;font-size:11.5px;color:var(--tinta2)}
+.raffle span{align-self:flex-end;font-family:var(--serif);font-weight:700;color:var(--sol);background:var(--tinta);border-radius:999px;padding:2px 10px;font-size:13px;margin-top:6px}
 .hab{height:100%;display:grid;place-items:center;background:linear-gradient(135deg,var(--cielo2),var(--crema2))}
 .hab .card{width:78%;background:var(--blanco);border-radius:12px;padding:14px;box-shadow:0 14px 20px -12px rgba(51,32,26,.6);transform:perspective(500px) rotateX(12deg)}
 .hab .card small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta2);font-weight:700}
 .hab .card b{display:block;font-size:19px;color:var(--pa);margin:2px 0 4px}
 .hab .card span{font-size:11.5px;color:var(--tinta2);line-height:1.3;display:block}
 .ig{height:100%;display:grid;place-items:center;background:linear-gradient(135deg,#F58529,#DD2A7B 55%,#8134AF)}
-.ig .ph{width:46%;aspect-ratio:9/16;background:var(--noche) url(/assets/sac/pastrami.jpg) center/cover;border-radius:14px;border:3px solid #fff;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;gap:4px;box-shadow:0 14px 24px -10px rgba(0,0,0,.6)}
+.ig .ph{width:46%;aspect-ratio:9/16;background:var(--noche) url(/assets/catering/ph/bocadito.jpg) center/cover;border-radius:14px;border:3px solid #fff;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;gap:4px;box-shadow:0 14px 24px -10px rgba(0,0,0,.6)}
 .ig .ph span{background:#fff;color:var(--sac);font-size:10px;font-weight:700;border-radius:6px;padding:3px 6px;align-self:flex-start}
 .extra{margin-top:16px;display:flex;align-items:center;gap:14px;background:rgba(253,249,238,.7);border-radius:20px;padding:12px 16px;border:2px dashed var(--tinta)}
 .extra img{width:64px;height:64px;border-radius:14px;object-fit:cover;flex:none}
@@ -423,9 +431,7 @@ footer .priv{opacity:.6;font-size:12.5px}
       <div class="row"><a class="btn sol" href="#armar">Armar el pedido</a><a class="btn ghost" href="#detalles">Ver su noche</a></div>
     </div>
     <div class="stage" aria-hidden="true">
-      <div class="plate"><img src="/assets/sac/pastrami.jpg" alt=""></div>
-      <img class="fl s1" src="/assets/catering/cut/chiqui.webp" alt="">
-      <img class="fl s2" src="/assets/catering/cut/galleta-choco.webp" alt="">
+      <div class="plate"><img src="/assets/catering/ph/jefa.jpg" alt=""></div>
       <span class="tag">$6,50 por invitado</span>
     </div>
   </div>
@@ -462,8 +468,8 @@ footer .priv{opacity:.6;font-size:12.5px}
       <article class="sc rv" style="--c:var(--pa)"><div class="im"><img src="/assets/sac/pastrami.jpg" alt="Panini de pastrami con coleslaw"><span class="badge" style="background:#EBDDF0">Nuevo</span><div class="nm"><h3>Pastrami</h3></div></div><div class="bd"><div class="ing"><span>Pastrami</span><span>Pepinillos</span><span>Gouda</span><span>Coleslaw</span><span>Salsa golf</span></div></div></article>
     </div>
     <div class="formats">
-      <div class="fm rv"><div class="pics"><img src="/assets/catering/cut/chiqui.webp" alt="" style="object-fit:contain"></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
-      <div class="fm rv"><div class="pics"><img src="/assets/catering/cut/chiqui.webp" alt="" style="object-fit:contain"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/sandwich-papel.jpg" alt=""></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
       <div class="price rv"><b>$6,50</b><small>por invitado, en cualquier combinación</small></div>
     </div>
   </div>
@@ -490,8 +496,8 @@ footer .priv{opacity:.6;font-size:12.5px}
         <div class="left" id="left" aria-live="polite"></div>
         <div class="dul" id="dul" role="group" aria-label="Dulce del medio panini">
           <span>Dulce:</span>
-          <button type="button" data-d="av" aria-pressed="false"><img src="/assets/catering/ph/galletas.jpg" alt="">Avena y arándanos</button>
-          <button type="button" data-d="po" aria-pressed="false"><img src="/assets/catering/ph/polvorosas.jpg" alt="">Polvorosa</button>
+          <button type="button" data-d="av" aria-pressed="false">Avena y arándanos</button>
+          <button type="button" data-d="po" aria-pressed="false">Polvorosa</button>
           <button type="button" data-d="mix" aria-pressed="true">Mitad y mitad</button>
         </div>
         <div class="salon" aria-hidden="true">
@@ -523,9 +529,9 @@ footer .priv{opacity:.6;font-size:12.5px}
       <h2>Estaremos con usted, sin costo adicional</h2>
     </div>
     <div class="giftg">
-      <article class="gf rv"><div class="im"><div class="two"><img src="/assets/catering/ph/chemex.jpg" alt="Café filtrado en Chemex"><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"></div></div><div class="bd"><b>Barra de café</b><p>Tres métodos de extracción, preparados al momento.</p></div></article>
+      <article class="gf rv"><div class="im"><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"></div><div class="bd"><b>Barra de café</b><p>Tres métodos de extracción, preparados al momento.</p></div></article>
       <article class="gf rv"><div class="im"><div class="hab"><div class="card"><small>Está disfrutando</small><b>Pastrami</b><span>Focaccia de masa madre, más de 24 h de fermentación natural.</span></div></div></div><div class="bd"><b>Habladores</b><p>Cada invitado sabe qué disfruta y por qué es distinto.</p></div></article>
-      <article class="gf rv"><div class="im"><img src="/assets/sac/pan-jamon.jpg" alt="Pan de jamón grande de Alleria"></div><div class="bd"><b>Pan de jamón para rifar</b><p>Uno grande, para un momento de alegría en su noche.</p></div></article>
+      <article class="gf rv"><div class="im"><div class="raffle"><div class="tk"><small>Rifa</small><b>Pan de jamón</b><em>Noche de clientes · Grupo SAC</em><span>N.º 001</span></div></div></div><div class="bd"><b>Pan de jamón para rifar</b><p>Uno grande, para un momento de alegría en su noche.</p></div></article>
       <article class="gf rv"><div class="im"><div class="ig"><div class="ph"><span>Grupo SAC</span></div></div></div><div class="bd"><b>Su evento en Instagram</b><p>Más de 14 mil seguidores verán la noche de Grupo SAC.</p></div></article>
     </div>
     <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados conozcan lo que hacemos.</p></div></div>
@@ -534,7 +540,7 @@ footer .priv{opacity:.6;font-size:12.5px}
 
 <section class="why" id="masamadre">
   <div class="wrap mgrid">
-    <div class="mm-ph rv"><img src="/assets/sac/miga.jpg" alt="Miga de la focaccia de masa madre de Alleria"><span>24 horas de fermentación</span></div>
+    <div class="mm-ph rv"><img src="/assets/sac/hogaza.jpg" alt="Hogaza de la focaccia de masa madre de Alleria"><span>24 horas de fermentación</span></div>
     <div>
       <div class="head rv" style="margin-bottom:22px">
         <span class="kick">Por qué es premium</span>
@@ -608,12 +614,12 @@ const CARDS={
  host:[
   ["/assets/catering/ph/empacado-papel.jpg","Que se sientan especiales","Premium en cada detalle","Masa madre de Alleria, empacada una por una. Así se siente una invitación exclusiva."],
   ["/assets/catering/ph/box.jpg","Usted, con sus clientes","Del resto nos encargamos","Llegamos antes, montamos, reponemos durante las tres horas y retiramos al final."],
-  ["/assets/sac/pastrami.jpg","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
+  ["/assets/catering/ph/incondicional.jpg","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
   ["/assets/sac/pan-jamon.jpg","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada: el premio que todos quieren ganar."]
  ],
  guest:[
   ["/assets/catering/ph/signora.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
-  ["/assets/catering/ph/jefa.jpg","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se disfruta de pie, sin cubiertos."],
+  ["/assets/catering/ph/sanduchito.jpg","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se disfruta de pie, sin cubiertos."],
   ["/assets/catering/ph/diosa.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
   ["/assets/catering/ph/chemex.jpg","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
  ]

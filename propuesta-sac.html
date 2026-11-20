@@ -169,6 +169,16 @@ p{margin:0}
 .price small{font-size:14px;font-weight:700}
 
 /* armador */
+.premh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:8px 0 12px;border-top:2px dashed rgba(60,141,191,.35);padding-top:22px}
+.premh span{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#8A6416}
+.premh b{font-family:var(--block);font-weight:400;font-size:30px;color:var(--tinta)}
+.premh small{font-size:14px;color:var(--tinta2)}
+.sab2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-bottom:18px}
+.sp{background:var(--blanco);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:150px minmax(0,1fr);box-shadow:0 18px 30px -26px rgba(51,32,26,.8);border-left:6px solid var(--c)}
+.sp img{width:100%;height:100%;object-fit:cover;min-height:150px}
+.sp>div{padding:16px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.sp h3{font-size:22px;color:var(--c)}
+@media (max-width:760px){.sab2{grid-template-columns:minmax(0,1fr)}}
 .plan{background:var(--crema)}
 .pgrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:22px;align-items:start}
 .pgrid>*{min-width:0}
@@ -182,7 +192,7 @@ p{margin:0}
 input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:12px;border-radius:999px;background:linear-gradient(90deg,var(--coral) var(--p,67%),var(--cielo2) var(--p,67%));outline:none}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:34px;height:34px;border-radius:50%;background:var(--blanco);border:4px solid var(--coral);box-shadow:0 6px 12px -4px rgba(0,0,0,.35);cursor:grab}
 input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:var(--blanco);border:4px solid var(--coral);cursor:grab}
-.presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:24px}
+.presets{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:24px}
 .pre{all:unset;cursor:pointer;box-sizing:border-box;border-radius:18px;border:2px solid var(--linea);padding:12px 10px;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s,transform .2s}
 .pre .dots{display:flex;gap:3px;height:12px}
 .pre .dots i{flex:1;border-radius:6px}
@@ -197,6 +207,8 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .mx td:first-child{border-radius:14px 0 0 14px;border-left:6px solid var(--c)}
 .mx td:last-child{border-radius:0 14px 14px 0}
 .mx td b{display:block;font-size:15px}
+.mx td .pz{display:block;font-size:12px;color:var(--tinta2);font-weight:700}
+.mx .na{color:var(--tinta2);opacity:.5}
 .mx td:not(:first-child){text-align:center}
 .stp{display:inline-flex;align-items:center;background:var(--blanco);border:1px solid var(--linea);border-radius:999px}
 .stp button{all:unset;cursor:pointer;width:32px;height:32px;display:grid;place-items:center;font-size:18px;font-weight:700;color:var(--tinta)}
@@ -282,6 +294,17 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .extra b{display:block}
 .extra p{font-size:14.5px;color:var(--tinta2)}
 
+.cgrid2{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:34px;align-items:center}
+.cgrid2>*{min-width:0}
+.team{border-radius:26px;overflow:hidden;aspect-ratio:4/5;position:relative;box-shadow:0 30px 50px -30px rgba(51,32,26,.7)}
+.team img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.team span{position:absolute;left:14px;bottom:14px;right:14px;background:var(--crema);font-family:var(--serif);font-weight:700;font-size:19px;color:var(--tinta);padding:6px 16px;border-radius:999px;text-align:center}
+.svc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;counter-reset:s}
+.svc li{counter-increment:s;display:grid;grid-template-columns:48px 1fr;gap:4px 14px;align-items:center;background:rgba(253,249,238,.9);border-radius:18px;padding:12px 16px}
+.svc li::before{content:counter(s,decimal-leading-zero);grid-row:span 2;width:48px;height:48px;border-radius:50%;background:var(--tinta);color:var(--sol);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:18px}
+.svc b{font-size:16.5px}
+.svc span{font-size:14.5px;color:var(--tinta2)}
+@media (max-width:980px){.cgrid2{grid-template-columns:minmax(0,1fr)}.team{aspect-ratio:16/11}}
 /* masa madre + confianza */
 .why{background:var(--cielo)}
 .why h2{color:var(--tinta)}
@@ -356,7 +379,6 @@ footer .priv{opacity:.6;font-size:12.5px}
   .sab,.why3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pgrid,.tgrid{grid-template-columns:minmax(0,1fr)}
   .out{position:static}
-  .presets{grid-template-columns:repeat(2,minmax(0,1fr))}
   .formats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .formats .price{grid-column:span 2}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -406,7 +428,7 @@ footer .priv{opacity:.6;font-size:12.5px}
       <a href="#detalles">Su noche</a>
       <a href="#sabores">Sabores</a>
       <a href="#armar">Su pedido</a>
-      <a href="#compania">Nuestra compañía</a>
+      <a href="#compania">Nuestro equipo</a>
       <a href="#masamadre">Masa madre</a>
       <a href="#reservar">Reservar</a>
     </div>
@@ -458,19 +480,24 @@ footer .priv{opacity:.6;font-size:12.5px}
 <section id="sabores" class="menu">
   <div class="wrap">
     <div class="head rv">
-      <span class="kick">Tres sabores · focaccia de masa madre</span>
-      <h2>El que usted ya conoce, y dos para sorprender</h2>
+      <span class="kick">Sabores · focaccia de masa madre</span>
+      <h2>El que usted ya conoce, y más para sorprender</h2>
       <p class="lede">Todos en focaccia de masa madre de Alleria, horneada por nosotros.</p>
     </div>
     <div class="sab">
       <article class="sc rv" style="--c:var(--pp)"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Panini de pollo pesto"><span class="badge">El de MD Conference</span><div class="nm"><h3>Pollo pesto</h3></div></div><div class="bd"><div class="ing"><span>Pollo</span><span>Pesto</span><span>Tocineta</span><span>Gouda de búfala</span></div></div></article>
-      <article class="sc rv" style="--c:var(--rb)"><div class="im"><img src="/assets/catering/ph/empacado-2.jpg" alt="Paninis envueltos en papel Alleria"><span class="badge" style="background:var(--coral2)">Nuevo</span><div class="nm"><h3>Roast beef</h3></div></div><div class="bd"><div class="ing"><span>Roast beef</span><span>Mantequilla de ajo</span><span>Lechuga</span><span>Queso de mano</span></div></div></article>
+      <article class="sc rv" style="--c:var(--rb)"><div class="im"><img src="/assets/catering/ph/empacado-2.jpg" alt="Paninis envueltos en papel Alleria"><span class="badge" style="background:var(--coral2)">Nuevo</span><div class="nm"><h3>Roast beef</h3></div></div><div class="bd"><div class="ing"><span>Roast beef</span><span>Mantequilla de ajo</span><span>Mozzarella</span></div></div></article>
       <article class="sc rv" style="--c:var(--pa)"><div class="im"><img src="/assets/sac/pastrami.jpg" alt="Panini de pastrami con coleslaw"><span class="badge" style="background:#EBDDF0">Nuevo</span><div class="nm"><h3>Pastrami</h3></div></div><div class="bd"><div class="ing"><span>Pastrami</span><span>Pepinillos</span><span>Gouda</span><span>Coleslaw</span><span>Salsa golf</span></div></div></article>
+    </div>
+    <div class="premh rv"><span>Opción premium</span><b>$8,50</b><small>por panini completo</small></div>
+    <div class="sab2">
+      <article class="sp rv" style="--c:#B8862B"><img src="/assets/catering/ph/diosa.jpg" alt="Panini de prosciutto"><div><h3>Prosciutto</h3><div class="ing"><span>Prosciutto</span><span>Pesto</span><span>Mozzarella cremosa</span><span>Rúgula</span><span>Pimentón asado</span></div></div></article>
+      <article class="sp rv" style="--c:#C9577A"><img src="/assets/catering/ph/signora.jpg" alt="Panini de mortadela con pistacho"><div><h3>Mortadela con pistacho</h3><div class="ing"><span>Mortadela con pistacho</span><span>Confit de tomate</span><span>Pesto</span><span>Parmesano</span><span>Rúgula</span></div></div></article>
     </div>
     <div class="formats">
       <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/sandwich-papel.jpg" alt=""></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
       <div class="fm rv"><div class="pics"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
-      <div class="price rv"><b>$6,50</b><small>por invitado, en cualquier combinación</small></div>
+      <div class="price rv"><b>$6,50</b><small>por invitado · clásicos en cualquier combinación</small></div>
     </div>
   </div>
 </section>
@@ -504,7 +531,7 @@ footer .priv{opacity:.6;font-size:12.5px}
           <div class="top"><b>Salón Doral 1</b><span id="sCap">150 invitados</span></div>
           <div class="stagebar"></div>
           <div class="seats" id="seats"></div>
-          <div class="legend"><span><i style="background:var(--pp)"></i>Pollo pesto</span><span><i style="background:var(--rb)"></i>Roast beef</span><span><i style="background:var(--pa)"></i>Pastrami</span><span><i style="background:linear-gradient(90deg,#999 50%,var(--sol) 50%)"></i>Medio + dulce</span></div>
+          <div class="legend"><span><i style="background:var(--pp)"></i>Pollo pesto</span><span><i style="background:var(--rb)"></i>Roast beef</span><span><i style="background:var(--pa)"></i>Pastrami</span><span><i style="background:#B8862B"></i>Prosciutto</span><span><i style="background:#C9577A"></i>Mortadela</span><span><i style="background:linear-gradient(90deg,#999 50%,var(--sol) 50%)"></i>Medio + dulce</span></div>
         </div>
       </div>
       <aside class="out rv" aria-live="polite">
@@ -513,7 +540,7 @@ footer .priv{opacity:.6;font-size:12.5px}
         <ul id="oList"></ul>
         <div class="tot" id="oTot"></div>
         <div class="pay" id="oPay"></div>
-        <div class="inc"><b>Nuestra compañía esa noche:</b> barra de café de especialidad, habladores en las mesas, un pan de jamón grande para rifar, montaje y reposición durante las 3 horas, y su evento en nuestro Instagram.</div>
+        <div class="inc"><b>Incluido, sin costo:</b> nuestro equipo en el salón, montaje, atención y reposición durante las 3 horas, barra de café, habladores, un pan de jamón grande para rifar y su evento en nuestro Instagram.</div>
         <div id="oWarn"></div>
         <a class="btn wa" id="oWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Reservar con este pedido</a>
         <span class="fine">Pago en dólares, o en bolívares a la tasa del BCV del día de cada pago.</span>
@@ -523,18 +550,22 @@ footer .priv{opacity:.6;font-size:12.5px}
 </section>
 
 <section id="compania" class="gift">
-  <div class="wrap">
-    <div class="head rv">
-      <span class="kick">Nuestra compañía esa noche</span>
-      <h2>Estaremos con usted, sin costo adicional</h2>
+  <div class="wrap cgrid2">
+    <div class="team rv"><img src="/assets/anaquel/fundadores.jpg" alt="Eftimía y Gustavo, fundadores de Alleria"><span>Eftimía y Gustavo, con su equipo</span></div>
+    <div>
+      <div class="head rv" style="margin-bottom:22px">
+        <span class="kick">Incluido, sin costo adicional</span>
+        <h2>Nuestro equipo, a su servicio toda la noche</h2>
+      </div>
+      <ol class="svc rv">
+        <li><b>Montaje antes de que lleguen</b><span>La mesa lista antes del primer invitado.</span></li>
+        <li><b>Atención durante las tres horas</b><span>Tres personas de Alleria en el salón, pendientes de cada detalle.</span></li>
+        <li><b>La mesa siempre servida</b><span>Reponemos mientras sus invitados conversan.</span></li>
+        <li><b>Un barista en la barra de café</b><span>Gustavo, fundador de Alleria, prepara cada café.</span></li>
+        <li><b>Retiro al final</b><span>El salón queda como lo encontramos.</span></li>
+      </ol>
+      <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados se lleven el recuerdo de la noche.</p></div></div>
     </div>
-    <div class="giftg">
-      <article class="gf rv"><div class="im"><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"></div><div class="bd"><b>Barra de café</b><p>Tres métodos de extracción, preparados al momento.</p></div></article>
-      <article class="gf rv"><div class="im"><div class="hab"><div class="card"><small>Está disfrutando</small><b>Pastrami</b><span>Focaccia de masa madre, más de 24 h de fermentación natural.</span></div></div></div><div class="bd"><b>Habladores</b><p>Cada invitado sabe qué disfruta y por qué es distinto.</p></div></article>
-      <article class="gf rv"><div class="im"><div class="raffle"><div class="tk"><small>Rifa</small><b>Pan de jamón</b><em>Noche de clientes · Grupo SAC</em><span>N.º 001</span></div></div></div><div class="bd"><b>Pan de jamón para rifar</b><p>Uno grande, para un momento de alegría en su noche.</p></div></article>
-      <article class="gf rv"><div class="im"><div class="ig"><div class="ph"><span>Grupo SAC</span></div></div></div><div class="bd"><b>Su evento en Instagram</b><p>Más de 14 mil seguidores verán la noche de Grupo SAC.</p></div></article>
-    </div>
-    <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados conozcan lo que hacemos.</p></div></div>
   </div>
 </section>
 
@@ -559,7 +590,7 @@ footer .priv{opacity:.6;font-size:12.5px}
 
 <section class="trust">
   <div class="wrap tgrid">
-    <div class="ph rv"><img src="/assets/anaquel/fundadores.jpg" alt="Eftimía y Gustavo, fundadores de Alleria"><span>Eftimía y Gustavo</span></div>
+    <div class="ph rv"><img src="/assets/catering/ph/montaje-girasoles.jpg" alt="Montaje de Alleria en un evento corporativo"><span>un evento de empresa con Alleria</span></div>
     <div class="rv">
       <span class="kick">Empresas que ya lo viven</span>
       <div class="brands"><span>MD Conference</span><span>Consumeta</span><span>Movistar</span></div>
@@ -604,7 +635,7 @@ footer .priv{opacity:.6;font-size:12.5px}
 (function(){
 const WA="584122632864";const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
 const $=id=>document.getElementById(id);
-const f2=n=>"$"+(Math.round(n*100)/100).toFixed(2).replace(".",",").replace(",00","");
+const f2=n=>{const [i,d]=(Math.round(n*100)/100).toFixed(2).split(".");return "$"+i.replace(/\B(?=(\d{3})+(?!\d))/g,".")+(d==="00"?"":","+d)};
 const PRICE=6.5;let used=false;
 
 const L=$("lights");for(let i=0;i<22;i++){const s=document.createElement("i");s.style.left=(Math.random()*100)+"%";s.style.top=(14+Math.random()*80)+"%";s.style.animationDelay=(-Math.random()*3)+"s";s.style.transform="scale("+(.5+Math.random())+")";L.appendChild(s)}
@@ -618,9 +649,9 @@ const CARDS={
   ["/assets/sac/pan-jamon.jpg","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada: el premio que todos quieren ganar."]
  ],
  guest:[
-  ["/assets/catering/ph/signora.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
+  ["/assets/catering/ph/amiga.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
   ["/assets/catering/ph/sanduchito.jpg","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se disfruta de pie, sin cubiertos."],
-  ["/assets/catering/ph/diosa.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
+  ["/assets/catering/ph/bandeja.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
   ["/assets/catering/ph/chemex.jpg","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
  ]
 };
@@ -633,16 +664,18 @@ cards("host");cg.classList.remove("hint");
 new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){cg.classList.remove("hint");void cg.offsetWidth;cg.classList.add("hint");o.disconnect()}}),{threshold:.4}).observe(cg);
 
 /* armador */
-const S=[{id:"pp",nm:"Pollo pesto",c:"var(--pp)"},{id:"rb",nm:"Roast beef",c:"var(--rb)"},{id:"pa",nm:"Pastrami",c:"var(--pa)"}];
-const SC={pp:"#5E8B3A",rb:"#C24A2C",pa:"#8A4F9E"};
+const S=[{id:"pp",nm:"Pollo pesto",c:"var(--pp)",p:6.5},{id:"rb",nm:"Roast beef",c:"var(--rb)",p:6.5},{id:"pa",nm:"Pastrami",c:"var(--pa)",p:6.5},{id:"pro",nm:"Prosciutto",c:"#B8862B",p:8.5,prem:1},{id:"mor",nm:"Mortadela con pistacho",c:"#C9577A",p:8.5,prem:1}];
+const PR={};S.forEach(s=>{PR[s.id+"_c"]=s.p;PR[s.id+"_m"]=s.p});
+const SC={pp:"#5E8B3A",rb:"#C24A2C",pa:"#8A4F9E",pro:"#B8862B",mor:"#C9577A"};
 let n=150,Q={},dul="mix",preset="clasico";
-const keys=[];S.forEach(s=>keys.push(s.id+"_c",s.id+"_m"));
+const keys=[];S.forEach(s=>{keys.push(s.id+"_c");if(!s.prem)keys.push(s.id+"_m")});
 const STEP=5;
 function split(n,ks){const o={};const base=Math.floor(n/ks.length/STEP)*STEP;ks.forEach(k=>o[k]=base);o[ks[0]]+=n-base*ks.length;return o}
 const PRE={
  clasico:{nm:"El de MD",sub:"Todo pollo pesto",dots:["pp","pp","pp"],fn:n=>({pp_c:n})},
  tres:{nm:"Tres sabores",sub:"Completos, en partes iguales",dots:["pp","rb","pa"],fn:n=>split(n,["pp_c","rb_c","pa_c"])},
  dulce:{nm:"Salado y dulce",sub:"Medio + dulce, tres sabores",dots:["pp","rb","pa"],half:true,fn:n=>split(n,["pp_m","rb_m","pa_m"])},
+ prem:{nm:"Toque premium",sub:"Pollo pesto + prosciutto + mortadela",dots:["pp","pro","mor"],fn:n=>{const a=Math.round(n/2/STEP)*STEP,b=Math.floor((n-a)/2/STEP)*STEP;return{pp_c:a,pro_c:b,mor_c:n-a-b}}},
  mix:{nm:"Mitad y mitad",sub:"Completo + medio con dulce",dots:["pp","pp","rb"],fn:n=>{const a=Math.round(n/2/STEP)*STEP;return{pp_c:a,pp_m:n-a}}}
 };
 const pr=$("presets");
@@ -651,9 +684,10 @@ Object.entries(PRE).forEach(([k,p])=>{const b=document.createElement("button");b
  b.onclick=()=>{used=true;applyPreset(k)};pr.appendChild(b)});
 function applyPreset(k){preset=k;pr.querySelectorAll(".pre").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.k===k)));Q=PRE[k].fn(n);render()}
 const mx=$("mx");
-mx.innerHTML=S.map(s=>`<tr style="--c:${s.c}"><td><b>${s.nm}</b></td>${["c","m"].map(f=>`<td><span class="stp"><button type="button" data-k="${s.id}_${f}" data-d="-1" aria-label="Quitar ${STEP} de ${s.nm} ${f==="c"?"completo":"medio + dulce"}">−</button><output id="o_${s.id}_${f}">0</output><button type="button" data-k="${s.id}_${f}" data-d="1" aria-label="Sumar ${STEP} a ${s.nm} ${f==="c"?"completo":"medio + dulce"}">+</button></span></td>`).join("")}</tr>`).join("");
+mx.innerHTML=S.map(s=>`<tr style="--c:${s.c}"><td><b>${s.nm}</b><small class="pz">${f2(s.p)}${s.prem?" · premium":""}</small></td>${["c","m"].map(f=>s.prem&&f==="m"?`<td><span class="na">—</span></td>`:`<td><span class="stp"><button type="button" data-k="${s.id}_${f}" data-d="-1" aria-label="Quitar ${STEP} de ${s.nm} ${f==="c"?"completo":"medio + dulce"}">−</button><output id="o_${s.id}_${f}">0</output><button type="button" data-k="${s.id}_${f}" data-d="1" aria-label="Sumar ${STEP} a ${s.nm} ${f==="c"?"completo":"medio + dulce"}">+</button></span></td>`).join("")}</tr>`).join("");
 const sum=()=>keys.reduce((a,k)=>a+(Q[k]||0),0);
 const halves=()=>S.reduce((a,s)=>a+(Q[s.id+"_m"]||0),0);
+const money=()=>keys.reduce((a,k)=>a+(Q[k]||0)*PR[k],0);
 mx.addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;used=true;const k=b.dataset.k,d=+b.dataset.d;
  if(d>0&&sum()>=n)return;Q[k]=Math.max(0,(Q[k]||0)+d*STEP);if(d>0&&sum()>n)Q[k]-=sum()-n;if(!Q[k])delete Q[k];preset=null;pr.querySelectorAll(".pre").forEach(x=>x.setAttribute("aria-pressed","false"));render()});
 $("left").addEventListener("click",e=>{if(!e.target.closest("button"))return;used=true;const r=n-sum();if(r>0){Q.pp_c=(Q.pp_c||0)+r}else if(r<0){let over=-r;for(const k of keys.slice().reverse()){const t=Math.min(Q[k]||0,over);if(t){Q[k]-=t;over-=t;if(!Q[k])delete Q[k]}if(!over)break}}render()});
@@ -668,7 +702,7 @@ function dulTxt(q){if(dul==="av")return{av:q,po:0};if(dul==="po")return{av:0,po:
 function render(){
  $("nOut").textContent=n;nIn.style.setProperty("--p",((n-50)/150*100)+"%");
  $("nHint").textContent=n===150?"Aforo del Salón Doral 1":"Aforo del salón: 150";
- S.forEach(s=>["c","m"].forEach(f=>{const k=s.id+"_"+f;$("o_"+k).textContent=Q[k]||0}));
+ keys.forEach(k=>{$("o_"+k).textContent=Q[k]||0});
  const t=sum(),r=n-t;
  mx.querySelectorAll('button[data-d="1"]').forEach(b=>b.disabled=t>=n);
  mx.querySelectorAll('button[data-d="-1"]').forEach(b=>b.disabled=!(Q[b.dataset.k]>0));
@@ -683,12 +717,12 @@ function render(){
  $("oT").textContent=n+" invitados · 3 de diciembre";
  const lines=[];
  S.forEach(s=>{const c=Q[s.id+"_c"]||0,m=Q[s.id+"_m"]||0;
-  if(c)lines.push({c:SC[s.id],b:`${c} paninis ${s.nm.toLowerCase()}`,sm:"Completo",v:c*PRICE});
-  if(m)lines.push({c:SC[s.id],b:`${m} medios paninis ${s.nm.toLowerCase()}`,sm:"Medio + dulce",v:m*PRICE})});
+  if(c)lines.push({c:SC[s.id],b:`${c} paninis ${s.nm.toLowerCase()}`,sm:"Completo",p:s.p,v:c*s.p});
+  if(m)lines.push({c:SC[s.id],b:`${m} medios paninis ${s.nm.toLowerCase()}`,sm:"Medio + dulce",p:s.p,v:m*s.p})});
  const dd=dulTxt(h);
- $("oList").innerHTML=lines.map(l=>`<li><i style="background:${l.c}"></i><div>${l.b}<small>${l.sm} · ${f2(PRICE)} c/u</small></div><span>${f2(l.v)}</span></li>`).join("")+(h?`<li><i style="background:var(--sol)"></i><div>Dulces<small>${[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" · ")}</small></div><span>incluidos</span></li>`:"");
- const tot=t*PRICE;
- $("oTot").innerHTML=`<div><span>${t} invitados × ${f2(PRICE)}</span><span></span></div><div class="gt"><span>Total</span><b>${f2(tot)}</b></div>`;
+ $("oList").innerHTML=lines.map(l=>`<li><i style="background:${l.c}"></i><div>${l.b}<small>${l.sm} · ${f2(l.p)} c/u</small></div><span>${f2(l.v)}</span></li>`).join("")+(h?`<li><i style="background:var(--sol)"></i><div>Dulces<small>${[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" · ")}</small></div><span>incluidos</span></li>`:"");
+ const tot=money();
+ $("oTot").innerHTML=`<div><span>${t} invitados</span><span>${t?f2(tot/t)+" por invitado":""}</span></div><div class="gt"><span>Total</span><b>${f2(tot)}</b></div>`;
  $("oPay").innerHTML=`<div><small>75 % para reservar</small><b>${f2(tot*.75)}</b></div><div><small>25 % el 2 de diciembre</small><b>${f2(tot*.25)}</b></div>`;
  $("oWarn").innerHTML=r!==0?`<p class="warn">${r>0?"Faltan "+r+" invitados por asignar":"Hay "+(-r)+" de más"}.</p>`:"";
  const msg=`Hola Gustavo, le escribo de Grupo SAC por el evento del jueves 3 de diciembre (Lido Hotel, Salón Doral 1).\n\nEste es el pedido:\nInvitados: ${n}\n\n${lines.map(l=>"• "+l.b+" ("+l.sm.toLowerCase()+") = "+f2(l.v)).join("\n")}${h?"\n• Dulces: "+[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" y "):""}\n\nTotal: ${f2(tot)}\n75 % para reservar: ${f2(tot*.75)}\n25 % el 2 de diciembre: ${f2(tot*.25)}\n\n¿Mesa de panes de la casa?: `;

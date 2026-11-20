@@ -115,27 +115,32 @@ p{margin:0}
 .tabs button:focus-visible{outline:3px solid var(--cielo)}
 .tabwrap{text-align:center}
 .cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.fc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1200px;height:330px;display:block;-webkit-tap-highlight-color:transparent}
-.fc .in{position:relative;width:100%;height:100%;transition:transform .8s cubic-bezier(.3,1.4,.4,1);transform-style:preserve-3d}
+.fc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1400px;height:420px;display:block;-webkit-tap-highlight-color:transparent}
+.fc .in{position:relative;width:100%;height:100%;transition:transform .9s cubic-bezier(.65,0,.35,1);transform-style:preserve-3d}
 .fc.flip .in{transform:rotateY(180deg)}
-.fc .f,.fc .b{position:absolute;inset:0;border-radius:26px;padding:22px;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
-.fc .f{background:var(--bg);color:#fff;box-shadow:0 26px 40px -24px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.15)}
-.fc .f::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-70px;top:-70px;background:rgba(255,255,255,.14)}
-.fc .f::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;left:-40px;bottom:-50px;background:rgba(0,0,0,.08)}
-.fc .ic{width:76px;height:76px;border-radius:22px;background:rgba(255,255,255,.95);display:grid;place-items:center;font-size:40px;box-shadow:0 14px 22px -12px rgba(0,0,0,.5);position:relative;z-index:1}
-.fc .q{font-family:var(--block);font-size:26px;line-height:1.02;margin-top:auto;position:relative;z-index:1;text-shadow:0 2px 0 rgba(0,0,0,.12)}
-.fc .t{margin-top:14px;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);border-radius:999px;padding:7px 14px;font-weight:700;font-size:13.5px;position:relative;z-index:1}
-.fc .t i{font-style:normal;display:inline-block}
-.fc .t{white-space:nowrap}
-@media (prefers-reduced-motion:no-preference){.fc .t i{animation:spinH 2.4s ease-in-out infinite}@keyframes spinH{0%,60%{transform:rotate(0)}80%,100%{transform:rotate(360deg)}}
- .cgrid.hint .fc .in{animation:peek 1.4s var(--ease) 1}.cgrid.hint .fc:nth-child(2) .in{animation-delay:.12s}.cgrid.hint .fc:nth-child(3) .in{animation-delay:.24s}.cgrid.hint .fc:nth-child(4) .in{animation-delay:.36s}
- @keyframes peek{40%{transform:rotateY(-24deg)}}
- .fc:hover:not(.flip) .in{transform:rotateY(-10deg) translateY(-4px)}}
-.fc .b{background:var(--crema);color:var(--tinta);transform:rotateY(180deg);border:4px solid var(--bg);justify-content:center;gap:14px}
-.fc .b .ok{width:52px;height:52px;border-radius:50%;background:var(--bg);color:#fff;display:grid;place-items:center;font-size:26px;font-weight:700}
-.fc .b .s{font-family:var(--block);font-size:24px;line-height:1.02;color:var(--bg)}
-.fc .b p{font-size:16.5px;line-height:1.4;font-weight:500}
-.fc:focus-visible{outline:3px solid var(--sol);outline-offset:5px;border-radius:26px}
+.fc .f,.fc .b{position:absolute;inset:0;border-radius:20px;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.fc .f{color:var(--crema);box-shadow:0 30px 50px -30px rgba(0,0,0,.95)}
+.fc .f img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.fc:hover .f img{transform:scale(1.06)}
+.fc .f::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,20,15,.05) 20%,rgba(33,20,15,.55) 55%,rgba(33,20,15,.94) 100%)}
+.fc .f>*:not(img){position:relative;z-index:1}
+.fc .f{padding:22px;justify-content:flex-end;gap:10px}
+.fc .num{position:absolute!important;top:18px;left:22px;font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:.2em;color:var(--sol);text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.fc .q{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.05}
+.fc .rule{width:44px;height:2px;background:var(--sol)}
+.fc .t{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:rgba(253,249,238,.85)}
+.fc .t i{font-style:normal;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--sol);color:var(--sol);display:grid;place-items:center;font-size:16px;line-height:1}
+@media (prefers-reduced-motion:no-preference){
+ .fc .t i{animation:pulse 2.6s ease-in-out infinite}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(247,195,68,.5)}60%{box-shadow:0 0 0 9px rgba(247,195,68,0)}}
+ .cgrid.hint .fc .in{animation:peek 1.6s cubic-bezier(.65,0,.35,1) 1}.cgrid.hint .fc:nth-child(2) .in{animation-delay:.15s}.cgrid.hint .fc:nth-child(3) .in{animation-delay:.3s}.cgrid.hint .fc:nth-child(4) .in{animation-delay:.45s}
+ @keyframes peek{45%{transform:rotateY(-16deg)}}}
+.fc .b{background:var(--crema);color:var(--tinta);transform:rotateY(180deg);padding:28px 24px;justify-content:center;gap:14px;box-shadow:inset 0 0 0 1px var(--linea),0 30px 50px -30px rgba(0,0,0,.95)}
+.fc .b::before{content:"";position:absolute;inset:10px;border:1px solid rgba(201,154,74,.55);border-radius:14px;pointer-events:none}
+.fc .b .k{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--coral)}
+.fc .b .s{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.05}
+.fc .b .rule{background:var(--coral)}
+.fc .b p{font-size:16.5px;line-height:1.5;color:var(--tinta2)}
+.fc:focus-visible{outline:2px solid var(--sol);outline-offset:5px;border-radius:20px}
 .cfoot{margin-top:28px;text-align:center;font-family:var(--hand);font-size:clamp(24px,3vw,32px);color:var(--sol)}
 
 /* sabores */
@@ -278,6 +283,18 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .wy span{font-family:var(--block);font-size:44px;line-height:1;color:var(--coral)}
 .wy b{font-size:18px}
 .wy p{font-size:15px;color:var(--tinta2)}
+.mgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:34px;align-items:center}
+.mgrid>*{min-width:0}
+.mm-ph{border-radius:26px;overflow:hidden;aspect-ratio:4/5;position:relative;box-shadow:0 30px 50px -30px rgba(51,32,26,.7);background:var(--crema)}
+.mm-ph img{width:100%;height:100%;object-fit:cover}
+.mm-ph span{position:absolute;left:14px;bottom:14px;background:var(--tinta);color:var(--sol);font-family:var(--serif);font-weight:700;font-size:20px;padding:4px 16px;border-radius:999px}
+.mm{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.mm>div{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;background:rgba(253,249,238,.9);border-radius:20px;padding:16px}
+.mm>div>span{width:52px;height:52px;border-radius:16px;background:var(--tinta);color:var(--sol);display:grid;place-items:center;font-family:var(--block);font-size:17px}
+.mm b{display:block;font-size:17px}
+.mm p{font-size:14.5px;color:var(--tinta2)}
+@media (max-width:980px){.mgrid{grid-template-columns:minmax(0,1fr)}.mm-ph{aspect-ratio:16/10}}
+@media (max-width:560px){.mm{grid-template-columns:minmax(0,1fr)}}
 .trust{background:var(--crema)}
 .tgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:30px;align-items:center}
 .tgrid>*{min-width:0}
@@ -350,20 +367,13 @@ footer .priv{opacity:.6;font-size:12.5px}
   footer{padding-bottom:110px}
   .awning{height:56px}
   .seats{grid-template-columns:repeat(15,minmax(0,1fr))}
-  .fc{height:300px}
+  .fc{height:380px}
 }
 @media (max-width:560px){
   .sab,.why3,.formats,.steps{grid-template-columns:minmax(0,1fr)}
   .formats .price{grid-column:auto}
-  .cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
-  .fc{height:250px}
-  .fc .f,.fc .b{padding:14px;border-radius:20px}
-  .fc .ic{width:54px;height:54px;font-size:28px;border-radius:16px}
-  .fc .q{font-size:18px}
-  .fc .t{font-size:11.5px;padding:5px 10px;margin-top:10px}
-  .fc .b .s{font-size:17px}
-  .fc .b p{font-size:13.5px}
-  .fc .b .ok{width:38px;height:38px;font-size:20px}
+  .cgrid{grid-template-columns:minmax(0,1fr)}
+  .fc{height:340px}
   .giftg{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
   .gf b{font-size:16px}
   .gf p{font-size:13px}
@@ -389,6 +399,7 @@ footer .priv{opacity:.6;font-size:12.5px}
       <a href="#sabores">Sabores</a>
       <a href="#armar">Su pedido</a>
       <a href="#compania">Nuestra compañía</a>
+      <a href="#masamadre">Masa madre</a>
       <a href="#reservar">Reservar</a>
     </div>
     <a class="btn coral" href="#armar">Armar el pedido</a>
@@ -443,6 +454,7 @@ footer .priv{opacity:.6;font-size:12.5px}
     <div class="head rv">
       <span class="kick">Tres sabores · focaccia de masa madre</span>
       <h2>El que usted ya conoce, y dos para sorprender</h2>
+      <p class="lede">Todos en focaccia de masa madre de Alleria, horneada por nosotros.</p>
     </div>
     <div class="sab">
       <article class="sc rv" style="--c:var(--pp)"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Panini de pollo pesto"><span class="badge">El de MD Conference</span><div class="nm"><h3>Pollo pesto</h3></div></div><div class="bd"><div class="ing"><span>Pollo</span><span>Pesto</span><span>Tocineta</span><span>Gouda de búfala</span></div></div></article>
@@ -520,16 +532,21 @@ footer .priv{opacity:.6;font-size:12.5px}
   </div>
 </section>
 
-<section class="why">
-  <div class="wrap">
-    <div class="head rv">
-      <span class="kick">Por qué masa madre</span>
-      <h2>Llegan con hambre. Se van conversando.</h2>
-    </div>
-    <div class="why3">
-      <div class="wy rv"><span>24 h</span><b>Fermentación natural</b><p>Sin conservantes ni levadura comercial.</p></div>
-      <div class="wy rv"><span>Ligero</span><b>Sin pesadez</b><p>A las 7 de la noche, sus invitados siguen conversando.</p></div>
-      <div class="wy rv"><span>100 %</span><b>Hecho por nosotros</b><p>De la masa al último panini.</p></div>
+<section class="why" id="masamadre">
+  <div class="wrap mgrid">
+    <div class="mm-ph rv"><img src="/assets/sac/miga.jpg" alt="Miga de la focaccia de masa madre de Alleria"><span>24 horas de fermentación</span></div>
+    <div>
+      <div class="head rv" style="margin-bottom:22px">
+        <span class="kick">Por qué es premium</span>
+        <h2>La diferencia está en la masa madre</h2>
+        <p class="lede" style="color:var(--tinta)">La misma que hace distinto a nuestro pan hace distinto a su refrigerio.</p>
+      </div>
+      <div class="mm">
+        <div class="rv"><span>24 h</span><div><b>Fermentación natural</b><p>Sin levadura comercial: el tiempo hace el trabajo.</p></div></div>
+        <div class="rv"><span>✓</span><div><b>Más fácil de digerir</b><p>La fermentación larga deja un pan que cae ligero.</p></div></div>
+        <div class="rv"><span>✓</span><div><b>Más sabor</b><p>Corteza dorada, miga aireada y un sabor que se nota en cada bocado.</p></div></div>
+        <div class="rv"><span>0</span><div><b>Conservantes</b><p>Harina, agua, sal y tiempo. Nada más.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -589,21 +606,21 @@ const L=$("lights");for(let i=0;i<22;i++){const s=document.createElement("i");s.
 /* tarjetas */
 const CARDS={
  host:[
-  ["#E2582F","🙌","Que se sientan especiales","Premium en cada detalle","Masa madre de Alleria, empacada una por una. Así se siente una invitación exclusiva."],
-  ["#1F5FAD","🥂","Usted, con sus clientes","Del resto nos encargamos","Llegamos antes, montamos, reponemos durante las 3 horas y retiramos al final."],
-  ["#8A4F9E","📣","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
-  ["#5E8B3A","🎁","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada. El premio que todos quieren ganar."]
+  ["/assets/catering/ph/empacado-papel.jpg","Que se sientan especiales","Premium en cada detalle","Masa madre de Alleria, empacada una por una. Así se siente una invitación exclusiva."],
+  ["/assets/catering/ph/box.jpg","Usted, con sus clientes","Del resto nos encargamos","Llegamos antes, montamos, reponemos durante las tres horas y retiramos al final."],
+  ["/assets/sac/pastrami.jpg","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
+  ["/assets/sac/pan-jamon.jpg","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada: el premio que todos quieren ganar."]
  ],
  guest:[
-  ["#F08A24","⚡","Energía a las 5 de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
-  ["#3C8DBF","🤝","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se come de pie, sin cubiertos."],
-  ["#C24A2C","🏷️","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
-  ["#6B4226","☕","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
+  ["/assets/catering/ph/signora.jpg","Energía a las cinco de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
+  ["/assets/catering/ph/jefa.jpg","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se disfruta de pie, sin cubiertos."],
+  ["/assets/catering/ph/diosa.jpg","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
+  ["/assets/catering/ph/chemex.jpg","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
  ]
 };
 const cg=$("cards");
-function cards(t){cg.classList.remove("hint");cg.innerHTML="";CARDS[t].forEach(w=>{const b=document.createElement("button");b.type="button";b.className="fc";b.style.setProperty("--bg",w[0]);b.setAttribute("aria-label",w[2]+". Toque para ver más");
-  b.innerHTML=`<div class="in"><div class="f"><span class="ic" aria-hidden="true">${w[1]}</span><span class="q">${w[2]}</span><span class="t"><i aria-hidden="true">↻</i>Toque aquí</span></div><div class="b"><span class="ok" aria-hidden="true">✓</span><span class="s">${w[3]}</span><p>${w[4]}</p></div></div>`;
+function cards(t){cg.classList.remove("hint");cg.innerHTML="";CARDS[t].forEach((w,i)=>{const b=document.createElement("button");b.type="button";b.className="fc";b.setAttribute("aria-label",w[1]+". Toque para ver más");
+  b.innerHTML=`<div class="in"><div class="f"><img src="${w[0]}" alt="" loading="lazy"><span class="num">0${i+1}</span><span class="q">${w[1]}</span><span class="rule"></span><span class="t"><i aria-hidden="true">+</i>Descubrir</span></div><div class="b"><span class="k">Lo que hacemos</span><span class="s">${w[2]}</span><span class="rule"></span><p>${w[3]}</p></div></div>`;
   b.onclick=()=>b.classList.toggle("flip");cg.appendChild(b)});void cg.offsetWidth;cg.classList.add("hint")}
 document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",String(x===b)));cards(b.dataset.t)}));
 cards("host");cg.classList.remove("hint");

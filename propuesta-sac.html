@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Propuesta para Grupo SAC · Evento del 3 de diciembre · Alleria</title>
-<meta name="description" content="Propuesta privada de Alleria para el evento corporativo de Grupo SAC: paninis de masa madre para 150 invitados, jueves 3 de diciembre, Lido Hotel.">
+<title>Grupo SAC · La noche de sus clientes · Propuesta de Alleria</title>
+<meta name="description" content="Propuesta privada de Alleria para el evento de Grupo SAC: jueves 3 de diciembre, Lido Hotel, 150 invitados.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Propuesta para Grupo SAC · Alleria">
-<meta property="og:description" content="Paninis de masa madre para la noche de sus clientes. Jueves 3 de diciembre · Lido Hotel, Salón Doral 1.">
+<meta property="og:title" content="Grupo SAC · La noche de sus clientes">
+<meta property="og:description" content="Propuesta de Alleria · Jueves 3 de diciembre · Lido Hotel, Salón Doral 1.">
 <meta property="og:image" content="https://alleria-website.vercel.app/assets/catering/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#33201A">
+<meta name="theme-color" content="#21140F">
 <style>
 @font-face{font-family:"Bowlby One";src:url(/assets/catering/bowlby-one-latin-400-normal.woff2) format("woff2");font-display:swap}
 @font-face{font-family:"Gochi Hand";src:url(/assets/anaquel/fonts/gochi-hand-latin-400-normal.woff2) format("woff2");font-display:swap}
@@ -22,7 +22,7 @@
 :root{
   --crema:#FDF9EE; --crema2:#F6EEDC; --blanco:#fff; --cielo:#7DC4E7; --cielo2:#DDEFF9; --cielo3:#3C8DBF;
   --coral:#E2582F; --coral2:#FBE1D6; --sol:#F7C344; --sol2:#FFF0C7; --tinta:#33201A; --tinta2:#6D564A; --linea:#EADFCB;
-  --noche:#21140F; --noche2:#2E1D16;
+  --noche:#21140F; --noche2:#2E1D16; --sac:#1F5FAD; --sacO:#F08A24;
   --pp:#5E8B3A; --rb:#C24A2C; --pa:#8A4F9E;
   --block:"Bowlby One","Arial Black",Impact,sans-serif; --hand:"Gochi Hand",cursive; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --serif:"Cormorant Garamond",Georgia,serif;
   --ease:cubic-bezier(.2,.75,.2,1); color-scheme:light;
@@ -35,55 +35,56 @@ img{max-width:100%;display:block}
 section{padding-block:84px;position:relative}
 h1,h2,h3{margin:0;text-wrap:balance}
 h2{font-family:var(--block);font-weight:400;font-size:clamp(34px,5.2vw,58px);line-height:.95;color:var(--cielo3);letter-spacing:-.01em}
-h3{font-family:var(--block);font-weight:400;color:var(--coral);line-height:1}
+h3{font-family:var(--block);font-weight:400;line-height:1}
 p{margin:0}
 .kick{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--tinta2)}
 .kick::before{content:"";width:34px;height:6px;border-radius:9px;background:var(--cielo)}
-.lede{font-size:clamp(17px,2vw,19.5px);color:var(--tinta2);max-width:64ch}
-.head{display:flex;flex-direction:column;gap:14px;margin-bottom:36px;max-width:860px}
+.lede{font-size:clamp(17px,2vw,19.5px);color:var(--tinta2);max-width:56ch}
+.head{display:flex;flex-direction:column;gap:14px;margin-bottom:34px;max-width:820px}
+.head.c{margin-inline:auto;text-align:center;align-items:center}
 :focus-visible{outline:3px solid var(--cielo3);outline-offset:3px;border-radius:10px}
-.btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:15px 24px;border-radius:999px;font-weight:700;font-size:16px;text-align:center;transition:transform .15s}
+.btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:15px 26px;border-radius:999px;font-weight:700;font-size:16px;text-align:center;transition:transform .15s}
 .btn:active{transform:scale(.97)}
 .btn:focus-visible{outline:3px solid var(--tinta);outline-offset:3px}
 .btn.coral{background:var(--coral);color:#fff;box-shadow:0 12px 26px -12px rgba(160,50,10,.75)}
 .btn.wa{background:#25D366;color:#0B2E17}
-.btn.ink{background:var(--tinta);color:var(--crema)}
-.btn.sol{background:var(--sol);color:var(--tinta)}
+.btn.sol{background:var(--sol);color:var(--tinta);box-shadow:0 12px 26px -12px rgba(0,0,0,.6)}
 .btn.ghost{border:2px solid currentColor}
 .btn svg{width:20px;height:20px;flex:none}
 .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .rv.in{opacity:1;transform:none}
-.sr{position:absolute;left:-9999px}
 
 /* barra */
-.bar{position:sticky;top:0;z-index:40;background:rgba(253,249,238,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
-.bar .wrap{display:flex;align-items:center;gap:14px;height:60px}
-.logo{font-family:var(--serif);font-weight:700;letter-spacing:.3em;font-size:18px;flex:none;display:flex;align-items:center;gap:10px}
-.logo small{font-family:var(--sans);letter-spacing:0;font-size:13px;color:var(--tinta2);font-weight:500}
-.logo img{width:30px;height:30px;border-radius:50%;box-shadow:0 0 0 1px var(--linea)}
+.bar{position:sticky;top:0;z-index:40;background:rgba(253,249,238,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.bar .wrap{display:flex;align-items:center;gap:14px;height:62px}
+.duo{display:flex;align-items:center;gap:10px;flex:none}
+.duo img{width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--linea)}
+.duo .x{color:var(--tinta2);font-size:14px}
+.duo .al{font-family:var(--serif);font-weight:700;letter-spacing:.3em;font-size:17px}
 .nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;justify-content:center}
 .nav::-webkit-scrollbar{display:none}
 .nav a{flex:none;text-decoration:none;color:var(--tinta2);font-size:14px;padding:7px 12px;border-radius:999px}
 .nav a.on{background:var(--cielo);color:var(--tinta);font-weight:700}
 .bar .btn{padding:10px 16px;font-size:14px;flex:none}
 
-/* portada: la noche del evento */
-.hero{background:radial-gradient(120% 90% at 80% 10%,#4A2E22 0,var(--noche) 62%);color:var(--crema);padding:0 0 56px;overflow:hidden}
-.awning{height:86px;background:repeating-linear-gradient(90deg,var(--sol) 0 56px,var(--crema) 56px 112px);position:relative}
+/* portada */
+.hero{background:radial-gradient(110% 90% at 85% 15%,#4A2E22 0,var(--noche) 62%);color:var(--crema);padding:0 0 60px;overflow:hidden}
+.awning{height:80px;background:repeating-linear-gradient(90deg,var(--sol) 0 56px,var(--crema) 56px 112px);position:relative}
 .awning::after{content:"";position:absolute;left:0;right:0;bottom:-27px;height:28px;background:radial-gradient(circle at 28px 0,var(--sol) 27px,transparent 28px) 0 0/112px 28px repeat-x,radial-gradient(circle at 28px 0,var(--crema) 27px,transparent 28px) 56px 0/112px 28px repeat-x}
 .lights{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-.lights i{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--sol);box-shadow:0 0 14px 4px rgba(247,195,68,.45);opacity:.65}
-@media (prefers-reduced-motion:no-preference){.lights i{animation:tw 3.2s ease-in-out infinite}@keyframes tw{50%{opacity:.15}}}
-.hgrid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:30px;align-items:center;padding-top:62px;position:relative}
+.lights i{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--sol);box-shadow:0 0 14px 4px rgba(247,195,68,.45);opacity:.6}
+@media (prefers-reduced-motion:no-preference){.lights i{animation:tw 3.2s ease-in-out infinite}@keyframes tw{50%{opacity:.12}}}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:30px;align-items:center;padding-top:60px;position:relative}
 .hgrid>*{min-width:0}
-.for-who{display:inline-flex;align-items:center;gap:12px;background:rgba(253,249,238,.08);border:1px solid rgba(253,249,238,.18);border-radius:999px;padding:6px 16px 6px 6px}
-.for-who img{width:44px;height:44px;border-radius:50%;background:#fff}
-.for-who span{font-size:13px;line-height:1.25;color:rgba(253,249,238,.8)}
-.for-who b{display:block;color:var(--crema);font-size:14.5px}
-.hero h1{font-family:var(--block);font-weight:400;font-size:clamp(40px,5.4vw,72px);line-height:.95;color:var(--crema);margin:22px 0 18px;letter-spacing:-.01em}
+.host{display:flex;align-items:center;gap:18px}
+.host img{width:104px;height:104px;border-radius:50%;background:#fff;box-shadow:0 0 0 6px rgba(253,249,238,.12),0 20px 30px -14px rgba(0,0,0,.8);flex:none}
+.host small{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--sol)}
+.host b{display:block;font-family:var(--serif);font-size:clamp(30px,4vw,46px);line-height:1.05;color:var(--crema)}
+.host span{font-size:15px;color:rgba(253,249,238,.75)}
+.hero h1{font-family:var(--block);font-weight:400;font-size:clamp(44px,6vw,80px);line-height:.93;color:var(--crema);margin:28px 0 16px;letter-spacing:-.01em}
 .hero h1 span{color:var(--sol);display:block}
-.hero .lede{color:rgba(253,249,238,.86)}
+.hero .lede{color:rgba(253,249,238,.86);font-size:clamp(18px,2.1vw,21px)}
 .ticket{margin:26px 0 28px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--crema);color:var(--tinta);border-radius:20px;overflow:hidden;box-shadow:0 24px 40px -24px rgba(0,0,0,.8)}
 .ticket div{padding:12px 14px;border-right:2px dashed var(--linea);display:flex;flex-direction:column;gap:2px;min-width:0}
 .ticket div:last-child{border-right:0}
@@ -94,79 +95,73 @@ p{margin:0}
 .stage .plate{position:absolute;inset:6%;border-radius:50%;overflow:hidden;border:14px solid var(--crema);box-shadow:0 40px 70px -30px rgba(0,0,0,.9)}
 .stage .plate img{width:100%;height:100%;object-fit:cover}
 .stage .fl{position:absolute;filter:drop-shadow(0 18px 16px rgba(0,0,0,.45));z-index:3}
-.stage .s1{width:34%;left:-7%;bottom:2%}
-.stage .s2{width:24%;right:-4%;top:2%}
-.stage .s3{width:22%;right:-6%;bottom:12%}
-.stage .tag{position:absolute;z-index:6;background:var(--coral);color:#fff;font-family:var(--hand);font-size:24px;padding:4px 16px;border-radius:999px;transform:rotate(-5deg);left:26%;top:2%;box-shadow:0 10px 18px -10px rgba(0,0,0,.8);white-space:nowrap}
-@media (prefers-reduced-motion:no-preference){.stage .s1{animation:fl 6s ease-in-out infinite}.stage .s2,.stage .s3{animation:fl 7s ease-in-out -2s infinite}@keyframes fl{50%{transform:translateY(-10px) rotate(2deg)}}}
+.stage .s1{width:36%;left:-8%;bottom:0}
+.stage .s2{width:24%;right:-4%;top:4%}
+.stage .tag{position:absolute;z-index:6;background:var(--coral);color:#fff;font-family:var(--hand);font-size:24px;padding:4px 16px;border-radius:999px;transform:rotate(-5deg);right:2%;bottom:8%;box-shadow:0 10px 18px -10px rgba(0,0,0,.8);white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.stage .s1{animation:fl 6s ease-in-out infinite}.stage .s2{animation:fl 7s ease-in-out -2s infinite}@keyframes fl{50%{transform:translateY(-10px) rotate(2deg)}}}
 
-/* frase puente */
-.bridge{background:var(--sol);padding-block:30px}
-.bridge p{font-family:var(--serif);font-weight:700;font-size:clamp(22px,3vw,32px);line-height:1.2;text-align:center;max-width:900px;margin:0 auto}
+.bridge{background:var(--sol);padding-block:28px}
+.bridge p{font-family:var(--serif);font-weight:700;font-size:clamp(23px,3vw,34px);line-height:1.15;text-align:center;max-width:900px;margin:0 auto}
 .bridge p em{font-style:normal;color:var(--coral)}
 
-/* metas */
-.goals{background:var(--crema)}
-.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.gc{background:var(--blanco);border:2px solid var(--linea);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:10px}
-.gc .n{font-family:var(--block);font-size:46px;line-height:1;color:var(--cielo)}
-.gc b{font-family:var(--block);font-weight:400;font-size:22px;line-height:1.05}
-.gc p{font-size:15.5px;color:var(--tinta2)}
-.gc .us{margin-top:auto;padding-top:12px;border-top:2px dashed var(--linea);font-size:15px;color:var(--tinta)}
-.gc .us::before{content:"Cómo ayudamos: ";font-weight:700;color:var(--coral)}
-
-/* alegrías y problemas */
-.care{background:var(--tinta);color:var(--crema)}
+/* tarjetas que se voltean */
+.care{background:var(--noche);color:var(--crema);overflow:hidden}
 .care h2{color:var(--sol)}
 .care .kick{color:rgba(253,249,238,.75)}
 .care .lede{color:rgba(253,249,238,.84)}
-.tabs{display:inline-flex;background:rgba(255,255,255,.08);border-radius:999px;padding:5px;gap:4px;margin-bottom:22px;flex-wrap:wrap}
-.tabs button{all:unset;cursor:pointer;padding:10px 18px;border-radius:999px;font-weight:700;font-size:15px;color:rgba(253,249,238,.8)}
+.tabs{display:inline-flex;background:rgba(255,255,255,.08);border-radius:999px;padding:6px;gap:4px;margin:0 auto 26px}
+.tabs button{all:unset;cursor:pointer;padding:12px 22px;border-radius:999px;font-weight:700;font-size:16px;color:rgba(253,249,238,.8);transition:background .25s,color .25s}
 .tabs button[aria-selected="true"]{background:var(--sol);color:var(--tinta)}
 .tabs button:focus-visible{outline:3px solid var(--cielo)}
-.cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.wc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1000px;min-height:250px;display:block}
-.wc .in{position:relative;width:100%;height:100%;min-height:250px;transition:transform .7s var(--ease);transform-style:preserve-3d}
-.wc.flip .in{transform:rotateY(180deg)}
-.wc .f,.wc .b{position:absolute;inset:0;border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:10px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
-.wc .f{background:var(--noche2);border:1px solid rgba(253,249,238,.16)}
-.wc .f .ic{font-size:30px}
-.wc .f .q{font-family:var(--block);font-size:21px;line-height:1.08;color:var(--crema)}
-.wc .f p{font-size:15px;line-height:1.4;color:rgba(253,249,238,.82)}
-.wc .f .t{margin-top:auto;font-size:13.5px;font-weight:700;color:var(--sol)}
-.wc .b{background:var(--crema);color:var(--tinta);transform:rotateY(180deg)}
-.wc .b .s{font-family:var(--block);font-size:19px;color:var(--coral);line-height:1.05}
-.wc .b p{font-size:15px;line-height:1.42}
-.wc:focus-visible{outline:3px solid var(--sol);outline-offset:4px;border-radius:22px}
-.cfoot{margin-top:22px;font-family:var(--hand);font-size:26px;color:var(--sol)}
+.tabwrap{text-align:center}
+.cgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.fc{all:unset;box-sizing:border-box;cursor:pointer;perspective:1200px;height:330px;display:block;-webkit-tap-highlight-color:transparent}
+.fc .in{position:relative;width:100%;height:100%;transition:transform .8s cubic-bezier(.3,1.4,.4,1);transform-style:preserve-3d}
+.fc.flip .in{transform:rotateY(180deg)}
+.fc .f,.fc .b{position:absolute;inset:0;border-radius:26px;padding:22px;display:flex;flex-direction:column;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.fc .f{background:var(--bg);color:#fff;box-shadow:0 26px 40px -24px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.15)}
+.fc .f::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-70px;top:-70px;background:rgba(255,255,255,.14)}
+.fc .f::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;left:-40px;bottom:-50px;background:rgba(0,0,0,.08)}
+.fc .ic{width:76px;height:76px;border-radius:22px;background:rgba(255,255,255,.95);display:grid;place-items:center;font-size:40px;box-shadow:0 14px 22px -12px rgba(0,0,0,.5);position:relative;z-index:1}
+.fc .q{font-family:var(--block);font-size:26px;line-height:1.02;margin-top:auto;position:relative;z-index:1;text-shadow:0 2px 0 rgba(0,0,0,.12)}
+.fc .t{margin-top:14px;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);border-radius:999px;padding:7px 14px;font-weight:700;font-size:13.5px;position:relative;z-index:1}
+.fc .t i{font-style:normal;display:inline-block}
+.fc .t{white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.fc .t i{animation:spinH 2.4s ease-in-out infinite}@keyframes spinH{0%,60%{transform:rotate(0)}80%,100%{transform:rotate(360deg)}}
+ .cgrid.hint .fc .in{animation:peek 1.4s var(--ease) 1}.cgrid.hint .fc:nth-child(2) .in{animation-delay:.12s}.cgrid.hint .fc:nth-child(3) .in{animation-delay:.24s}.cgrid.hint .fc:nth-child(4) .in{animation-delay:.36s}
+ @keyframes peek{40%{transform:rotateY(-24deg)}}
+ .fc:hover:not(.flip) .in{transform:rotateY(-10deg) translateY(-4px)}}
+.fc .b{background:var(--crema);color:var(--tinta);transform:rotateY(180deg);border:4px solid var(--bg);justify-content:center;gap:14px}
+.fc .b .ok{width:52px;height:52px;border-radius:50%;background:var(--bg);color:#fff;display:grid;place-items:center;font-size:26px;font-weight:700}
+.fc .b .s{font-family:var(--block);font-size:24px;line-height:1.02;color:var(--bg)}
+.fc .b p{font-size:16.5px;line-height:1.4;font-weight:500}
+.fc:focus-visible{outline:3px solid var(--sol);outline-offset:5px;border-radius:26px}
+.cfoot{margin-top:28px;text-align:center;font-family:var(--hand);font-size:clamp(24px,3vw,32px);color:var(--sol)}
 
 /* sabores */
 .menu{background:var(--cielo2)}
-.sab{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:22px}
-.sc{background:var(--blanco);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 30px -26px rgba(51,32,26,.8);border-top:8px solid var(--c)}
-.sc .im{aspect-ratio:4/3;position:relative;background:var(--crema2);overflow:hidden}
-.sc .im img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
-.sc:hover .im img{transform:scale(1.04)}
-.sc .im img.cut{object-fit:contain;padding:5%}
-.sc .badge{position:absolute;left:12px;top:12px;background:var(--sol);font-weight:700;font-size:12.5px;padding:5px 11px;border-radius:999px}
-.sc .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
-.sc h3{font-size:27px;color:var(--c)}
+.sab{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.sc{background:var(--blanco);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 30px -26px rgba(51,32,26,.8)}
+.sc .im{aspect-ratio:1/1;position:relative;background:var(--crema2);overflow:hidden}
+.sc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.sc:hover .im img{transform:scale(1.05)}
+.sc .im img.cut{object-fit:contain;padding:6%}
+.sc .nm{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(33,20,15,.85));color:#fff}
+.sc .nm h3{font-size:30px;color:#fff}
+.sc .badge{position:absolute;left:12px;top:12px;background:var(--sol);font-weight:700;font-size:12.5px;padding:5px 11px;border-radius:999px;z-index:1}
+.sc .bd{padding:14px 16px 16px;border-top:6px solid var(--c)}
 .ing{display:flex;flex-wrap:wrap;gap:6px}
 .ing span{font-size:13px;font-weight:700;background:var(--crema);border:1px solid var(--linea);border-radius:999px;padding:4px 10px}
-.sc .note{font-size:14.5px;color:var(--tinta2);margin-top:auto}
-.formats{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
-.fm{background:var(--tinta);color:var(--crema);border-radius:26px;padding:20px 22px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;align-items:center}
-.fm .pics{position:relative;height:120px}
-.fm .pics img{position:absolute;border-radius:16px;object-fit:cover;box-shadow:0 10px 18px -10px rgba(0,0,0,.7)}
-.fm .pics .a{width:96px;height:110px;left:0;top:0}
-.fm .pics .b2{width:64px;height:64px;right:-6px;bottom:-6px;border:3px solid var(--tinta)}
-.fm .lab{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sol)}
-.fm h3{color:var(--crema);font-size:26px;margin:4px 0 6px}
-.fm p{font-size:15px;color:rgba(253,249,238,.85)}
-.fm .pr{font-family:var(--block);font-size:30px;color:var(--sol);margin-top:8px;line-height:1}
-.fm .pr small{font-family:var(--sans);font-size:13px;color:rgba(253,249,238,.75);margin-left:4px}
-.all{margin-top:18px;display:flex;gap:12px;align-items:center;background:var(--blanco);border-radius:18px;padding:14px 18px;font-size:15.5px;border:2px dashed var(--cielo)}
-.all b{color:var(--cielo3)}
+.formats{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);gap:14px;align-items:stretch}
+.fm{background:var(--tinta);color:var(--crema);border-radius:24px;padding:16px;display:flex;gap:14px;align-items:center}
+.fm .pics{display:flex;flex:none}
+.fm .pics img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--tinta);background:var(--crema)}
+.fm .pics img+img{margin-left:-18px}
+.fm b{display:block;font-family:var(--block);font-weight:400;font-size:20px;line-height:1.05}
+.fm small{display:block;font-size:13.5px;opacity:.8;margin-top:2px}
+.price{background:var(--coral);color:#fff;border-radius:24px;padding:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.price b{font-family:var(--block);font-weight:400;font-size:42px;line-height:1}
+.price small{font-size:14px;font-weight:700}
 
 /* armador */
 .plan{background:var(--crema)}
@@ -179,7 +174,7 @@ p{margin:0}
 .ppl output{font-family:var(--block);font-size:56px;line-height:1;color:var(--cielo3);min-width:110px;text-align:right}
 .ppl .r{flex:1}
 .ppl small{display:block;font-size:13px;color:var(--tinta2);margin-top:4px}
-input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:12px;border-radius:999px;background:linear-gradient(90deg,var(--coral) var(--p,60%),var(--cielo2) var(--p,60%));outline:none}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:12px;border-radius:999px;background:linear-gradient(90deg,var(--coral) var(--p,67%),var(--cielo2) var(--p,67%));outline:none}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:34px;height:34px;border-radius:50%;background:var(--blanco);border:4px solid var(--coral);box-shadow:0 6px 12px -4px rgba(0,0,0,.35);cursor:grab}
 input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:var(--blanco);border:4px solid var(--coral);cursor:grab}
 .presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:24px}
@@ -197,9 +192,8 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .mx td:first-child{border-radius:14px 0 0 14px;border-left:6px solid var(--c)}
 .mx td:last-child{border-radius:0 14px 14px 0}
 .mx td b{display:block;font-size:15px}
-.mx td small{font-size:12px;color:var(--tinta2)}
-.stp{display:inline-flex;align-items:center;background:var(--blanco);border:1px solid var(--linea);border-radius:999px;margin:0 auto}
 .mx td:not(:first-child){text-align:center}
+.stp{display:inline-flex;align-items:center;background:var(--blanco);border:1px solid var(--linea);border-radius:999px}
 .stp button{all:unset;cursor:pointer;width:32px;height:32px;display:grid;place-items:center;font-size:18px;font-weight:700;color:var(--tinta)}
 .stp button:disabled{opacity:.3;cursor:default}
 .stp button:focus-visible{outline:2px solid var(--cielo3)}
@@ -241,105 +235,90 @@ input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;bac
 .pay{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .pay div{background:rgba(255,255,255,.07);border-radius:14px;padding:10px 12px}
 .pay small{display:block;font-size:12px;opacity:.75}
-.pay b{font-family:var(--block);font-weight:400;font-size:20px;color:var(--crema)}
+.pay b{font-family:var(--block);font-weight:400;font-size:20px}
 .inc{font-size:13.5px;background:rgba(247,195,68,.12);border:1px solid rgba(247,195,68,.35);border-radius:14px;padding:12px 14px;line-height:1.5}
 .inc b{color:var(--sol)}
 .out .btn{width:100%}
 .out .fine{font-size:12.5px;opacity:.7;text-align:center}
 .warn{font-size:13.5px;background:var(--sol);color:var(--tinta);border-radius:12px;padding:9px 12px;font-weight:700}
 
-/* cortesías */
+/* compañía */
 .gift{background:var(--sol)}
 .gift h2{color:var(--tinta)}
 .gift .kick::before{background:var(--tinta)}
 .gift .lede{color:var(--tinta)}
-.giftg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.giftg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .gf{background:var(--crema);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 30px -24px rgba(51,32,26,.7)}
-.gf .im{aspect-ratio:16/10;background:var(--crema2);position:relative;overflow:hidden}
-.gf .im img{width:100%;height:100%;object-fit:cover}
-.gf .im img.cut{object-fit:contain;padding:6%}
-.gf .im .two{display:grid;grid-template-columns:1fr 1fr;gap:4px;height:100%}
-.gf .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
-.gf b{font-family:var(--block);font-weight:400;font-size:21px;line-height:1.05}
+.gf .im{aspect-ratio:1/1;position:relative;overflow:hidden;background:var(--crema2)}
+.gf .im>img{width:100%;height:100%;object-fit:cover}
+.gf .im .two{display:grid;grid-template-rows:1fr 1fr;gap:4px;height:100%}
+.gf .im .two img{width:100%;height:100%;object-fit:cover;min-height:0}
+.gf .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px}
+.gf b{font-family:var(--block);font-weight:400;font-size:20px;line-height:1.05}
 .gf p{font-size:14.5px;color:var(--tinta2)}
-.gf .pill{align-self:flex-start;font-size:12px;font-weight:700;background:var(--tinta);color:var(--sol);border-radius:999px;padding:4px 10px;margin-top:auto}
-.gf .pill.ask{background:var(--coral);color:#fff}
-.hab{aspect-ratio:16/10;display:grid;place-items:center;background:linear-gradient(135deg,var(--cielo2),var(--crema2))}
-.hab .card{width:72%;background:var(--blanco);border-radius:12px;padding:12px 14px;box-shadow:0 14px 20px -12px rgba(51,32,26,.6);transform:perspective(500px) rotateX(10deg)}
+.hab{height:100%;display:grid;place-items:center;background:linear-gradient(135deg,var(--cielo2),var(--crema2))}
+.hab .card{width:78%;background:var(--blanco);border-radius:12px;padding:14px;box-shadow:0 14px 20px -12px rgba(51,32,26,.6);transform:perspective(500px) rotateX(12deg)}
 .hab .card small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta2);font-weight:700}
-.hab .card b{display:block;font-family:var(--block);font-weight:400;font-size:16px;color:var(--pp);margin:2px 0 4px}
+.hab .card b{display:block;font-size:19px;color:var(--pa);margin:2px 0 4px}
 .hab .card span{font-size:11.5px;color:var(--tinta2);line-height:1.3;display:block}
-.ig{aspect-ratio:16/10;display:grid;place-items:center;background:linear-gradient(135deg,#F58529,#DD2A7B 55%,#8134AF)}
-.ig .ph{width:40%;aspect-ratio:9/16;max-height:88%;background:var(--noche);border-radius:14px;border:3px solid #fff;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;gap:4px;box-shadow:0 14px 24px -10px rgba(0,0,0,.6);background-image:url(/assets/catering/ph/empacado-papel.jpg);background-size:cover;background-position:center}
-.ig .ph span{background:#fff;color:var(--tinta);font-size:9.5px;font-weight:700;border-radius:6px;padding:3px 5px;align-self:flex-start}
-.ig .ph em{font-style:normal;background:rgba(0,0,0,.6);color:#fff;font-size:9.5px;border-radius:6px;padding:3px 5px;align-self:flex-start}
+.ig{height:100%;display:grid;place-items:center;background:linear-gradient(135deg,#F58529,#DD2A7B 55%,#8134AF)}
+.ig .ph{width:46%;aspect-ratio:9/16;background:var(--noche) url(/assets/sac/pastrami.jpg) center/cover;border-radius:14px;border:3px solid #fff;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;gap:4px;box-shadow:0 14px 24px -10px rgba(0,0,0,.6)}
+.ig .ph span{background:#fff;color:var(--sac);font-size:10px;font-weight:700;border-radius:6px;padding:3px 6px;align-self:flex-start}
+.extra{margin-top:16px;display:flex;align-items:center;gap:14px;background:rgba(253,249,238,.7);border-radius:20px;padding:12px 16px;border:2px dashed var(--tinta)}
+.extra img{width:64px;height:64px;border-radius:14px;object-fit:cover;flex:none}
+.extra b{display:block}
+.extra p{font-size:14.5px;color:var(--tinta2)}
 
-/* masa madre */
+/* masa madre + confianza */
 .why{background:var(--cielo)}
 .why h2{color:var(--tinta)}
 .why .kick::before{background:var(--crema)}
-.wgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:34px;align-items:center}
-.wgrid>*{min-width:0}
-.clock{position:relative;aspect-ratio:1;max-width:340px;margin-inline:auto;width:100%;border-radius:50%;background:var(--crema);box-shadow:inset 0 0 0 14px #fff,0 30px 50px -30px rgba(51,32,26,.6)}
-.clock .arc{position:absolute;inset:14px;border-radius:50%;background:conic-gradient(from 150deg,rgba(226,88,47,.22) 0 90deg,transparent 90deg)}
-.clock .n{position:absolute;font-family:var(--block);font-size:20px;color:var(--cielo3);transform:translate(-50%,-50%)}
-.clock .h,.clock .m{position:absolute;left:50%;top:50%;transform-origin:50% 100%;border-radius:9px;background:var(--tinta)}
-.clock .h{width:10px;height:24%;margin:-24% 0 0 -5px;transform:rotate(150deg)}
-.clock .m{width:6px;height:34%;margin:-34% 0 0 -3px;transform:rotate(0deg)}
-.clock .dot{position:absolute;left:50%;top:50%;width:22px;height:22px;margin:-11px;border-radius:50%;background:var(--coral)}
-.clock .lab{position:absolute;left:27%;top:30%;transform:translateX(-50%) rotate(-8deg);font-size:21px;font-family:var(--hand);font-size:24px;color:var(--coral);white-space:nowrap}
-@media (prefers-reduced-motion:no-preference){.clock.in .h{animation:spin 2.4s var(--ease) 1}@keyframes spin{from{transform:rotate(60deg)}}}
-.facts{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.facts>div{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:start;background:rgba(253,249,238,.82);border-radius:18px;padding:14px}
-.facts>div>span{width:46px;height:46px;border-radius:14px;background:var(--tinta);color:var(--sol);display:grid;place-items:center;font-family:var(--block);font-size:15px}
-.facts b{display:block}
-.facts p{font-size:14.5px;color:var(--tinta2)}
-
-/* confianza */
+.why3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.wy{background:rgba(253,249,238,.88);border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.wy span{font-family:var(--block);font-size:44px;line-height:1;color:var(--coral)}
+.wy b{font-size:18px}
+.wy p{font-size:15px;color:var(--tinta2)}
 .trust{background:var(--crema)}
-.tgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center}
+.tgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:30px;align-items:center}
 .tgrid>*{min-width:0}
-.tgrid .ph{border-radius:26px;overflow:hidden;aspect-ratio:7/8;box-shadow:0 30px 50px -30px rgba(51,32,26,.7);position:relative}
-.tgrid .ph img{width:100%;height:100%;object-fit:cover}
+.tgrid .ph{border-radius:26px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 50px -30px rgba(51,32,26,.7);position:relative}
+.tgrid .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .tgrid .ph span{position:absolute;left:14px;bottom:14px;background:var(--crema);font-family:var(--hand);font-size:22px;color:var(--coral);padding:2px 14px;border-radius:999px}
-.who{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.who>div{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;background:var(--blanco);border:2px solid var(--linea);border-radius:18px;padding:14px}
-.who i{width:52px;height:52px;border-radius:14px;background:var(--cielo2);display:grid;place-items:center;font-style:normal;font-family:var(--block);color:var(--cielo3);font-size:18px}
-.who b{display:block}
-.who p{font-size:14.5px;color:var(--tinta2)}
-.quote{margin-top:16px;font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.25;color:var(--tinta)}
+.brands{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.brands span{font-family:var(--block);font-size:clamp(18px,2.2vw,24px);background:var(--blanco);border:2px solid var(--linea);border-radius:16px;padding:12px 18px;color:var(--tinta)}
+.quote{font-family:var(--serif);font-weight:700;font-size:clamp(24px,2.8vw,32px);line-height:1.2}
+.quote em{font-style:normal;color:var(--coral)}
 
-/* condiciones */
+/* reservar */
 .how{background:var(--cielo2)}
-.hgrid2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.hc{background:var(--blanco);border:2px solid var(--linea);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:6px}
-.hc .v{font-family:var(--block);font-size:28px;line-height:1;color:var(--cielo3)}
-.hc b{font-size:16.5px}
-.hc p{font-size:15px;color:var(--tinta2);line-height:1.45}
-.hc.dark{background:var(--tinta);border-color:var(--tinta);color:var(--crema)}
-.hc.dark .v{color:var(--sol)}
-.hc.dark p{color:rgba(253,249,238,.85)}
-.tl{margin-top:26px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:relative}
-.tl::before{content:"";position:absolute;left:12%;right:12%;top:19px;height:4px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--cielo3) 0 10px,transparent 10px 18px)}
-.tl div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;position:relative;padding:0 6px}
-.tl i{width:42px;height:42px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;box-shadow:0 0 0 6px var(--cielo2)}
-.tl b{font-size:15px}
-.tl small{font-size:13px;color:var(--tinta2);line-height:1.35}
-.tl div:last-child i{background:var(--tinta);color:var(--sol)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.st{background:var(--blanco);border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:8px;border:2px solid var(--linea);position:relative}
+.st i{font-style:normal;width:46px;height:46px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-weight:700;font-size:18px}
+.st small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--tinta2)}
+.st b{font-family:var(--block);font-weight:400;font-size:22px;line-height:1.05}
+.st p{font-size:14.5px;color:var(--tinta2)}
+.st.big{background:var(--tinta);border-color:var(--tinta);color:var(--crema)}
+.st.big i{background:var(--sol);color:var(--tinta)}
+.st.big small,.st.big p{color:rgba(253,249,238,.8)}
+.st.big b{color:var(--sol)}
+.paynote{margin-top:16px;text-align:center;font-size:15px;color:var(--tinta2)}
 
 /* cierre */
 .close{background:radial-gradient(120% 90% at 20% 0,#4A2E22,var(--noche) 65%);text-align:center;overflow:hidden;color:var(--crema)}
-.close h2{color:var(--crema);font-size:clamp(38px,6.6vw,80px)}
+.close .logos{display:flex;justify-content:center;align-items:center;gap:16px;margin-bottom:24px}
+.close .logos img{width:84px;height:84px;border-radius:50%;background:#fff}
+.close .logos span{font-family:var(--serif);font-weight:700;letter-spacing:.3em;font-size:22px}
+.close .logos em{font-style:normal;opacity:.6}
+.close h2{color:var(--crema);font-size:clamp(38px,6.4vw,78px)}
 .close h2 span{color:var(--sol);display:block}
 .close .lede{margin:20px auto 30px;color:rgba(253,249,238,.86)}
 .close .row{justify-content:center}
 .close .btn.ghost{color:var(--crema)}
 .sign{margin-top:28px;font-family:var(--hand);font-size:26px;color:var(--sol)}
-footer{background:var(--tinta);color:var(--crema);padding-block:36px}
-footer .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;font-size:14.5px}
-footer b{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+footer{background:var(--tinta);color:var(--crema);padding-block:30px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:var(--crema)}
-footer .priv{margin-top:20px;font-size:12.5px;opacity:.6}
+footer .priv{opacity:.6;font-size:12.5px}
 .dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--tinta);color:var(--crema);border-radius:20px;padding:10px 10px 10px 16px;display:none;align-items:center;gap:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(160%);transition:transform .35s var(--ease)}
 .dock:not(.show){visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
 .dock.show{transform:none;visibility:visible}
@@ -348,44 +327,54 @@ footer .priv{margin-top:20px;font-size:12.5px;opacity:.6}
 .dock .btn{padding:12px 16px;font-size:14.5px}
 
 @media (max-width:980px){
-  .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sab,.giftg,.hgrid2{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .pgrid,.wgrid,.tgrid{grid-template-columns:minmax(0,1fr)}
+  .cgrid,.giftg{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sab,.why3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pgrid,.tgrid{grid-template-columns:minmax(0,1fr)}
   .out{position:static}
   .presets{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .formats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .formats .price{grid-column:span 2}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
   section{padding-block:58px}
-  .hgrid{grid-template-columns:minmax(0,1fr);padding-top:44px}
-  .stage{max-width:380px}
+  .hgrid{grid-template-columns:minmax(0,1fr);padding-top:40px}
+  .stage{max-width:360px}
   .nav{display:none}
   .bar .wrap{justify-content:space-between}
-  .g3,.formats{grid-template-columns:minmax(0,1fr)}
+  .host img{width:84px;height:84px}
   .ticket{grid-template-columns:repeat(2,minmax(0,1fr))}
   .ticket div:nth-child(2){border-right:0}
   .ticket div:nth-child(-n+2){border-bottom:2px dashed var(--linea)}
-  .tl{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
-  .tl::before{display:none}
-  footer{padding-bottom:110px}
-  footer .cols{grid-template-columns:minmax(0,1fr)}
   .dock{display:flex}
-  .awning{height:60px}
+  footer{padding-bottom:110px}
+  .awning{height:56px}
   .seats{grid-template-columns:repeat(15,minmax(0,1fr))}
-  .tgrid .ph{aspect-ratio:4/3}
+  .fc{height:300px}
 }
 @media (max-width:560px){
-  .cgrid,.sab,.giftg,.hgrid2{grid-template-columns:minmax(0,1fr)}
-  .wc,.wc .in{min-height:210px}
+  .sab,.why3,.formats,.steps{grid-template-columns:minmax(0,1fr)}
+  .formats .price{grid-column:auto}
+  .cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+  .fc{height:250px}
+  .fc .f,.fc .b{padding:14px;border-radius:20px}
+  .fc .ic{width:54px;height:54px;font-size:28px;border-radius:16px}
+  .fc .q{font-size:18px}
+  .fc .t{font-size:11.5px;padding:5px 10px;margin-top:10px}
+  .fc .b .s{font-size:17px}
+  .fc .b p{font-size:13.5px}
+  .fc .b .ok{width:38px;height:38px;font-size:20px}
+  .giftg{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+  .gf b{font-size:16px}
+  .gf p{font-size:13px}
   .ppl output{font-size:46px;min-width:90px}
-  .fm{grid-template-columns:minmax(0,1fr)}
-  .fm .pics{height:110px;width:130px}
   .mx th{font-size:10.5px;letter-spacing:.06em}
   .mx td{padding:8px 4px}
-  .mx td small{display:none}
   .stp button{width:28px;height:28px}
   .stp output{min-width:30px;font-size:14px}
-  .stage .tag{font-size:20px;left:20%}
-  .logo small{display:none}
+  .duo .al{display:none}
+  .duo .x{display:none}
+  .tabs button{padding:10px 14px;font-size:14.5px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
 </style>
@@ -394,14 +383,13 @@ footer .priv{margin-top:20px;font-size:12.5px;opacity:.6}
 
 <nav class="bar" aria-label="Secciones">
   <div class="wrap">
-    <span class="logo">ALLERIA <small>× Grupo SAC</small></span>
+    <span class="duo"><img src="/assets/sac/logo-sac.png" alt="Grupo SAC"><span class="x">×</span><span class="al">ALLERIA</span></span>
     <div class="nav" id="nav">
-      <a href="#noche">Su noche</a>
-      <a href="#detalles">Los detalles</a>
+      <a href="#detalles">Su noche</a>
       <a href="#sabores">Sabores</a>
-      <a href="#armar">Arme su pedido</a>
-      <a href="#cortesias">Cortesías</a>
-      <a href="#condiciones">Condiciones</a>
+      <a href="#armar">Su pedido</a>
+      <a href="#compania">Nuestra compañía</a>
+      <a href="#reservar">Reservar</a>
     </div>
     <a class="btn coral" href="#armar">Armar el pedido</a>
   </div>
@@ -412,328 +400,281 @@ footer .priv{margin-top:20px;font-size:12.5px;opacity:.6}
   <div class="lights" aria-hidden="true" id="lights"></div>
   <div class="wrap hgrid">
     <div>
-      <div class="for-who"><img src="/assets/sac/logo-sac.png" alt="Grupo SAC" width="44" height="44"><span><b>Propuesta para el Lic. Juan Pablo Pérez</b>Grupo SAC · preparada por Alleria</span></div>
-      <h1>Una noche para agradecer<span>merece un detalle que se recuerde.</span></h1>
-      <p class="lede">Usted invita a sus clientes a una noche exclusiva para darles las gracias. Nosotros queremos que, al irse, se lleven el sabor de algo hecho con el mismo cuidado con el que usted los atiende: paninis de masa madre de Alleria, hechos por nosotros desde la masa hasta el último detalle.</p>
+      <div class="host"><img src="/assets/sac/logo-sac.png" alt="Grupo SAC" width="104" height="104"><div><small>Propuesta exclusiva para</small><b>Lic. Juan Pablo Pérez</b><span>Grupo SAC</span></div></div>
+      <h1>La noche de sus clientes<span>merece un sabor que se recuerde.</span></h1>
+      <p class="lede">Paninis de masa madre de Alleria para que sus 150 invitados se sientan atendidos como lo que son: especiales.</p>
       <div class="ticket" role="list">
         <div role="listitem"><small>Fecha</small><b>Jueves 3 de diciembre</b></div>
         <div role="listitem"><small>Hora</small><b>5:00 a 8:00 p. m.</b></div>
         <div role="listitem"><small>Lugar</small><b>Lido Hotel · Salón Doral 1</b></div>
-        <div role="listitem"><small>Invitados</small><b>150 clientes de Grupo SAC</b></div>
+        <div role="listitem"><small>Invitados</small><b>150 clientes</b></div>
       </div>
-      <div class="row"><a class="btn sol" href="#armar">Armar el pedido</a><a class="btn ghost" href="#detalles">Ver lo que incluye</a></div>
+      <div class="row"><a class="btn sol" href="#armar">Armar el pedido</a><a class="btn ghost" href="#detalles">Ver su noche</a></div>
     </div>
     <div class="stage" aria-hidden="true">
-      <div class="plate"><img src="/assets/catering/ph/empacado-papel.jpg" alt=""></div>
+      <div class="plate"><img src="/assets/sac/pastrami.jpg" alt=""></div>
       <img class="fl s1" src="/assets/catering/cut/chiqui.webp" alt="">
       <img class="fl s2" src="/assets/catering/cut/galleta-choco.webp" alt="">
-      <img class="fl s3" src="/assets/anaquel/cut/panjamon.webp" alt="">
-      <span class="tag">para 150 invitados</span>
+      <span class="tag">$6,50 por invitado</span>
     </div>
   </div>
 </header>
 
-<div class="bridge"><p>Usted ya los probó en los cursos de MD Conference. <em>Esta vez, los prueban sus clientes.</em></p></div>
-
-<section id="noche" class="goals">
-  <div class="wrap">
-    <div class="head rv">
-      <span class="kick">Lo que usted quiere lograr esa noche</span>
-      <h2>Un evento gratuito tiene una sola meta: que sus clientes se sientan importantes</h2>
-      <p class="lede">Pensamos esta propuesta al revés: primero en lo que usted busca con esta noche, y después en cómo la comida puede ayudarlo a lograrlo.</p>
-    </div>
-    <div class="g3">
-      <article class="gc rv"><span class="n">01</span><b>Que se sientan agradecidos</b><p>Un evento exclusivo dice «usted es importante para nosotros». Cada detalle lo tiene que confirmar.</p><p class="us">un refrigerio premium, hecho por nosotros y presentado uno por uno, a la altura de la invitación.</p></article>
-      <article class="gc rv"><span class="n">02</span><b>Que conversen y se queden</b><p>Si el invitado está cómodo, se queda, conversa con otros clientes y con su equipo. Ahí nacen los negocios.</p><p class="us">un formato que se come de pie, con una mano, mientras conversan; y una barra de café que invita a quedarse.</p></article>
-      <article class="gc rv"><span class="n">03</span><b>Que hablen de Grupo SAC</b><p>Lo mejor de un evento es lo que se comenta al día siguiente: «qué buena estuvo la noche de SAC».</p><p class="us">algo distinto que da de qué hablar, y difusión en nuestro Instagram de más de 14 mil seguidores, etiquetando a Grupo SAC.</p></article>
-    </div>
-  </div>
-</section>
+<div class="bridge"><p>Usted ya los probó en MD Conference. <em>Ahora, que los disfruten sus clientes.</em></p></div>
 
 <section id="detalles" class="care">
   <div class="wrap">
-    <div class="head rv">
-      <span class="kick">Los detalles</span>
-      <h2>Alegrías que se notan. Problemas que nadie ve.</h2>
-      <p class="lede">Toque cada tarjeta para ver qué hacemos. Elija primero para quién.</p>
+    <div class="head c rv">
+      <span class="kick">Su noche</span>
+      <h2>Lo que queremos que pase esa noche</h2>
+      <p class="lede">Toque cada tarjeta.</p>
     </div>
-    <div class="tabs rv" role="tablist" aria-label="Para quién">
+    <div class="tabwrap rv"><div class="tabs" role="tablist" aria-label="Para quién">
       <button type="button" role="tab" aria-selected="true" data-t="host">Para usted</button>
       <button type="button" role="tab" aria-selected="false" data-t="guest">Para sus invitados</button>
-    </div>
+    </div></div>
     <div class="cgrid" id="cards" role="tabpanel"></div>
-    <p class="cfoot rv">Esa noche usted solo recibe a sus clientes. Del resto nos encargamos nosotros.</p>
+    <p class="cfoot rv">Esa noche, usted solo disfruta con sus clientes.</p>
   </div>
 </section>
 
 <section id="sabores" class="menu">
   <div class="wrap">
     <div class="head rv">
-      <span class="kick">Tres sabores · todos en focaccia de masa madre</span>
-      <h2>El de siempre, y dos más para sorprender</h2>
-      <p class="lede">El pollo pesto es el que usted ya conoce. Le sumamos dos sabores para que la mesa tenga variedad. Usted decide si va todo de uno o si reparte entre los tres.</p>
+      <span class="kick">Tres sabores · focaccia de masa madre</span>
+      <h2>El que usted ya conoce, y dos para sorprender</h2>
     </div>
     <div class="sab">
-      <article class="sc rv" style="--c:var(--pp)"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Panini de pollo pesto en focaccia de masa madre"><span class="badge">El que usted ya conoce</span></div><div class="bd"><h3>Pollo pesto</h3><div class="ing"><span>Pollo</span><span>Pesto</span><span>Tocineta</span><span>Gouda de búfala</span></div><p class="note">El que acompaña los cursos de MD Conference. Fresco, aromático y con el toque crocante de la tocineta.</p></div></article>
-      <article class="sc rv" style="--c:var(--rb)"><div class="im"><img src="/assets/catering/ph/sandwich-papel.jpg" alt="Panini envuelto en papel Alleria"><span class="badge" style="background:var(--coral2)">Nuevo para su evento</span></div><div class="bd"><h3>Roast beef</h3><div class="ing"><span>Roast beef</span><span>Mantequilla de ajo</span><span>Lechuga</span><span>Queso de mano</span></div><p class="note">Sabor criollo y elegante a la vez: el queso de mano con la mantequilla de ajo, en la focaccia tibia.</p></div></article>
-      <article class="sc rv" style="--c:var(--pa)"><div class="im"><img src="/assets/catering/ph/empacado-2.jpg" alt="Paninis empacados uno por uno en papel Alleria"><span class="badge" style="background:#EBDDF0">Nuevo para su evento</span></div><div class="bd"><h3>Pastrami</h3><div class="ing"><span>Pastrami</span><span>Pepinillos</span><span>Gouda</span><span>Coleslaw</span><span>Salsa golf</span></div><p class="note">El más atrevido de los tres. Va bien envuelto en su papel, para comerlo de pie sin preocuparse por la ropa.</p></div></article>
+      <article class="sc rv" style="--c:var(--pp)"><div class="im"><img class="cut" src="/assets/catering/cut/chiqui.webp" alt="Panini de pollo pesto"><span class="badge">El de MD Conference</span><div class="nm"><h3>Pollo pesto</h3></div></div><div class="bd"><div class="ing"><span>Pollo</span><span>Pesto</span><span>Tocineta</span><span>Gouda de búfala</span></div></div></article>
+      <article class="sc rv" style="--c:var(--rb)"><div class="im"><img src="/assets/catering/ph/empacado-2.jpg" alt="Paninis envueltos en papel Alleria"><span class="badge" style="background:var(--coral2)">Nuevo</span><div class="nm"><h3>Roast beef</h3></div></div><div class="bd"><div class="ing"><span>Roast beef</span><span>Mantequilla de ajo</span><span>Lechuga</span><span>Queso de mano</span></div></div></article>
+      <article class="sc rv" style="--c:var(--pa)"><div class="im"><img src="/assets/sac/pastrami.jpg" alt="Panini de pastrami con coleslaw"><span class="badge" style="background:#EBDDF0">Nuevo</span><div class="nm"><h3>Pastrami</h3></div></div><div class="bd"><div class="ing"><span>Pastrami</span><span>Pepinillos</span><span>Gouda</span><span>Coleslaw</span><span>Salsa golf</span></div></div></article>
     </div>
     <div class="formats">
-      <article class="fm rv"><div class="pics"><img class="a" src="/assets/catering/ph/sandwich-papel.jpg" alt=""><img class="b2" src="/assets/catering/cut/chiqui.webp" alt="" style="object-fit:contain;background:var(--crema)"></div><div><span class="lab">Formato 1</span><h3>Panini completo</h3><p>El mismo panini que lleva MD Conference a sus cursos, en focaccia de 8 × 12 cm, empacado uno por uno.</p><div class="pr">$6,50<small>por invitado</small></div></div></article>
-      <article class="fm rv"><div class="pics"><img class="a" src="/assets/catering/ph/galletas.jpg" alt=""><img class="b2" src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><span class="lab">Formato 2</span><h3>Medio panini + dulce</h3><p>Medio panini del sabor que usted elija, y de cierre una galleta de avena con arándanos o una polvorosa de almendras. Salado y dulce en la misma mano.</p><div class="pr">$6,50<small>por invitado</small></div></div></article>
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/cut/chiqui.webp" alt="" style="object-fit:contain"></div><div><b>Panini completo</b><small>Empacado uno por uno</small></div></div>
+      <div class="fm rv"><div class="pics"><img src="/assets/catering/cut/chiqui.webp" alt="" style="object-fit:contain"><img src="/assets/catering/ph/galletas.jpg" alt=""><img src="/assets/catering/ph/polvorosas.jpg" alt=""></div><div><b>Medio panini + dulce</b><small>Galleta de avena con arándanos o polvorosa de almendras</small></div></div>
+      <div class="price rv"><b>$6,50</b><small>por invitado, en cualquier combinación</small></div>
     </div>
-    <p class="all rv"><b>Todo a $6,50 por invitado.</b> Puede mezclar sabores y formatos como quiera: el precio por persona no cambia.</p>
   </div>
 </section>
 
 <section id="armar" class="plan">
   <div class="wrap">
     <div class="head rv">
-      <span class="kick">Arme su pedido</span>
-      <h2>Reparta a sus 150 invitados como prefiera</h2>
-      <p class="lede">Empiece con una de las sugerencias y ajuste a su gusto. El salón de abajo se va llenando con cada invitado, y a la derecha ve el total y los dos pagos.</p>
+      <span class="kick">Su pedido</span>
+      <h2>Arme el refrigerio a su gusto</h2>
+      <p class="lede">Elija una sugerencia y ajústela. El salón se llena con cada invitado.</p>
     </div>
     <div class="pgrid">
       <div class="ctrl rv">
-        <p class="lbl"><em>1</em>¿Cuántos invitados?</p>
+        <p class="lbl"><em>1</em>Invitados</p>
         <div class="ppl"><output id="nOut">150</output><div class="r"><input type="range" id="n" min="50" max="200" step="5" value="150" aria-label="Número de invitados"><small id="nHint">Aforo del Salón Doral 1</small></div></div>
-        <p class="lbl"><em>2</em>Empiece con una sugerencia</p>
+        <p class="lbl"><em>2</em>Una sugerencia para empezar</p>
         <div class="presets" id="presets"></div>
-        <p class="lbl"><em>3</em>Ajuste por sabor y formato</p>
+        <p class="lbl"><em>3</em>Ajuste por sabor</p>
         <table class="mx" aria-label="Invitados por sabor y formato">
           <thead><tr><th>Sabor</th><th>Completo</th><th>Medio + dulce</th></tr></thead>
           <tbody id="mx"></tbody>
         </table>
         <div class="left" id="left" aria-live="polite"></div>
-        <div class="dul" id="dul" role="group" aria-label="Dulce del formato medio panini">
-          <span>Dulce del medio panini:</span>
+        <div class="dul" id="dul" role="group" aria-label="Dulce del medio panini">
+          <span>Dulce:</span>
           <button type="button" data-d="av" aria-pressed="false"><img src="/assets/catering/ph/galletas.jpg" alt="">Avena y arándanos</button>
-          <button type="button" data-d="po" aria-pressed="false"><img src="/assets/catering/ph/polvorosas.jpg" alt="">Polvorosa de almendras</button>
+          <button type="button" data-d="po" aria-pressed="false"><img src="/assets/catering/ph/polvorosas.jpg" alt="">Polvorosa</button>
           <button type="button" data-d="mix" aria-pressed="true">Mitad y mitad</button>
         </div>
         <div class="salon" aria-hidden="true">
           <div class="top"><b>Salón Doral 1</b><span id="sCap">150 invitados</span></div>
           <div class="stagebar"></div>
           <div class="seats" id="seats"></div>
-          <div class="legend"><span><i style="background:var(--pp)"></i>Pollo pesto</span><span><i style="background:var(--rb)"></i>Roast beef</span><span><i style="background:var(--pa)"></i>Pastrami</span><span><i style="background:linear-gradient(90deg,#999 50%,var(--sol) 50%)"></i>Medio + dulce</span><span><i style="background:rgba(253,249,238,.25)"></i>Por asignar</span></div>
+          <div class="legend"><span><i style="background:var(--pp)"></i>Pollo pesto</span><span><i style="background:var(--rb)"></i>Roast beef</span><span><i style="background:var(--pa)"></i>Pastrami</span><span><i style="background:linear-gradient(90deg,#999 50%,var(--sol) 50%)"></i>Medio + dulce</span></div>
         </div>
       </div>
       <aside class="out rv" aria-live="polite">
-        <span class="k">Pedido para Grupo SAC</span>
+        <span class="k">Pedido de Grupo SAC</span>
         <h3 id="oT">150 invitados</h3>
         <ul id="oList"></ul>
         <div class="tot" id="oTot"></div>
         <div class="pay" id="oPay"></div>
-        <div class="inc"><b>Cortesía de Alleria, sin costo:</b> barra de degustación de café, habladores en las mesas, piñitas de bienvenida, un pan de jamón para rifar, montaje y reposición durante las 3 horas, y difusión en nuestro Instagram.</div>
+        <div class="inc"><b>Nuestra compañía esa noche:</b> barra de café de especialidad, habladores en las mesas, un pan de jamón grande para rifar, montaje y reposición durante las 3 horas, y su evento en nuestro Instagram.</div>
         <div id="oWarn"></div>
-        <a class="btn wa" id="oWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Confirmar este pedido por WhatsApp</a>
-        <span class="fine">Le respondemos con la cotización formal y la factura. Pago en dólares, o en bolívares a la tasa del BCV del día de cada pago.</span>
+        <a class="btn wa" id="oWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg>Reservar con este pedido</a>
+        <span class="fine">Pago en dólares, o en bolívares a la tasa del BCV del día de cada pago.</span>
       </aside>
     </div>
   </div>
 </section>
 
-<section id="cortesias" class="gift">
+<section id="compania" class="gift">
   <div class="wrap">
     <div class="head rv">
-      <span class="kick">Cortesías de Alleria · incluidas</span>
-      <h2>Lo que sumamos sin costo, porque su noche nos importa</h2>
-      <p class="lede">Nada de esto aparece en la factura. Es nuestra forma de acompañarlo y de presentarnos a sus clientes.</p>
+      <span class="kick">Nuestra compañía esa noche</span>
+      <h2>Estaremos con usted, sin costo adicional</h2>
     </div>
     <div class="giftg">
-      <article class="gf rv"><div class="im"><div class="two"><img src="/assets/catering/ph/chemex.jpg" alt="Café filtrado en Chemex"><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"></div></div><div class="bd"><b>Barra de degustación de café</b><p>Café de especialidad preparado al momento con tres métodos de extracción distintos, servido en vasitos de degustación. La barra la atiende Gustavo, fundador de Alleria.</p><span class="pill">Para compartir con los invitados</span></div></article>
-      <article class="gf rv"><div class="hab"><div class="card"><small>Están comiendo</small><b>Pollo pesto</b><span>Focaccia de masa madre con más de 24 horas de fermentación natural, sin conservantes. Por eso cae ligera.</span></div></div><div class="bd"><b>Habladores en las mesas</b><p>Cada invitado sabe qué está comiendo, con qué está hecho y por qué la masa madre es distinta. Así se nota que usted eligió algo premium.</p><span class="pill">En las mesas del refrigerio</span></div></article>
-      <article class="gf rv"><div class="im"><img src="/assets/anaquel/cat/pinita.jpg" alt="Piñitas de Alleria"></div><div class="bd"><b>Piñitas de bienvenida</b><p>Un detalle dulce para la mesa de recepción, para que el primer contacto de la noche ya sea una sonrisa.</p><span class="pill">Para la recepción</span></div></article>
-      <article class="gf rv"><div class="im"><img class="cut" src="/assets/anaquel/cut/panjamon.webp" alt="Pan de jamón de Alleria"></div><div class="bd"><b>Un pan de jamón para rifar</b><p>Nuestro pan de jamón de temporada, para que usted lo rife entre sus clientes o lo regale como prefiera. Un momento de alegría en plena noche.</p><span class="pill">Usted decide si lo usa y cómo</span></div></article>
-      <article class="gf rv"><div class="ig"><div class="ph"><span>Grupo SAC</span><em>Noche de clientes · Lido Hotel</em></div></div><div class="bd"><b>Difusión en nuestro Instagram</b><p>Historias del evento en @alleriacoffeebar, con más de 14 mil seguidores, etiquetando a Grupo SAC. Su noche se ve también afuera del salón.</p><span class="pill">Siempre con su aprobación</span></div></article>
-      <article class="gf rv"><div class="im"><img src="/assets/anaquel/cat/mini-pack.jpg" alt="Panes de masa madre de Alleria"></div><div class="bd"><b>Mesa de panes de la casa</b><p>Si usted lo autoriza, una pequeña mesa con nuestros panes de masa madre, para que sus invitados conozcan lo que hacemos. Si prefiere el salón solo para su evento, no la llevamos.</p><span class="pill ask">Solo con su autorización</span></div></article>
+      <article class="gf rv"><div class="im"><div class="two"><img src="/assets/catering/ph/chemex.jpg" alt="Café filtrado en Chemex"><img src="/assets/catering/ph/guayabo.jpg" alt="Café filtrado en Guayabo"></div></div><div class="bd"><b>Barra de café</b><p>Tres métodos de extracción, preparados al momento.</p></div></article>
+      <article class="gf rv"><div class="im"><div class="hab"><div class="card"><small>Está disfrutando</small><b>Pastrami</b><span>Focaccia de masa madre, más de 24 h de fermentación natural.</span></div></div></div><div class="bd"><b>Habladores</b><p>Cada invitado sabe qué disfruta y por qué es distinto.</p></div></article>
+      <article class="gf rv"><div class="im"><img src="/assets/sac/pan-jamon.jpg" alt="Pan de jamón grande de Alleria"></div><div class="bd"><b>Pan de jamón para rifar</b><p>Uno grande, para un momento de alegría en su noche.</p></div></article>
+      <article class="gf rv"><div class="im"><div class="ig"><div class="ph"><span>Grupo SAC</span></div></div></div><div class="bd"><b>Su evento en Instagram</b><p>Más de 14 mil seguidores verán la noche de Grupo SAC.</p></div></article>
     </div>
+    <div class="extra rv"><img src="/assets/anaquel/cat/mini-pack.jpg" alt=""><div><b>Y, si usted lo autoriza, una mesa con nuestros panes de la casa.</b><p>Para que sus invitados conozcan lo que hacemos.</p></div></div>
   </div>
 </section>
 
 <section class="why">
-  <div class="wrap wgrid">
-    <div class="clock rv" id="clock" aria-hidden="true">
-      <i class="arc"></i>
-      <span class="n" style="left:50%;top:12%">12</span><span class="n" style="left:88%;top:50%">3</span><span class="n" style="left:50%;top:88%">6</span><span class="n" style="left:12%;top:50%">9</span>
-      <i class="h"></i><i class="m"></i><i class="dot"></i><span class="lab">de 5 a 8 p. m.</span>
-    </div>
-    <div class="rv">
+  <div class="wrap">
+    <div class="head rv">
       <span class="kick">Por qué masa madre</span>
-      <h2 style="margin-top:12px">Llegan del trabajo con hambre. Se van conversando.</h2>
-      <div class="facts">
-        <div><span>24h</span><div><b>Fermentación natural de más de 24 horas</b><p>Sin levadura comercial y sin conservantes. La fermentación hace el trabajo pesado antes de que el pan llegue a la mesa.</p></div></div>
-        <div><span>✓</span><div><b>Ligero, sin pesadez</b><p>Un pan más fácil de digerir: sus invitados comen bien a las 5 y a las 7 siguen atentos, de pie y conversando.</p></div></div>
-        <div><span>✓</span><div><b>Hecho por nosotros, de principio a fin</b><p>Hacemos la masa, horneamos la focaccia y armamos cada panini. Nada viene de otro lado.</p></div></div>
-      </div>
+      <h2>Llegan con hambre. Se van conversando.</h2>
+    </div>
+    <div class="why3">
+      <div class="wy rv"><span>24 h</span><b>Fermentación natural</b><p>Sin conservantes ni levadura comercial.</p></div>
+      <div class="wy rv"><span>Ligero</span><b>Sin pesadez</b><p>A las 7 de la noche, sus invitados siguen conversando.</p></div>
+      <div class="wy rv"><span>100 %</span><b>Hecho por nosotros</b><p>De la masa al último panini.</p></div>
     </div>
   </div>
 </section>
 
 <section class="trust">
   <div class="wrap tgrid">
-    <div class="ph rv"><img src="/assets/anaquel/fundadores.jpg" alt="Fundadores de Alleria"><span>los que hacemos el pan</span></div>
+    <div class="ph rv"><img src="/assets/anaquel/fundadores.jpg" alt="Eftimía y Gustavo, fundadores de Alleria"><span>Eftimía y Gustavo</span></div>
     <div class="rv">
-      <span class="kick">Quiénes ya confían en nosotros</span>
-      <h2 style="margin-top:12px">No somos nuevos en sus eventos</h2>
-      <div class="who">
-        <div><i>MD</i><div><b>MD Conference</b><p>Acompañamos con nuestros paninis los cursos que usted dicta. Los mismos que usted ya probó.</p></div></div>
-        <div><i>C</i><div><b>Consumeta</b><p>Llevamos nuestro catering a sus eventos con empresas.</p></div></div>
-      </div>
-      <p class="quote">Usted ya sabe cómo sabe. Ahora queremos que lo sepan sus clientes.</p>
+      <span class="kick">Ya nos eligen</span>
+      <div class="brands"><span>MD Conference</span><span>Consumeta</span><span>Movistar</span></div>
+      <p class="quote">Usted ya sabe cómo sabe. <em>Ahora queremos que lo sepan sus clientes.</em></p>
     </div>
   </div>
 </section>
 
-<section id="condiciones" class="how">
+<section id="reservar" class="how">
   <div class="wrap">
-    <div class="head rv">
-      <span class="kick">Condiciones</span>
-      <h2>Todo claro desde hoy</h2>
-      <p class="lede">Para 150 invitados compramos ingredientes de primera con tiempo. Por eso el anticipo es mayor que en un pedido normal.</p>
+    <div class="head c rv">
+      <span class="kick">Reservar</span>
+      <h2>Así de fácil reservamos su noche</h2>
     </div>
-    <div class="hgrid2">
-      <div class="hc dark rv"><span class="v">75 %</span><b>Al confirmar</b><p>Con este anticipo aseguramos los ingredientes y reservamos la producción para su evento.</p></div>
-      <div class="hc dark rv"><span class="v">25 %</span><b>El miércoles 2 de diciembre</b><p>El resto, el día antes del evento.</p></div>
-      <div class="hc rv"><span class="v">27 nov</span><b>Confirmación</b><p>Confírmenos a más tardar el viernes 27 de noviembre para garantizar la producción.</p></div>
-      <div class="hc rv"><span class="v">$ o Bs</span><b>Forma de pago</b><p>En dólares, o en bolívares a la tasa oficial del BCV del día de cada pago.</p></div>
-      <div class="hc rv"><span class="v">Factura</span><b>Todo por escrito</b><p>Le enviamos la cotización formal para aprobar y emitimos factura.</p></div>
-      <div class="hc rv"><span class="v">Lido</span><b>Coordinación</b><p>Coordinamos con MD Conference el ingreso y el montaje en el Salón Doral 1, para llegar listos antes que el primer invitado.</p></div>
+    <div class="steps">
+      <div class="st rv"><i>1</i><small>Hoy</small><b>Arma su pedido</b><p>Y nos lo envía por WhatsApp.</p></div>
+      <div class="st rv"><i>2</i><small>Hasta el viernes 27 de nov.</small><b>Reserva con el 75 %</b><p>Aseguramos sus ingredientes y la producción.</p></div>
+      <div class="st rv"><i>3</i><small>Miércoles 2 de dic.</small><b>El 25 % restante</b><p>Un día antes de su evento.</p></div>
+      <div class="st big rv"><i>★</i><small>Jueves 3 de dic. · 5 p. m.</small><b>Usted disfruta</b><p>Nosotros nos encargamos del resto.</p></div>
     </div>
-    <div class="tl rv" aria-label="Así avanzamos">
-      <div><i>1</i><b>Hoy</b><small>Arma su pedido y nos lo envía</small></div>
-      <div><i>2</i><b>Hasta el 27 nov</b><small>Confirma con el 75 %</small></div>
-      <div><i>3</i><b>2 dic</b><small>Pago del 25 % restante</small></div>
-      <div><i>★</i><b>3 dic · 5 p. m.</b><small>Usted recibe a sus clientes</small></div>
-    </div>
+    <p class="paynote rv">En dólares, o en bolívares a la tasa del BCV del día de cada pago.</p>
   </div>
 </section>
 
 <section class="close">
   <div class="wrap rv">
+    <div class="logos"><img src="/assets/sac/logo-sac.png" alt="Grupo SAC"><em>×</em><span>ALLERIA</span></div>
     <h2>Su noche, a la altura<span>de sus clientes.</span></h2>
-    <p class="lede">Arme el pedido y envíenoslo por WhatsApp, o escríbanos con cualquier duda. Con gusto ajustamos lo que necesite.</p>
+    <p class="lede">Será un gusto acompañarlo.</p>
     <div class="row"><a class="btn sol" href="#armar">Armar el pedido</a><a class="btn ghost" id="cWa" target="_blank" rel="noopener">Escribir a Gustavo</a></div>
     <p class="sign">Gustavo, Eftimía y el equipo de Alleria</p>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">
-    <div class="cols">
-      <div><b>Contacto</b>Gustavo · WhatsApp +58 412-263 2864<br>alleriacoffebar@gmail.com<br><a href="https://instagram.com/alleriacoffeebar" target="_blank" rel="noopener">@alleriacoffeebar</a></div>
-      <div><b>Tienda · Barquisimeto</b>Nueva Segovia, calle 6 entre carreras 1 y 2, edificio Chamonix, local 2</div>
-      <div><b>Panificadora (producción), Cabudare</b>Las Mercedes, calle 5, lote 20, #20-37</div>
-    </div>
-    <p class="priv">Propuesta privada preparada para Grupo SAC. Precios válidos para el evento del 3 de diciembre de 2026.</p>
-  </div>
+  <div class="wrap"><span>Gustavo · WhatsApp +58 412-263 2864 · <a href="https://instagram.com/alleriacoffeebar" target="_blank" rel="noopener">@alleriacoffeebar</a></span><span class="priv">Propuesta privada para Grupo SAC · evento del 3 de diciembre de 2026</span></div>
 </footer>
 
-<div class="dock" id="dock"><div class="t"><b id="dT"></b><span id="dS"></span></div><a class="btn wa" id="dWa" target="_blank" rel="noopener">Confirmar</a></div>
+<div class="dock" id="dock"><div class="t"><b id="dT"></b><span id="dS"></span></div><a class="btn wa" id="dWa" target="_blank" rel="noopener">Reservar</a></div>
 
 <script>
 (function(){
 const WA="584122632864";const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
 const $=id=>document.getElementById(id);
 const f2=n=>"$"+(Math.round(n*100)/100).toFixed(2).replace(".",",").replace(",00","");
-const PRICE=6.5;
-let used=false;
+const PRICE=6.5;let used=false;
 
-/* luces del salón */
 const L=$("lights");for(let i=0;i<22;i++){const s=document.createElement("i");s.style.left=(Math.random()*100)+"%";s.style.top=(14+Math.random()*80)+"%";s.style.animationDelay=(-Math.random()*3)+"s";s.style.transform="scale("+(.5+Math.random())+")";L.appendChild(s)}
 
-/* tarjetas: para usted / para sus invitados */
+/* tarjetas */
 const CARDS={
  host:[
-  ["🙌","Que se note el agradecimiento","Una invitación exclusiva promete algo especial. El refrigerio tiene que cumplir esa promesa.","Premium de principio a fin","Masa madre de Alleria, ingredientes de verdad y cada pieza empacada una por una. Sus clientes sienten que se pensó en ellos."],
-  ["🕓","Cero preocupaciones esa noche","Usted tiene que recibir, saludar y hablar. No puede estar pendiente de la comida.","Llegamos antes y nos quedamos","Coordinamos con MD Conference, montamos antes de que llegue el primer invitado, reponemos durante las 3 horas y al final retiramos todo."],
-  ["📣","Que se hable de Grupo SAC","Un buen evento se comenta al día siguiente, dentro y fuera del salón.","Su nombre, también afuera","Historias del evento en nuestro Instagram de más de 14 mil seguidores, etiquetando a Grupo SAC, siempre con su aprobación."],
-  ["🎁","Un momento de alegría","En un evento de tres horas, un momento divertido cambia la energía del salón.","Un pan de jamón para rifar","Se lo damos para que lo rife o lo regale como usted quiera. Un premio de temporada que todos quieren ganar."]
+  ["#E2582F","🙌","Que se sientan especiales","Premium en cada detalle","Masa madre de Alleria, empacada una por una. Así se siente una invitación exclusiva."],
+  ["#1F5FAD","🥂","Usted, con sus clientes","Del resto nos encargamos","Llegamos antes, montamos, reponemos durante las 3 horas y retiramos al final."],
+  ["#8A4F9E","📣","Que se hable de Grupo SAC","Su noche, también afuera","Su evento en nuestro Instagram, ante más de 14 mil seguidores."],
+  ["#5E8B3A","🎁","Un momento de alegría","Un pan de jamón para rifar","Grande y de temporada. El premio que todos quieren ganar."]
  ],
  guest:[
-  ["🍽️","Llegan del trabajo con hambre","A las 5 de la tarde nadie ha comido desde el almuerzo.","Energía sin pesadez","La masa madre de fermentación larga cae ligera: comen bien y siguen atentos y conversando toda la noche."],
-  ["🤝","Comen de pie, conversando","Con un vaso en una mano y una tarjeta en la otra, nadie quiere platos ni cubiertos.","Una mano y dos bocados","Cada panini va envuelto en su papel, listo para tomar. Sin salsas que goteen, sin migas en la ropa."],
-  ["🏷️","Quieren saber qué están comiendo","Lo bueno se pregunta: «¿esto de dónde es?».","Habladores en las mesas","Cada sabor identificado, con sus ingredientes y lo que hace distinta a la masa madre. Saben que es algo premium."],
-  ["☕","Un café que no esperaban","Al final de la tarde, un buen café es el mejor pretexto para quedarse un rato más.","Barra de degustación","Café de especialidad en tres métodos de extracción, preparado al momento por Gustavo, fundador de Alleria."]
+  ["#F08A24","⚡","Energía a las 5 de la tarde","Ligero y sabroso","La masa madre cae ligera: comen bien y siguen conversando."],
+  ["#3C8DBF","🤝","Una mano libre para saludar","Listo para tomar","Cada panini envuelto en su papel. Se come de pie, sin cubiertos."],
+  ["#C24A2C","🏷️","Saber qué están disfrutando","Habladores en las mesas","Sabor, ingredientes y por qué la masa madre es distinta."],
+  ["#6B4226","☕","Un café que no esperaban","Barra de café de especialidad","Tres métodos de extracción, preparados al momento."]
  ]
 };
 const cg=$("cards");
-function cards(t){cg.innerHTML="";CARDS[t].forEach(w=>{const b=document.createElement("button");b.type="button";b.className="wc";b.setAttribute("aria-label",w[1]+". Toque para ver cómo lo resolvemos");
-  b.innerHTML=`<div class="in"><div class="f"><span class="ic" aria-hidden="true">${w[0]}</span><span class="q">${w[1]}</span><p>${w[2]}</p><span class="t">Toque para ver qué hacemos →</span></div><div class="b"><span class="s">${w[3]}</span><p>${w[4]}</p></div></div>`;
-  b.onclick=()=>b.classList.toggle("flip");cg.appendChild(b)})}
+function cards(t){cg.classList.remove("hint");cg.innerHTML="";CARDS[t].forEach(w=>{const b=document.createElement("button");b.type="button";b.className="fc";b.style.setProperty("--bg",w[0]);b.setAttribute("aria-label",w[2]+". Toque para ver más");
+  b.innerHTML=`<div class="in"><div class="f"><span class="ic" aria-hidden="true">${w[1]}</span><span class="q">${w[2]}</span><span class="t"><i aria-hidden="true">↻</i>Toque aquí</span></div><div class="b"><span class="ok" aria-hidden="true">✓</span><span class="s">${w[3]}</span><p>${w[4]}</p></div></div>`;
+  b.onclick=()=>b.classList.toggle("flip");cg.appendChild(b)});void cg.offsetWidth;cg.classList.add("hint")}
 document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",String(x===b)));cards(b.dataset.t)}));
-cards("host");
+cards("host");cg.classList.remove("hint");
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){cg.classList.remove("hint");void cg.offsetWidth;cg.classList.add("hint");o.disconnect()}}),{threshold:.4}).observe(cg);
 
 /* armador */
-const S=[{id:"pp",nm:"Pollo pesto",c:"var(--pp)",sub:"Pollo, pesto, tocineta y gouda de búfala"},{id:"rb",nm:"Roast beef",c:"var(--rb)",sub:"Mantequilla de ajo, lechuga y queso de mano"},{id:"pa",nm:"Pastrami",c:"var(--pa)",sub:"Pepinillos, gouda, coleslaw y salsa golf"}];
+const S=[{id:"pp",nm:"Pollo pesto",c:"var(--pp)"},{id:"rb",nm:"Roast beef",c:"var(--rb)"},{id:"pa",nm:"Pastrami",c:"var(--pa)"}];
 const SC={pp:"#5E8B3A",rb:"#C24A2C",pa:"#8A4F9E"};
-let n=150;let Q={};let dul="mix";let preset="clasico";
-const keys=[];S.forEach(s=>{keys.push(s.id+"_c",s.id+"_m")});
+let n=150,Q={},dul="mix",preset="clasico";
+const keys=[];S.forEach(s=>keys.push(s.id+"_c",s.id+"_m"));
 const STEP=5;
+function split(n,ks){const o={};const base=Math.floor(n/ks.length/STEP)*STEP;ks.forEach(k=>o[k]=base);o[ks[0]]+=n-base*ks.length;return o}
 const PRE={
- clasico:{nm:"Clásico",sub:"Todo pollo pesto, completo",dots:["pp","pp","pp"],fn:n=>({pp_c:n})},
+ clasico:{nm:"El de MD",sub:"Todo pollo pesto",dots:["pp","pp","pp"],fn:n=>({pp_c:n})},
  tres:{nm:"Tres sabores",sub:"Completos, en partes iguales",dots:["pp","rb","pa"],fn:n=>split(n,["pp_c","rb_c","pa_c"])},
  dulce:{nm:"Salado y dulce",sub:"Medio + dulce, tres sabores",dots:["pp","rb","pa"],half:true,fn:n=>split(n,["pp_m","rb_m","pa_m"])},
- mix:{nm:"Mitad y mitad",sub:"Pollo pesto completo + medio con dulce",dots:["pp","pp","rb"],fn:n=>{const a=Math.round(n/2/STEP)*STEP;return{pp_c:a,pp_m:n-a}}}
+ mix:{nm:"Mitad y mitad",sub:"Completo + medio con dulce",dots:["pp","pp","rb"],fn:n=>{const a=Math.round(n/2/STEP)*STEP;return{pp_c:a,pp_m:n-a}}}
 };
-function split(n,ks){const o={};const base=Math.floor(n/ks.length/STEP)*STEP;ks.forEach(k=>o[k]=base);o[ks[0]]+=n-base*ks.length;return o}
 const pr=$("presets");
 Object.entries(PRE).forEach(([k,p])=>{const b=document.createElement("button");b.type="button";b.className="pre";b.dataset.k=k;b.setAttribute("aria-pressed",String(k===preset));
  b.innerHTML=`<span class="dots" aria-hidden="true">${p.dots.map(d=>`<i style="background:${p.half?`linear-gradient(90deg,${SC[d]} 50%,#F7C344 50%)`:SC[d]}"></i>`).join("")}</span><b>${p.nm}</b><small>${p.sub}</small>`;
  b.onclick=()=>{used=true;applyPreset(k)};pr.appendChild(b)});
 function applyPreset(k){preset=k;pr.querySelectorAll(".pre").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.k===k)));Q=PRE[k].fn(n);render()}
 const mx=$("mx");
-mx.innerHTML=S.map(s=>`<tr style="--c:${s.c}"><td><b>${s.nm}</b><small>${s.sub}</small></td>${["c","m"].map(f=>`<td><span class="stp"><button type="button" data-k="${s.id}_${f}" data-d="-1" aria-label="Quitar ${STEP} invitados de ${s.nm} ${f==="c"?"completo":"medio + dulce"}">−</button><output id="o_${s.id}_${f}">0</output><button type="button" data-k="${s.id}_${f}" data-d="1" aria-label="Sumar ${STEP} invitados a ${s.nm} ${f==="c"?"completo":"medio + dulce"}">+</button></span></td>`).join("")}</tr>`).join("");
-mx.addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;used=true;const k=b.dataset.k,d=+b.dataset.d;const cur=Q[k]||0;
- if(d>0&&sum()>=n)return; Q[k]=Math.max(0,cur+d*STEP);if(d>0&&sum()>n)Q[k]-=sum()-n;if(!Q[k])delete Q[k];preset=null;pr.querySelectorAll(".pre").forEach(x=>x.setAttribute("aria-pressed","false"));render()});
+mx.innerHTML=S.map(s=>`<tr style="--c:${s.c}"><td><b>${s.nm}</b></td>${["c","m"].map(f=>`<td><span class="stp"><button type="button" data-k="${s.id}_${f}" data-d="-1" aria-label="Quitar ${STEP} de ${s.nm} ${f==="c"?"completo":"medio + dulce"}">−</button><output id="o_${s.id}_${f}">0</output><button type="button" data-k="${s.id}_${f}" data-d="1" aria-label="Sumar ${STEP} a ${s.nm} ${f==="c"?"completo":"medio + dulce"}">+</button></span></td>`).join("")}</tr>`).join("");
 const sum=()=>keys.reduce((a,k)=>a+(Q[k]||0),0);
 const halves=()=>S.reduce((a,s)=>a+(Q[s.id+"_m"]||0),0);
+mx.addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;used=true;const k=b.dataset.k,d=+b.dataset.d;
+ if(d>0&&sum()>=n)return;Q[k]=Math.max(0,(Q[k]||0)+d*STEP);if(d>0&&sum()>n)Q[k]-=sum()-n;if(!Q[k])delete Q[k];preset=null;pr.querySelectorAll(".pre").forEach(x=>x.setAttribute("aria-pressed","false"));render()});
 $("left").addEventListener("click",e=>{if(!e.target.closest("button"))return;used=true;const r=n-sum();if(r>0){Q.pp_c=(Q.pp_c||0)+r}else if(r<0){let over=-r;for(const k of keys.slice().reverse()){const t=Math.min(Q[k]||0,over);if(t){Q[k]-=t;over-=t;if(!Q[k])delete Q[k]}if(!over)break}}render()});
 document.querySelectorAll("#dul button").forEach(b=>b.addEventListener("click",()=>{used=true;dul=b.dataset.d;document.querySelectorAll("#dul button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
 const nIn=$("n");
-nIn.addEventListener("input",()=>{used=true;const old=n;n=+nIn.value;
+nIn.addEventListener("input",()=>{used=true;n=+nIn.value;
  if(preset){Q=PRE[preset].fn(n)}else{const tot=sum();if(!tot){Q={pp_c:n}}else{const nq={},fr=[];let acc=0;keys.forEach(k=>{if(Q[k]){const ex=Q[k]*n/tot/STEP;nq[k]=Math.floor(ex)*STEP;acc+=nq[k];fr.push([k,ex-Math.floor(ex)])}});fr.sort((a,b)=>b[1]-a[1]);let i=0;while(n-acc>=STEP&&fr.length){nq[fr[i%fr.length][0]]+=STEP;acc+=STEP;i++}if(n-acc)nq[fr[0][0]]+=n-acc;keys.forEach(k=>{if(nq[k]===0)delete nq[k]});Q=nq}}
  render()});
-/* asientos */
 const seatsEl=$("seats");const seats=[];
 for(let i=0;i<200;i++){const s=document.createElement("i");s.className="seat";seatsEl.appendChild(s);seats.push(s)}
 function dulTxt(q){if(dul==="av")return{av:q,po:0};if(dul==="po")return{av:0,po:q};const a=Math.ceil(q/2);return{av:a,po:q-a}}
 function render(){
  $("nOut").textContent=n;nIn.style.setProperty("--p",((n-50)/150*100)+"%");
- $("nHint").textContent=n===150?"Aforo del Salón Doral 1":n>150?"Más que el aforo anunciado (150)":"Menos invitados que el aforo (150)";
+ $("nHint").textContent=n===150?"Aforo del Salón Doral 1":"Aforo del salón: 150";
  S.forEach(s=>["c","m"].forEach(f=>{const k=s.id+"_"+f;$("o_"+k).textContent=Q[k]||0}));
  const t=sum(),r=n-t;
  mx.querySelectorAll('button[data-d="1"]').forEach(b=>b.disabled=t>=n);
  mx.querySelectorAll('button[data-d="-1"]').forEach(b=>b.disabled=!(Q[b.dataset.k]>0));
  const lf=$("left");lf.className="left "+(r===0?"ok":"no");
- lf.innerHTML=r===0?`<span>✓ Los ${n} invitados tienen su panini asignado.</span>`:r>0?`<span>Faltan <b>${r}</b> invitados por asignar.</span><button type="button">Asignarlos a pollo pesto completo</button>`:`<span>Hay <b>${-r}</b> asignados de más.</span><button type="button">Ajustar</button>`;
+ lf.innerHTML=r===0?`<span>✓ Sus ${n} invitados tienen su panini.</span>`:r>0?`<span>Faltan <b>${r}</b> invitados por asignar.</span><button type="button">Completar con pollo pesto</button>`:`<span>Hay <b>${-r}</b> de más.</span><button type="button">Ajustar</button>`;
  const h=halves();$("dul").classList.toggle("off",h===0);
- /* salón */
  const order=[];S.forEach(s=>{for(let i=0;i<(Q[s.id+"_c"]||0);i++)order.push([s.id,0])});S.forEach(s=>{for(let i=0;i<(Q[s.id+"_m"]||0);i++)order.push([s.id,1])});
  seats.forEach((el,i)=>{const show=i<n;el.style.display=show?"":"none";if(!show)return;const o=order[i];
   if(o){el.style.setProperty("--c",SC[o[0]]);el.style.background=SC[o[0]];el.classList.toggle("half",!!o[1]);el.classList.add("on")}else{el.style.background="";el.classList.remove("half","on")}
   el.style.transitionDelay=(i%25)*8+"ms"});
- $("sCap").textContent=n+" invitados · "+t+" asignados";
- /* pedido */
- $("oT").textContent=n+" invitados · Jue 3 dic";
+ $("sCap").textContent=t+" de "+n+" invitados";
+ $("oT").textContent=n+" invitados · 3 de diciembre";
  const lines=[];
  S.forEach(s=>{const c=Q[s.id+"_c"]||0,m=Q[s.id+"_m"]||0;
-  if(c)lines.push({c:SC[s.id],b:`${c} paninis ${s.nm.toLowerCase()}`,sm:"Completo · "+f2(PRICE)+" c/u",v:c*PRICE});
-  if(m)lines.push({c:SC[s.id],b:`${m} medios paninis ${s.nm.toLowerCase()} + dulce`,sm:"Medio + dulce · "+f2(PRICE)+" c/u",v:m*PRICE})});
+  if(c)lines.push({c:SC[s.id],b:`${c} paninis ${s.nm.toLowerCase()}`,sm:"Completo",v:c*PRICE});
+  if(m)lines.push({c:SC[s.id],b:`${m} medios paninis ${s.nm.toLowerCase()}`,sm:"Medio + dulce",v:m*PRICE})});
  const dd=dulTxt(h);
- $("oList").innerHTML=lines.map(l=>`<li><i style="background:${l.c}"></i><div>${l.b}<small>${l.sm}</small></div><span>${f2(l.v)}</span></li>`).join("")+(h?`<li><i style="background:var(--sol)"></i><div>Dulces del medio panini<small>${[dd.av?dd.av+" galletas de avena y arándanos":"",dd.po?dd.po+" polvorosas de almendras":""].filter(Boolean).join(" · ")}</small></div><span>incluido</span></li>`:"")+`<li><i style="background:var(--cielo)"></i><div>Barra de café, habladores, piñitas y pan de jamón<small>Cortesía de Alleria</small></div><span>$0</span></li>`;
+ $("oList").innerHTML=lines.map(l=>`<li><i style="background:${l.c}"></i><div>${l.b}<small>${l.sm} · ${f2(PRICE)} c/u</small></div><span>${f2(l.v)}</span></li>`).join("")+(h?`<li><i style="background:var(--sol)"></i><div>Dulces<small>${[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" · ")}</small></div><span>incluidos</span></li>`:"");
  const tot=t*PRICE;
- $("oTot").innerHTML=`<div><span>Invitados asignados</span><span>${t} × ${f2(PRICE)}</span></div><div class="gt"><span>Total</span><b>${f2(tot)}</b></div>`;
- $("oPay").innerHTML=`<div><small>75 % al confirmar</small><b>${f2(tot*.75)}</b></div><div><small>25 % el 2 de diciembre</small><b>${f2(tot*.25)}</b></div>`;
- $("oWarn").innerHTML=r!==0?`<p class="warn">${r>0?"Faltan "+r+" invitados por asignar":"Hay "+(-r)+" asignados de más"}: ajústelo arriba o se lo cuadramos al confirmar.</p>`:"";
- const msg=`Hola Gustavo, le escribo de Grupo SAC por el evento del jueves 3 de diciembre (Lido Hotel, Salón Doral 1).\n\nRevisé la propuesta y este es el pedido:\nInvitados: ${n}\n\n${lines.map(l=>"• "+l.b+" = "+f2(l.v)).join("\n")}${h?"\n• Dulces: "+[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" y "):""}\n\nTotal: ${f2(tot)}\n75 % al confirmar: ${f2(tot*.75)}\n25 % el 2 de diciembre: ${f2(tot*.25)}\n\n¿Pan de jamón para rifar?: \n¿Autoriza la mesa de panes de la casa?: \nDatos para la factura: `;
+ $("oTot").innerHTML=`<div><span>${t} invitados × ${f2(PRICE)}</span><span></span></div><div class="gt"><span>Total</span><b>${f2(tot)}</b></div>`;
+ $("oPay").innerHTML=`<div><small>75 % para reservar</small><b>${f2(tot*.75)}</b></div><div><small>25 % el 2 de diciembre</small><b>${f2(tot*.25)}</b></div>`;
+ $("oWarn").innerHTML=r!==0?`<p class="warn">${r>0?"Faltan "+r+" invitados por asignar":"Hay "+(-r)+" de más"}.</p>`:"";
+ const msg=`Hola Gustavo, le escribo de Grupo SAC por el evento del jueves 3 de diciembre (Lido Hotel, Salón Doral 1).\n\nEste es el pedido:\nInvitados: ${n}\n\n${lines.map(l=>"• "+l.b+" ("+l.sm.toLowerCase()+") = "+f2(l.v)).join("\n")}${h?"\n• Dulces: "+[dd.av?dd.av+" galletas de avena":"",dd.po?dd.po+" polvorosas":""].filter(Boolean).join(" y "):""}\n\nTotal: ${f2(tot)}\n75 % para reservar: ${f2(tot*.75)}\n25 % el 2 de diciembre: ${f2(tot*.25)}\n\n¿Mesa de panes de la casa?: `;
  $("oWa").href=wa(msg);$("dWa").href=wa(msg);
- $("dT").textContent=n+" invitados · "+f2(tot);$("dS").textContent="75 % al confirmar: "+f2(tot*.75);
+ $("dT").textContent=n+" invitados · "+f2(tot);$("dS").textContent="75 % para reservar: "+f2(tot*.75);
 }
 applyPreset("clasico");
-$("cWa").href=wa("Hola Gustavo, le escribo de Grupo SAC por la propuesta para el evento del 3 de diciembre. Tengo una consulta: ");
+$("cWa").href=wa("Hola Gustavo, le escribo de Grupo SAC por la propuesta para el evento del 3 de diciembre. ");
 
-/* animaciones y navegación */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 const links=[...document.querySelectorAll("#nav a")],secs=links.map(a=>document.querySelector(a.getAttribute("href"))),dock=$("dock"),out=document.querySelector(".out"),armar=$("armar");
